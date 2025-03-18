@@ -8,11 +8,13 @@ interface CodeBlockProps {
 }
 
 const CodeBlock: React.FC<CodeBlockProps> = ({ code, className }) => {
-  // Replace "___" with a highlighted span
-  const formattedCode = code.replace(/___/g, '<span class="highlight-blank">___</span>');
+  // Replace newlines with <br> tags and convert "___" to highlighted spans
+  const processedCode = code
+    .replace(/\n/g, '<br />')
+    .replace(/___/g, '<span class="highlight-blank">___</span>');
   
   // Enhanced syntax highlighting for Python
-  const highlightedCode = formattedCode
+  const highlightedCode = processedCode
     // Keywords
     .replace(/(print|def|return|if|for|in|else|elif|import|from|as|class|try|except|with|raise|pass|continue|break|while|not|and|or|is|None|True|False)\b/g, '<span class="keyword">$1</span>')
     // Strings
