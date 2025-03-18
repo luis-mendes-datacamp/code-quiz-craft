@@ -41,7 +41,11 @@ async function generatePractice(exerciseCount, lessonExercises) {
         "difficultyLevel": "beginner"
     }
     const prompt = 'Context: You are a teacher, and you are creating exercises based on the lesson details provided as the input. Input is in JSON format.' +
-        `Generate a JSON array of size ${exerciseCount} containing coding exercises in the "fill in the blanks" style based on the content of the course. Here's an example of one exercise:\n` +
+        `Generate a JSON array of size ${exerciseCount} containing coding exercises in the "fill in the blanks" style based on the content of the course. 
+        'There should be exactly one blank to fill.' +
+        'Each exercise should have between 3 and 5 options.' +
+        'Exactly one option should be correct.' +
+        'Here's an example of one exercise:\n` +
         '```' + JSON.stringify(exerciseExample) + '```\n' +
         'The difficulty of the exercises should be: beginner (40%), intermediate (30%), advanced (20%), expert (10%)' +
         'Ensure the output you generate is a valid JSON without additional markup.';
