@@ -74,7 +74,7 @@ const OptionButton: React.FC<OptionButtonProps> = ({
     >
       {renderIcon()}
       <span>{option}</span>
-      <span className='text-xs'>{isMobile ? '' : `Press ${index + 1}`} </span>
+      <span className='text-xs min-w-4'>{isMobile ? '' : `Press ${index + 1}`} </span>
     </Button>
   );
 };
