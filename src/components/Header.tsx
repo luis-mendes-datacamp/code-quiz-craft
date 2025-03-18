@@ -22,7 +22,7 @@ const Header: React.FC<HeaderProps> = ({ className }) => {
         
         <div>
           <h1 className="text-2xl font-bold tracking-tight">
-            CodeQuest
+            DataCamp
           </h1>
           <p className="text-sm text-muted-foreground">
             Test your Python knowledge

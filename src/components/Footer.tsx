@@ -10,7 +10,7 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
   return (
     <footer className={cn("py-6 text-center text-sm text-muted-foreground", className)}>
       <p>
-        CodeQuest &copy; {new Date().getFullYear()}
+        DataCamp &copy; {new Date().getFullYear()}
       </p>
     </footer>
   );

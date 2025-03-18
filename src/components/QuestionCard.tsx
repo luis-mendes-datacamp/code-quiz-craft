@@ -9,8 +9,6 @@ import { cn } from '@/lib/utils';
 import { animate } from '@/utils/animations';
 import { ArrowRight, Check, RefreshCw } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import { CodeBlock as WafflesCodeBlock } from '@datacamp/waffles/code-block';
-import { theme } from "@datacamp/waffles/theme";
 
 interface QuestionCardProps {
   question: Question;
@@ -87,7 +85,8 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
           <h3 className="text-sm font-medium text-muted-foreground mb-2">Fill in the blank:</h3>
           <CodeBlock code={question.question.code} />
           <h3 className="text-sm font-medium text-muted-foreground mb-2">Output:</h3>
-          <WafflesCodeBlock size="medium" style={{backgroundColor: theme.background.contrastInverse, color: theme.text.inverse}}>{question.question.output}</WafflesCodeBlock>
+          {/* <WafflesCodeBlock size="medium" style={{backgroundColor: theme.background.contrastInverse, color: theme.text.inverse}}>{question.question.output}</WafflesCodeBlock> */}
+           <CodeBlock code={question.question.output} />
           {isRevealed && (
             <div className={cn(
               "mt-4 bg-secondary/50 rounded-lg p-3 text-sm",
