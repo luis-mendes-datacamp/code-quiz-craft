@@ -140,34 +140,18 @@ class CodeExecutor {
 }
 
 const executeCode = async (userCode) => {
-  const muxAuthenticationInfo = {
-    email: "damian.knapik@datacamp.com",
-    authentication_token:
-      "eyJhbGciOiJSUzI1NiIsInR5cCIgOiAiSldUIiwia2lkIiA6ICJneUZvOVJGU21lTUIzcGZRNk1oMkhFa186dksySDYxR05tbF9aSENZZzdnIn0.eyJleHAiOjE3NDk3NDM5MDYsImlhdCI6MTc0MTk2NzkwNiwiYXV0aF90aW1lIjoxNzQxOTY3OTA2LCJqdGkiOiI5YmE0ZTYzZS04MDQ4LTQzNjUtYmEwNS03YmVhM2U2MWJkYmYiLCJpc3MiOiJodHRwczovL2F1dGguZGF0YWNhbXAuY29tL3JlYWxtcy9kYXRhY2FtcC11c2VycyIsImF1ZCI6ImFjY291bnQiLCJzdWIiOiJkNzk3NmVlMy1lMzRhLTRkMTktODQyZS1hYWZkZWZjM2E4NGMiLCJ0eXAiOiJCZWFyZXIiLCJhenAiOiJEQjJEMkI1Ri1ERUM4LTQyMjUtQkNBQS0xRDM0NTA0RDg2OTYiLCJzaWQiOiJkZGYyNWEyZC1hMDJkLTRlNmYtYmQ5OS1hYmRmNmUxYWY5MWIiLCJhY3IiOiIxIiwicmVhbG1fYWNjZXNzIjp7InJvbGVzIjpbIm9mZmxpbmVfYWNjZXNzIiwidW1hX2F1dGhvcml6YXRpb24iLCJkZWZhdWx0LXJvbGVzLWRhdGFjYW1wLXVzZXJzIl19LCJyZXNvdXJjZV9hY2Nlc3MiOnsiYWNjb3VudCI6eyJyb2xlcyI6WyJtYW5hZ2UtYWNjb3VudCIsIm1hbmFnZS1hY2NvdW50LWxpbmtzIiwidmlldy1wcm9maWxlIl19fSwic2NvcGUiOiJvcGVuaWQgZW1haWwgZGMtdXNlci1pZCBwcm9maWxlIiwiZW1haWxfdmVyaWZpZWQiOnRydWUsImIyYl9zc29fdHJhY2VfaWQiOiI3MDExOWMzYy00NDgxLTQzNmUtOTUxYy0wMDQ2MmUwNzZiODUiLCJ1c2VyX2lkIjo4MjQzMzgwLCJuYW1lIjoiRGFtaWFuIEtuYXBpayIsInByZWZlcnJlZF91c2VybmFtZSI6ImRhbWlhbi5rbmFwaWtAZGF0YWNhbXAuY29tIiwiaWRlbnRpdHlfcHJvdmlkZXJfYWxpYXMiOiJiMmItc3NvLWdyb3VwLTQ5NDciLCJnaXZlbl9uYW1lIjoiRGFtaWFuIiwiZmFtaWx5X25hbWUiOiJLbmFwaWsiLCJlbWFpbCI6ImRhbWlhbi5rbmFwaWtAZGF0YWNhbXAuY29tIn0.FYBm8iP4iBOXtQBzyxhF-7_D6YFqTgb1cSuMK4fVoOCqS8Oj9YnZ1UZ4cwemuzkfVug1lWesrfQKVB9nrSzCwz7BUy73tsWugXzLzOoV33_NLv5lK1ukin2fPppN50TB2QPSk3aZphsPtg07_ZQAJDvzdrHKgjs4LAIlwitqxQGMFmvLVT44J-p7COxoLrX7CxtqhZ0uyos3SMofBDYdCEEQEfiTdef7Q-_Y-haCCfywE7m_njePI3zWpxg4XMOIsOqegrX9Z-blqFo0RuLh66jv7uWmETS_PvMXN98KlkENjrgPHYwWQ2EuoObCu8E7_BrcBSDr-z3GVBuMdMpzWw",
-  };
-
-  // Create Mux Session
-  const codeExecutor = new CodeExecutor(
-    muxAuthenticationInfo,
-    "https://sessions.datacamp.com",
-    {
-      force_new: false,
-      maxRestart: 2,
-      maxRetry: 0,
-      // WARNING! Multiplexer setings are not deep-merged in CodeExecutor,
-      // so force_new, runtime_config, and image should always be set when overriding startOptions.
-      startOptions: {
-        force_new: false,
-        image:
-          "course-735-master:7fc8cecbe5d86f3288f8ba26e2fd0820-20250226160623729",
-        runtime_config: undefined,
-      },
-    }
+  const syncSession = new mux.SyncSession(
+      { email: process.env.DATACAMP_EMAIL, authentication_token: process.env.DATACAMP_TOKEN },
+      { multiplexerUrl: 'https://sessions.datacamp.com', language: 'python', initCommand: {
+          code: '',
+          command: 'init',
+          pec: '',
+        }}
   );
 
-  await codeExecutor.start();
-
-  return codeExecutor.execute(userCode, false);
+  await syncSession.start();
+  const [response] = await syncSession.input({ command: 'console', code: userCode });
+  return response.payload;
 };
 
 function fixPythonCode(code) {
@@ -193,6 +177,7 @@ async function testExercise(exercise) {
     console.log("Modified code:", code);
 
     const output = await executeCode(code);
+    console.log(`output: ${output}`);
     if (output !== null) {
       const matches = output === exercise.question.output;
       console.log("Got output:", output);
