@@ -80,6 +80,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
       
       <CardContent className="space-y-4">
         <div className="space-y-2">
+          <h3 className="text-sm font-medium text-muted-foreground mb-2">Fill in the blank:</h3>
           <CodeBlock code={question.question.code} />
           
           {isRevealed && (
@@ -87,7 +88,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
               "mt-4 bg-secondary/50 rounded-lg p-3 text-sm",
               animate({ variant: 'fadeIn' })
             )}>
-              <p className="font-semibold">Output: <code>{question.question.output}</code></p>
+              <p className="font-semibold">Output: <code className="bg-background/70 px-1 py-0.5 rounded">{question.question.output}</code></p>
               <p className="text-muted-foreground mt-1">{question.question.explanation}</p>
             </div>
           )}
