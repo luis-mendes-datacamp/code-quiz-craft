@@ -69,6 +69,7 @@ const OptionButton: React.FC<OptionButtonProps> = ({
         isRevealed && isCorrect && 'bg-emerald-500 text-white'
       )}
       onClick={onClick}
+      disabled={isRevealed}
     >
       {renderIcon()}
       <span>{option}</span>

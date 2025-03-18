@@ -49,7 +49,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
   };
 
   const handleSubmitAnswer = (e: KeyboardEvent) => {
-    if (e.key >= '1' && e.key <= '4') {
+    if (e.key >= '1' && e.key <= '4' && !isRevealed) {
       setSelectedOption(Number(e.key) - 1);
       setIsRevealed(true);
     }
@@ -61,7 +61,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
     return () => {
       document.removeEventListener('keydown', handleSubmitAnswer);
     };
-  }, []);
+  }, [isRevealed]);
   
   
 
