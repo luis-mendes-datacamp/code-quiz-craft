@@ -1,4 +1,3 @@
-
 import { useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -28,7 +27,6 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
   const handleReveal = () => {
     setIsRevealed(true);
     
-    // Show toast message based on correct/incorrect answer
     if (selectedOption === question.correctAnswer) {
       toast.success('Correct answer!', {
         description: question.question.explanation
@@ -46,7 +44,6 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
     onNext();
   };
   
-  // Reset the current question
   const handleReset = () => {
     setSelectedOption(null);
     setIsRevealed(false);
@@ -88,8 +85,10 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
               "mt-4 bg-secondary/50 rounded-lg p-3 text-sm",
               animate({ variant: 'fadeIn' })
             )}>
-              <p className="font-semibold">Output: <code className="bg-background/70 px-1 py-0.5 rounded">{question.question.output}</code></p>
-              <p className="text-muted-foreground mt-1">{question.question.explanation}</p>
+              <div className="flex flex-col gap-2">
+                <p className="font-semibold">Output: <code className="bg-background/70 px-1 py-0.5 rounded">{question.question.output}</code></p>
+                <p className="text-muted-foreground">{question.question.explanation}</p>
+              </div>
             </div>
           )}
         </div>
