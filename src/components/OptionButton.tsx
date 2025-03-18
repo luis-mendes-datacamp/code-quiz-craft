@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { animate } from '@/utils/animations';
 import { CheckCircle, XCircle } from 'lucide-react';
-
+import { useIsMobile } from '@/hooks/use-mobile';
 interface OptionButtonProps {
   option: string;
   index: number;
@@ -24,6 +24,7 @@ const OptionButton: React.FC<OptionButtonProps> = ({
 }) => {
   const isSelected = selectedIndex === index;
   const isCorrect = index === correctIndex;
+  const isMobile = useIsMobile();
   
   const getVariant = () => {
     if (!isRevealed) return isSelected ? 'secondary' : 'outline';
@@ -73,7 +74,7 @@ const OptionButton: React.FC<OptionButtonProps> = ({
     >
       {renderIcon()}
       <span>{option}</span>
-      <span className='text-xs'>Press {index + 1}</span>
+      <span className='text-xs'>{isMobile ? '' : `Press ${index + 1}`} </span>
     </Button>
   );
 };
