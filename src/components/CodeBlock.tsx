@@ -27,7 +27,8 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ code, className }) => {
   return (
     <pre className={cn("px-4 py-3 rounded-lg overflow-auto bg-secondary text-foreground font-mono text-sm", className)}>
       <code dangerouslySetInnerHTML={{ __html: highlightedCode }} />
-      <style jsx global>{`
+      <style>
+        {`
         .highlight-blank {
           display: inline-block;
           padding: 0 2px;
@@ -53,7 +54,8 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ code, className }) => {
         .function {
           color: #4fc3f7;
         }
-      `}</style>
+        `}
+      </style>
     </pre>
   );
 };
