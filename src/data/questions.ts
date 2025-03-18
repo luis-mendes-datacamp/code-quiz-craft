@@ -29,7 +29,7 @@ export const questions: Question[] = [
     "id": "2a3b4c5d-6789-0123-4567-891011121314",
     "type": "Blanks",
     "question": {
-      "code": "x = 'Python'\\nprint(x[___])",
+      "code": "x = 'Python'<br/>print(x[___])",
       "output": "'P'",
       "explanation": "Strings in Python are indexed starting at 0. x[0] returns 'P'."
     },
@@ -53,7 +53,7 @@ export const questions: Question[] = [
     "id": "4a5b6c7d-8901-2345-6789-011121314151",
     "type": "Blanks",
     "question": {
-      "code": "numbers = [10, 20, 30, 40]\\nprint(___(numbers))",
+      "code": "numbers = [10, 20, 30, 40]<br/>print(___(numbers))",
       "output": "4",
       "explanation": "len() is the built-in function used to get the number of elements in a list."
     },
