@@ -41,7 +41,7 @@ async function generatePractice(exerciseCount, lessonExercises) {
         "difficultyLevel": "beginner"
     }
     const prompt = 'Context: You are a teacher, and you are creating exercises based on the lesson details provided as the input. Input is in JSON format.' +
-        `Generate a JSON array of size ${exerciseCount} containing coding exercises in the "fill in the blanks" style based on the content of the course. 
+        `Generate a JSON array of size ${exerciseCount} containing coding exercises in the "fill in the blanks" style based on the content of the course.
         'There should be exactly one blank to fill.' +
         'Each exercise should have between 3 and 5 options.' +
         'Exactly one option should be correct.' +
@@ -102,11 +102,10 @@ async function main() {
         }));
     }));
 
+    const currentLesson = lessons.find((l) => l.number === Number(lesson));
     const exerciseMap = Object.fromEntries(enrichedChapterData.flatMap(chapter => chapter.map(exercise => [exercise.id, exercise])));
-   // console.log(exerciseMap);
-
-    const lessonExercises = lessons.map(lesson => lesson.exercises.map(exercise => exerciseMap[exercise.id]));
-    const output = await generatePractice(exerciseCount, lessonExercises[lesson]);
+    const lessonExercises = currentLesson.exercises.map(exercise => exerciseMap[exercise.id]);
+    const output = await generatePractice(exerciseCount, lessonExercises);
     console.log(JSON.stringify(output));
 }
 
