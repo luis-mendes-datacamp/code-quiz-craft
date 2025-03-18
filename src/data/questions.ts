@@ -77,7 +77,7 @@ export const questions: Question[] = [
     "id": "6a7b8c9d-0123-4567-8901-121314151617",
     "type": "Blanks",
     "question": {
-      "code": "x = 'hello'\\nprint(x.upper()) # Output: '___'",
+      "code": "x = 'hello'\nprint(x.upper()) # Output: '___'",
       "output": "HELLO",
       "explanation": "The .upper() method converts a string to uppercase."
     },
@@ -101,7 +101,7 @@ export const questions: Question[] = [
     "id": "8a9b0c1d-2345-6789-0123-141516171819",
     "type": "Blanks",
     "question": {
-      "code": "if 'x' in 'exam':\\n    print('Found!') # Output: ___",
+      "code": "if 'x' in 'exam':\n    print('Found!') # Output: ___",
       "output": "Found!",
       "explanation": "The 'in' keyword checks for substring presence. 'x' exists in 'exam'."
     },
@@ -113,7 +113,7 @@ export const questions: Question[] = [
     "id": "9a0b1c2d-3456-7890-1234-151617181920",
     "type": "Blanks",
     "question": {
-      "code": "nums = [1, 2, 3, 4]\\nprint(nums[-1]) # Output: ___",
+      "code": "nums = [1, 2, 3, 4]\nprint(nums[-1]) # Output: ___",
       "output": "4",
       "explanation": "Negative indexing in Python allows access from the end. nums[-1] is 4."
     },
@@ -125,7 +125,7 @@ export const questions: Question[] = [
     "id": "10a1b2c3d-4567-8901-2345-161718192021",
     "type": "Blanks",
     "question": {
-      "code": "result = 5 + 2 * 3 ** 2\\nprint(result) # Output: ___",
+      "code": "result = 5 + 2 * 3 ** 2\nprint(result) # Output: ___",
       "output": "23",
       "explanation": "Exponentiation (**), then multiplication, then addition: 3 ** 2 = 9, 2 * 9 = 18, 5 + 18 = 23."
     },
@@ -137,7 +137,7 @@ export const questions: Question[] = [
     "id": "19a0b1c2d-2345-6789-0123-192021222324",
     "type": "Blanks",
     "question": {
-      "code": "numbers = [1, 2, 3, 4, 5]\\nprint(sum(numbers[1:___]))",
+      "code": "numbers = [1, 2, 3, 4, 5]\nprint(sum(numbers[1:___]))",
       "output": "9",
       "explanation": "The slice numbers[1:4] includes elements at index 1, 2, and 3 (2, 3, 4). Their sum is 9."
     },
@@ -149,7 +149,7 @@ export const questions: Question[] = [
     "id": "20a1b2c3d-2345-6789-0123-252627282930",
     "type": "Blanks",
     "question": {
-      "code": "def func(x):\\n    return x * x\\nprint(func(3)) # Output: ___",
+      "code": "def func(x):\n    return x * x\nprint(func(3)) # Output: ___",
       "output": "9",
       "explanation": "The function squares the input. 3 * 3 = 9."
     },
