@@ -14,7 +14,7 @@ import { theme } from "@datacamp/waffles/theme";
 
 interface QuestionCardProps {
   question: Question;
-  onNext: () => void;
+  onNext: (currentAnswer: number) => void;
 }
 
 const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
@@ -33,7 +33,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
   const handleNext = () => {
     setSelectedOption(null);
     setIsRevealed(false);
-    onNext();
+    onNext(selectedOption);
   };
   
   const handleReset = () => {
