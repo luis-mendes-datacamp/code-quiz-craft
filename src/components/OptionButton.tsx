@@ -72,7 +72,7 @@ const OptionButton: React.FC<OptionButtonProps> = ({
     >
       {renderIcon()}
       <span>{option}</span>
-      <span className='text-xs'>Press {index + 1} to answer</span>
+      <span className='text-xs'>Press {index + 1}</span>
     </Button>
   );
 };
