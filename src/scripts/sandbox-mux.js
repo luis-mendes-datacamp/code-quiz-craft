@@ -170,6 +170,7 @@ async function testExercise(exercise) {
   console.log("Original code:", exercise.question.code);
   console.log("Expected output:", exercise.question.output);
 
+  let correctAnswerCount = 0;
   for (const option of exercise.options) {
     const originalCode = exercise.question.code.replace("___", option);
     const code = fixPythonCode(originalCode);
@@ -177,16 +178,17 @@ async function testExercise(exercise) {
     console.log("Modified code:", code);
 
     const output = await executeCode(code);
-    console.log(`output: ${output}`);
     if (output !== null) {
       const matches = output === exercise.question.output;
       console.log("Got output:", output);
       console.log("Output matches?", matches ? "✅ YES" : "❌ NO");
       if (matches) {
         console.log("✨ Found correct answer:", option);
+        correctAnswerCount++;
       }
     }
   }
+  return correctAnswerCount;
 }
 
 async function main() {
@@ -197,11 +199,21 @@ async function main() {
     const questions = JSON.parse(await fs.readFile(questionsPath, "utf-8"));
     console.log(`Loaded ${questions.length} questions`);
 
+    const results = [];
+    const validQuestions = [];
     // Test each exercise
-    for (const exercise of questions) {
-      await testExercise(exercise);
+    for (const [index, exercise] of questions.entries()) {
+      const correctAnswerCount = await testExercise(exercise);
       console.log("-".repeat(80));
+      results.push([index, correctAnswerCount]);
+      if (correctAnswerCount === 1) {
+        validQuestions.push(exercise);
+      }
     }
+    console.log(`Summary:\n`);
+    results.forEach((result) => {console.log(result)});
+    const validQuestionPath = path.join(process.cwd(), "src/data/validQuestions.json");
+    await fs.writeFile(validQuestionPath, JSON.stringify(validQuestions));
   } catch (err) {
     console.error("Failed to run tests:", err);
   }
