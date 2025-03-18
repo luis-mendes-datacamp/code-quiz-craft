@@ -1,0 +1,1987 @@
+[
+  [
+    {
+      "id": 14251,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "Hello Python!",
+      "sample_code": "",
+      "instructions": null,
+      "number": 1,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_d8fcd4c930027fa4e1c3870c7e7e0ff1",
+      "key": "f644a48d5d",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1842,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "Hi, my name is Hugo and I'll be your host for Introduction to Python for Data Science.\n\nI'm a data scientist and educator at DataCamp.\n\n",
+            "startsAtTimestamp": 0,
+            "title": "Hello Python!"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "In this course, you will learn Python for Data Science through video lessons, like this one, and interactive exercises. You get your own Python session where you can experiment and try to come up with the correct code to solve the instructions. You're learning by doing, while receiving customized and instant feedback on your work.\n\n",
+            "startsAtTimestamp": 0.04235674154129058,
+            "title": "How you will learn"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "Python was conceived by Guido Van Rossum. Here, you can see a photo of me with Guido. What started as a hobby project, soon became a general purpose programming language: nowadays, you can use Python to build practically any piece of software. But how did this happen? Well, first of all, Python is open source. It's free to use. Second, it's very easy to build packages in Python, which is code that you can share with other people to solve specific problems. Throughout time, more and more of these packages specifically built for data science have been developed. Suppose you want to make some fancy visualizations of your company's sales. There's a package for that. Or what about connecting to a database to analyze sensor measurements? There's also a package for that.\nPeople often refer to Python as the swiss army knife of programming languages as you can do almost anything with it.\nIn this course, we'll start to build up your data science coding skills bit by bit, so make sure to stick around to see how powerful the language can be.\n\n",
+            "startsAtTimestamp": 0.12376352965142207,
+            "title": "Python"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "Now that you're all eyes and ears for Python, let's start experimenting. I'll start with the\n\n",
+            "startsAtTimestamp": 0.40070459703826933,
+            "title": "IPython Shell"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "Python shell, a place where you can type Python code and immediately see the results. In DataCamp's exercise interface, this shell is embedded here. Let's start off simple and use Python as a calculator.\n\n",
+            "startsAtTimestamp": 0.42517239366985665,
+            "title": "IPython Shell"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "Let me type 4 + 5, and hit Enter. Python interprets what you typed and prints the result of your calculation, 9. The Python shell that's used here is actually not the original one; we're using IPython, short for Interactive Python, which is some kind of juiced up version of regular Python that'll be useful later on.\n\nIPython was created by Fernando Pérez and is part of the broader Jupyter ecosystem. Apart from interactively working with Python, you can also have Python run so called\n\n",
+            "startsAtTimestamp": 0.4806093535857616,
+            "title": "IPython Shell"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "python scripts. These python scripts are simply text files with the extension (dot) py. It's basically a list of Python commands that are executed, almost as if you where typing the commands in the shell yourself, line by line.\n\n",
+            "startsAtTimestamp": 0.6236766064922022,
+            "title": "Python Script"
+          },
+          {
+            "citations": [],
+            "number": 8,
+            "script": "Let's put the command from before in a script now, which can be found here in DataCamp's interface. The next step is executing the script, by clicking 'Submit Answer'. If you execute this script in the DataCamp interface, there's nothing in the output pane. That's because you have to explicitly use print inside scripts if you want to generate output during execution.\n\n",
+            "startsAtTimestamp": 0.6851898182230143,
+            "title": "Python Script"
+          },
+          {
+            "citations": [],
+            "number": 9,
+            "script": "Let's wrap our previous calculation in a print call, and rerun the script. This time, the same output as before is generated, great! Putting your code in Python scripts instead of manually retyping every step interactively will help you to keep structure and avoid retyping everything over and over again if you want to make a change; you simply make the change in the script, and rerun the entire thing.\n\n",
+            "startsAtTimestamp": 0.7861068781183682,
+            "title": "Python Script"
+          },
+          {
+            "citations": [],
+            "number": 10,
+            "script": "Now that you've got an idea about different ways of working with Python, I suggest you head over to the exercises. Use the IPython Shell for experimentation, and use the Python script editor to code the actual answer. If you click Submit Answer, your script will be executed and checked for correctness.\n\n",
+            "startsAtTimestamp": 0.8983243542386974,
+            "title": "DataCamp Interface"
+          },
+          {
+            "citations": [],
+            "number": 11,
+            "script": "Get coding and don't forget to have fun!\n\n",
+            "startsAtTimestamp": 0.9729181242554382,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    null,
+    {
+      "id": 14023,
+      "type": "NormalExercise",
+      "assignment": "<p>It's time to run your first Python code!</p>\n<p>Head to the code and hit the run code button to see the output.</p>",
+      "title": "Your first Python code",
+      "sample_code": "# Hit run code to see the output!\nprint(5 / 8)",
+      "instructions": "<ul>\n<li>Hit the run code button to see the output of <code>print(5 / 8)</code>.</li>\n</ul>",
+      "number": 2,
+      "sct": "Ex().has_printout(0, not_printed_msg = \"__JINJA__:Have you used `{{sol_call}}` to print out `5 / 8`?\")\nsuccess_msg(\"Great! On to the next one!\")",
+      "pre_exercise_code": "",
+      "solution": "# Hit run code to see the output!\nprint(5 / 8)",
+      "hint": "<ul>\n<li>Run the code first before submitting your answer so you have time to explore the output.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    null,
+    {
+      "id": 14026,
+      "type": "NormalExercise",
+      "assignment": "<p>Python is perfectly suited to do basic calculations. It can do addition, subtraction, multiplication and division.</p>\n<p>The code in the script gives some examples.</p>\n<p>Now it's your turn to practice by writing some code yourself.</p>",
+      "title": "Python as a calculator",
+      "sample_code": "# Addition and division\nprint(4 + 5)\nprint(10 / 2)\n\n# Subtraction\nprint()\n\n# Multiplication\n",
+      "instructions": "<ul>\n<li>Print the result of subtracting <code>5</code> from <code>5</code> under <code># Subtraction</code> using <code>print()</code>.</li>\n<li>Print the result of multiplying <code>3</code> by <code>5</code> under <code># Multiplication</code>.</li>\n</ul>",
+      "number": 3,
+      "sct": "Ex().has_printout(0, not_printed_msg = \"Have you used `print(4 + 5)` to print out the result of your sum?\")\n\nEx().has_printout(1, not_printed_msg = \"Have you used `print(5 - 5)` to print out the result of your subtration?\")\n\nEx().has_printout(2, not_printed_msg = \"Have you used `print(3 * 5)` to print out the result of your multiplication?\")\n\nEx().has_printout(3, not_printed_msg = \"Have you used `print(10 / 2)` to print out the result of your division?\")\n\nsuccess_msg(\"That's correct! Python can help you do the math, a characteristic that will be helpful for analysis as we grow our data skills.\")",
+      "pre_exercise_code": " ",
+      "solution": "# Addition and division\nprint(4 + 5)\nprint(10 / 2)\n\n# Subtraction\nprint(5 - 5)\n\n# Multiplication\nprint(3 * 5)",
+      "hint": "<ul>\n<li>You'll need to use <code>print()</code> to generate an output.</li>\n<li>You can subtract with <code>-</code> and multiply with <code>*</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    }
+  ],
+  [
+    {
+      "id": 972033,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "Variables and Types",
+      "sample_code": "",
+      "instructions": null,
+      "number": 4,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_433dcfcfedaee070cbf440491c402e3b",
+      "key": "c2e396792e",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1842,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "Well done and welcome back! It's clear that Python is a great calculator. If you want to do more complex calculations though, you will want to \"save\" values while you're coding along.\n\n",
+            "startsAtTimestamp": 0,
+            "title": "Variables and Types"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "You can do this by defining a variable, with a specific, case-sensitive name. Once you create (or declare) such a variable, you can later call up its value by typing the variable name.\n\nSuppose you measure your height and weight, in metric units: you are 1.79 meters tall, and weigh 68.7 kilograms. You can assign these values to two variables, named height and weight, with an equals sign:\n\nIf you now type the name of the variable, height,\n\nPython looks for the variable name, retrieves its value, and prints it out.\n\n",
+            "startsAtTimestamp": 0.05378976204258755,
+            "title": "Variable"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "Let's now calculate the Body Mass Index, or BMI, which is calculated as follows, with weight in kilograms and height in meters. You can do this with the actual values, but you can just as well use the variables height and weight, like in here. Every time you type the variable's name, you are asking Python to change it with the actual value of the variable. weight corresponds to 68.7, and height to 1.79.\n\nFinally, this version has Python store the result in a new variable, bmi. bmi now contains the same value as the one you calculated earlier.\n\nIn Python, variables are used all the time. They help to make your code reproducible.\n\n",
+            "startsAtTimestamp": 0.2087864119382656,
+            "title": "Calculate BMI"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "Suppose the code to create the height, weight and bmi variable are in a script, like this. If you now want to recalculate the bmi for another weight,\n\n",
+            "startsAtTimestamp": 0.40425057652145463,
+            "title": "Reproducibility"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "you can simply change the declaration of the weight variable, and rerun the script. The bmi changes accordingly, because the value of the variable weight has changed as well.\n\nSo far, we've only worked with numerical values, such as height and weight.\n\n",
+            "startsAtTimestamp": 0.4399043650296833,
+            "title": "Reproducibility"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "In Python, these numbers all have a specific type. You can check out the type of a value with the type function. To see the type of our bmi value, simply write type and then bmi inside parentheses. You can see that it's a float, which is python's way of representing a real number, so a number which can have both an integer part and a fractional part. Python also has a type for integers: int, like this example.\n\nTo do data science, you'll need more than ints and floats, though.\n\n",
+            "startsAtTimestamp": 0.5103022904643116,
+            "title": "Python Types"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "Python features tons of other data types. The most common ones are strings and booleans.\n\nA string is Python's way to represent text. You can use both double and single quotes to build a string, as you can see from these examples. If you print the type of the last variable here, you see that it's str, short for string.\n\nThe Boolean is a type that can either be True or False. You can think of it as 'Yes' and 'No' in everyday language. Booleans will be very useful in the future, to perform filtering operations on your data for example.\n\nThere's something special about Python data types.\n\n",
+            "startsAtTimestamp": 0.6437213265980479,
+            "title": "Python Types (2)"
+          },
+          {
+            "citations": [],
+            "number": 8,
+            "script": "Have a look at this line of code, that sums two integers, and then this line of code, that sums two strings.\n\nFor the integers, the values were summed, while for the strings, the strings were pasted together. The plus operator behaved differently for different data types. This is a general principle: how the code behaves depends on the types you're working with.\n\nIn the exercises that follow, you'll create your first variables and experiment with some of Python's data types. I'll see you in the next video to explain all about lists.\n\n",
+            "startsAtTimestamp": 0.800145559558491,
+            "title": "Python Types (3)"
+          },
+          {
+            "citations": [],
+            "number": 9,
+            "script": "Let's get you coding and I can't wait to see you in the next chapter where you'll build even more awesome python charts.\n\n",
+            "startsAtTimestamp": 0.9505889680107228,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14043,
+      "type": "NormalExercise",
+      "assignment": "<p>In Python, a variable allows you to refer to a value with a name. To create a variable <code>x</code> with a value of <code>5</code>, you use <code>=</code>, like this example:</p>\n<pre><code>x = 5\n</code></pre>\n<p>You can now use the name of this variable, <code>x</code>, instead of the actual value, <code>5</code>.</p>\n<p>Remember, <code>=</code> in Python means <em>assignment</em>, it doesn't test equality! Try it in the exercise by replacing <code>____</code> with your code.</p>",
+      "title": "Variable Assignment",
+      "sample_code": "# Create a variable savings\n____\n\n# Print out savings\n____",
+      "instructions": "<ul>\n<li>Create a variable <code>savings</code> with the value of <code>100</code>.</li>\n<li>Check out this variable by typing <code>print(savings)</code> in the script.</li>\n</ul>",
+      "number": 5,
+      "sct": "Ex().check_object(\"savings\").has_equal_value(incorrect_msg=\"Assign `100` to the variable `savings`.\")\nEx().has_printout(0, not_printed_msg = \"Print out `savings`, the variable you created, with `print(savings)`.\")\nsuccess_msg(\"Great! Let's try to do some calculations with this variable now!\")",
+      "pre_exercise_code": " ",
+      "solution": "# Create a variable savings\nsavings = 100\n\n# Print out savings\nprint(savings)",
+      "hint": "<ul>\n<li>Type <code>savings = 100</code> to create the variable <code>savings</code>.</li>\n<li>After creating the variable <code>savings</code>, you can type <code>print(savings)</code>.</li>\n<li>Your final code should not include any <code>____</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 13726,
+      "type": "NormalExercise",
+      "assignment": "<p>You've now created a savings variable, so let's start saving!</p>\n<p>Instead of calculating with the actual values, you can use variables instead.</p>\n<p>How much money would you have saved four months from now, if you saved $10 each month?</p>",
+      "title": "Calculations with variables",
+      "sample_code": "# Create the variables monthly_savings and num_months\n\n\n\n# Multiply monthly_savings and num_months\nnew_savings = ____\n\n# Print new_savings\n",
+      "instructions": "<ul>\n<li>Create a variable <code>monthly_savings</code>, equal to <code>10</code> and <code>num_months</code>, equal to <code>4</code>.</li>\n<li>Multiply <code>monthly_savings</code> by <code>num_months</code> and assign it to <code>new_savings</code>.</li>\n<li>Print the value of <code>new_savings</code>.</li>\n</ul>",
+      "number": 6,
+      "sct": "Ex().check_object(\"monthly_savings\").has_equal_value(incorrect_msg = \"Did you save `10` to `monthly_savings` using `monthly_savings = 10`?\")\nEx().check_object(\"num_months\").has_equal_value(incorrect_msg = \"Did you save `4` to `num_months` using `num_months = 4`?\")\nEx().check_object(\"new_savings\").has_equal_value(incorrect_msg = \"Did you use the correct variables and symbols to multiply? Expected `monthly_savings * num_months` but got something else.\")\n# Ex().check_object(\"total_savings\").has_equal_value(incorrect_msg = \"Did you use the correct variables and symbols to add? Expected `savings + new_savings` but got something else.\")\n\nEx().has_printout(0, not_printed_msg=\"Remember to print out `new_savings` at the end of your script.\")\n\nsuccess_msg(\"You have $40 in new savings!\")",
+      "pre_exercise_code": "",
+      "solution": "# Create the variables monthly_savings and num_months\nmonthly_savings = 10\nnum_months = 4\n\n# Multiply monthly_savings and num_months\nnew_savings = monthly_savings * num_months\n\n# Print new_savings\nprint(new_savings)",
+      "hint": "<ul>\n<li>You can do calculations with variables the same way as with numbers so instead of <code>10 * 4</code>, replace the numbers with the variables!</li>\n<li>Use <code>print()</code> to see the amount in <code>new_savings</code>.</li>\n<li>Take care to spell the variables correctly!</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14044,
+      "type": "NormalExercise",
+      "assignment": "<p>In the previous exercise, you worked with the integer Python data type:</p>\n<ul>\n<li><code>int</code>, or integer: a number without a fractional part. <code>savings</code>, with the value <code>100</code>, is an example of an integer.</li>\n</ul>\n<p>Next to numerical data types, there are three other very common data types:</p>\n<ul>\n<li><code>float</code>, or floating point: a number that has both an integer and fractional part, separated by a point. <code>1.1</code>, is an example of a float.</li>\n<li><code>str</code>, or string: a type to represent text. You can use single or double quotes to build a string.</li>\n<li><code>bool</code>, or boolean: a type to represent logical values. It can only be <code>True</code> or <code>False</code> (the capitalization is important!).</li>\n</ul>",
+      "title": "Other variable types",
+      "sample_code": "# Create a variable half\n\n\n# Create a variable intro\n\n\n# Create a variable is_good\n",
+      "instructions": "<ul>\n<li>Create a new float, <code>half</code>, with the value <code>0.5</code>.</li>\n<li>Create a new string, <code>intro</code>, with the value <code>\"Hello! How are you?\"</code>.</li>\n<li>Create a new boolean, <code>is_good</code>, with the value <code>True</code>.</li>\n</ul>",
+      "number": 7,
+      "sct": "Ex().check_object(\"half\").has_equal_value(incorrect_msg = \"Did you save the float, `0.5` to `half`?\")\n\nEx().check_object(\"intro\").has_equal_value(incorrect_msg = \"Hmm, something is incorrect in your `intro` variable. Double check the spelling and make sure you've used quotation marks.\")\n\nEx().check_object(\"is_good\").has_equal_value(incorrect_msg = \"Did you capitalize the boolean value? Remember you don't need to use quotation marks here.\")\n\nsuccess_msg(\"Nice!\")",
+      "pre_exercise_code": "",
+      "solution": "# Create a variable half\nhalf = 0.5\n\n# Create a variable intro\nintro = \"Hello! How are you?\"\n\n# Create a variable is_good\nis_good = True",
+      "hint": "<ul>\n<li>To create a variable in Python, use <code>=</code>. Make sure to wrap your string in single or double quotes.</li>\n<li>Only two boolean values exist in Python: <code>True</code> and <code>False</code>. <code>TRUE</code>, <code>true</code>, <code>FALSE</code>, <code>false</code> and other versions will not be accepted.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14046,
+      "type": "BulletExercise",
+      "assignment": "<p>Variables come in different types in Python. You can see the type of a variable by using <code>type()</code>. For example, to see type of <code>a</code>, execute: <code>type(a)</code>.</p>\n<p>Different types behave differently in Python. When you sum two strings, for example, you'll get different behavior than when you sum two integers or two booleans.</p>\n<p>Time for you to test this out.</p>",
+      "title": "Operations with other types",
+      "sample_code": "",
+      "instructions": null,
+      "number": 8,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "subexercises": [
+        {
+          "id": 1759073,
+          "type": "NormalExercise",
+          "assignment": null,
+          "title": null,
+          "sample_code": "savings = 100\nnew_savings = 40\n\n# Calculate total_savings using savings and new_savings\n____\nprint(total_savings)\n\n# Print the type of total_savings\nprint(____)",
+          "instructions": "<ul>\n<li>Add <code>savings</code> and <code>new_savings</code> and assign it to <code>total_savings</code>.</li>\n<li>Use <code>type()</code> to print the resulting type of <code>total_savings</code>.</li>\n</ul>",
+          "number": 1,
+          "sct": "# predefined\nmsg = \"You don't have to change or remove the predefined variables.\"\n\nEx().multi(\n    check_object('savings', missing_msg=msg).has_equal_value(incorrect_msg=msg),\n    check_object('new_savings', missing_msg=msg).has_equal_value(incorrect_msg=msg)\n)\n\nEx().multi(\n    check_object(\"total_savings\").has_equal_value(incorrect_msg=\"Add `savings` and `new_savings` to create the `total_savings` variable.\"),\n    has_printout(1, not_printed_msg = \"__JINJA__:Use `{{sol_call}}` to print out the type of `total_savings`.\")\n)",
+          "pre_exercise_code": "",
+          "solution": "savings = 100\nnew_savings = 40\n\n# Calculate total_savings using savings and new_savings\ntotal_savings = savings + new_savings\nprint(total_savings)\n\n# Print the type of total_savings\nprint(type(total_savings))",
+          "hint": "<ul>\n<li>Assign <code>savings + new_savings</code> to a new variable, <code>total_savings</code>.</li>\n<li>To print the type of a variable <code>x</code>, use <code>print(type(x))</code>.</li>\n</ul>",
+          "attachments": null,
+          "xp": 50,
+          "possible_answers": [],
+          "feedbacks": [],
+          "question": "",
+          "exercise_image": null,
+          "programming_language": null,
+          "runtime_config": null
+        },
+        {
+          "id": 1759074,
+          "type": "NormalExercise",
+          "assignment": null,
+          "title": null,
+          "sample_code": "intro = \"Hello! How are you?\"\n\n# Assign sum of intro and intro to doubleintro\n____\n\n# Print out doubleintro\nprint(____)",
+          "instructions": "<ul>\n<li>Calculate the sum of <code>intro</code> and <code>intro</code> and assign the result to <code>doubleintro</code>.</li>\n<li>Print out <code>doubleintro</code>. Did you expect this?</li>\n</ul>",
+          "number": 2,
+          "sct": "# predefined\nmsg = \"You don't have to change or remove the predefined variables.\"\n\nEx().check_object('intro', missing_msg=msg).has_equal_value(incorrect_msg=msg)\n\nEx().multi(\n    check_object(\"doubleintro\").has_equal_value(incorrect_msg  = \"Have you stored the result of `intro + intro` in `doubleintro`?\"),\n    has_printout(0, not_printed_msg = \"Don't forget to print out `doubleintro`.\")\n)\n\nsuccess_msg(\"Nice. Notice how `intro + intro` causes `\\\"Hello! How are you?\\\"` and `\\\"Hello! How are you?\\\"` to be pasted together.\")",
+          "pre_exercise_code": "",
+          "solution": "intro = \"Hello! How are you?\"\n\n# Assign sum of intro and intro to doubleintro\ndoubleintro = intro + intro\n\n# Print out doubleintro\nprint(doubleintro)",
+          "hint": "<ul>\n<li>Assign <code>intro + intro</code> to a new variable, <code>doubleintro</code>.</li>\n<li>To print a variable <code>x</code>, write <code>print(x)</code> in the script.</li>\n</ul>",
+          "attachments": null,
+          "xp": 50,
+          "possible_answers": [],
+          "feedbacks": [],
+          "question": "",
+          "exercise_image": null,
+          "programming_language": null,
+          "runtime_config": null
+        }
+      ]
+    },
+    null,
+    null,
+    null
+  ],
+  [
+    {
+      "id": 972034,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "Python Lists",
+      "sample_code": "",
+      "instructions": null,
+      "number": 1,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_a0530c4542f10988847b2dbb91f717c3",
+      "key": "a5886d213f",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1851,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "Welcome back aspiring Pythonista. By now, you've played around with different data types, and I hope you've had as much fun as I have.\n\n",
+            "startsAtTimestamp": 0,
+            "title": "Python Lists"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "On the numbers side, there's the float, to represent a real number, and the int, to represent an integer. Next, we also have str, short for string, to represent text in Python, and bool, which can be either True or False. You can save these values as a variable, like these examples show. Each variable then represents a single value.\n\nAs a data scientist,\n\n",
+            "startsAtTimestamp": 0.053479179462171074,
+            "title": "Python Data Types"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "you'll often want to work with many data points. If you for example want to measure the height of everybody in your family, and store this information in Python, it would be inconvenient to create a new python variable for each point you collected right?\n\nWhat you can do instead, is store all this information in a Python list.\n\n",
+            "startsAtTimestamp": 0.1783073738170347,
+            "title": "Problem"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "You can build such a list with square brackets. Suppose you asked your two sisters and parents for their height, in meters. You can build the list as follows:\n\nOf course, also this data structure can be referenced to with a variable. Simply put the variable name and the equals sign in front, like here.\n\nA list is a way to give a single name to a collection of values. These values, or elements, can have any type; they can be floats, integer, booleans, strings, but also more advanced Python types, even lists.\n\nIt's perfectly possible for a list to contain different types as well.\n\n",
+            "startsAtTimestamp": 0.269790023659306,
+            "title": "Python List"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "Suppose, for example, that you want to add the names of your sisters and parents to the list, so that you know which height belongs to who. You can throw in some strings without issues.\n\nBut that's not all. I just told you that lists can also contain lists themselves. Instead of putting the strings in between the numbers, you can create little sublists for each member of the family. One for liz, one for emma and so on. Now, you can tell Python that these sublists are the elements of another list, that I named fam2: the little lists are wrapped in square brackets and separated with commas. If you now print out fam2, you see that we have a list of lists. The main list contains 4 sub-lists.\n\nWe're dealing with a new Python type here, next to the strings, booleans, integers and floats you already know about:\n\n",
+            "startsAtTimestamp": 0.5288649220833096,
+            "title": "Python List"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "the list. These calls show that both fam and fam2 are lists. Remember that I told you that each type has specific functionality and behavior associated? Well, for lists, this is also true. Python lists host a bunch of tools to subset and adapt them. But let's take this step by step,\n\n",
+            "startsAtTimestamp": 0.8304102696387075,
+            "title": "List type"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "and have you experiment with list creation first!\n\n",
+            "startsAtTimestamp": 0.9557059486205268,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14254,
+      "type": "NormalExercise",
+      "assignment": "<p>A list is a <strong>compound data type</strong>; you can group values together, like this:</p>\n<pre><code>a = \"is\"\nb = \"nice\"\nmy_list = [\"my\", \"list\", a, b]\n</code></pre>\n<p>After measuring the height of your family, you decide to collect some information on the house you're living in. The areas of the different parts of your house are stored in separate variables in the exercise.</p>",
+      "title": "Create a list",
+      "sample_code": "hall = 11.25\nkit = 18.0\nliv = 20.0\nbed = 10.75\nbath = 9.50\n\n# Create list areas\n\n\n# Print areas\n",
+      "instructions": "<ul>\n<li>Create a list, <code>areas</code>, that contains the area of the hallway (<code>hall</code>), kitchen (<code>kit</code>), living room (<code>liv</code>), bedroom (<code>bed</code>) and bathroom (<code>bath</code>), in this order. Use the predefined variables.</li>\n<li>Print <code>areas</code> with the <code>print()</code> function.</li>\n</ul>",
+      "number": 2,
+      "sct": "predef_msg = \"Don't remove or edit the predefined variables!\"\nareas_msg = \"Define `areas` as the list containing all the area variables, in the correct order: `[hall, kit, liv, bed, bath]`. Watch out for typos. The list shouldn't contain anything else!\"\n\nEx().check_correct(\n    has_printout(0, not_printed_msg = \"__JINJA__:Have you used `{{sol_call}}` to print out the `areas` list at the end of your script?\"),\n    check_correct(\n        check_object(\"areas\").has_equal_value(incorrect_msg = areas_msg),\n        multi(\n            check_object('hall', missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg),\n            check_object('kit', missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg),\n            check_object('liv', missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg),\n            check_object('bed', missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg),\n            check_object('bath', missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg)\n        )\n    )\n)\n\nsuccess_msg(\"Nice! A list is way better here, isn't it?\")",
+      "pre_exercise_code": "",
+      "solution": "hall = 11.25\nkit = 18.0\nliv = 20.0\nbed = 10.75\nbath = 9.50\n\n# Create list areas\nareas = [hall, kit, liv, bed, bath]\n\n# Print areas\nprint(areas)",
+      "hint": "<ul>\n<li>You can use the variables that have already been created to build the list: <code>areas = [hall, kit, ...]</code>.</li>\n<li>Make sure to use square brackets <code>[]</code> rather than parentheses <code>()</code>.</li>\n<li>You don't need to use quotation marks when storing variables within a list.</li>\n<li>Type <code>print(areas)</code> to print out the list when submitting.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14255,
+      "type": "NormalExercise",
+      "assignment": "<p>Although it's not really common, a list can also contain a mix of Python types including strings, floats, and booleans.</p>\n<p>You're now going to add the room names to your list, so you can easily see both the room name and size together.</p>\n<p>Some of the code has been provided for you to get you started. Pay attention here! <code>\"bathroom\"</code> is a string, while <code>bath</code> is a variable that represents the float <code>9.50</code> you specified earlier.</p>",
+      "title": "Create lists with different types",
+      "sample_code": "hall = 11.25\nkit = 18.0\nliv = 20.0\nbed = 10.75\nbath = 9.50\n\n# Adapt list areas\nareas = [____, hall, ____, kit, \"living room\", liv, ____, bed, \"bathroom\", bath]\n\n# Print areas\n____",
+      "instructions": "<ul>\n<li>Finish the code that creates the <code>areas</code> list. Build the list so that the list first contains the name of each room as a string and then its area. In other words, add the strings <code>\"hallway\"</code>, <code>\"kitchen\"</code> and <code>\"bedroom\"</code> at the appropriate locations.</li>\n<li>Print <code>areas</code> again; is the printout more informative this time?</li>\n</ul>",
+      "number": 3,
+      "sct": "objs = [\"hall\", \"kit\", \"liv\", \"bed\", \"bath\"]\npredef_msg = \"Don't remove or edit the predefined variables!\"\nareas_msg = \"You didn't assign the correct value to `areas`. Have another look at the instructions. Make sure to place the room name before the variable containing the area each time. The order matters here! Watch out for typos.\"\n\nEx().check_correct(\n  check_object(\"areas\").has_equal_value(incorrect_msg = areas_msg),\n  multi([ check_object(obj, missing_msg = predef_msg).has_equal_value(incorrect_msg = predef_msg) for obj in objs])\n)\n\nEx().has_printout(0, not_printed_msg = \"__JINJA__:Have you used `{{sol_call}}` to print out the `areas` list at the end of your script?\")\n\nsuccess_msg(\"Nice! This list contains both strings and floats, but that's not a problem for Python!\")",
+      "pre_exercise_code": "",
+      "solution": "hall = 11.25\nkit = 18.0\nliv = 20.0\nbed = 10.75\nbath = 9.50\n\n# Adapt list areas\nareas = [\"hallway\", hall, \"kitchen\", kit, \"living room\", liv, \"bedroom\", bed, \"bathroom\", bath]\n\n# Print areas\nprint(areas)",
+      "hint": "<ul>\n<li>The first four elements of the list <code>areas</code> are coded as <code>[\"hallway\", hall, \"kitchen\", kit, ...</code>.</li>\n<li>A string will need to be in quotation marks <code>\"\"</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    null,
+    {
+      "id": 14257,
+      "type": "NormalExercise",
+      "assignment": "<p>As a data scientist, you'll often be dealing with a lot of data, and it will make sense to group some of this data.</p>\n<p>Instead of creating a list containing strings and floats, representing the names and areas of the rooms in your house, you can create a list of lists.</p>\n<p>Remember: <code>\"hallway\"</code> is a string, while <code>hall</code> is a variable that represents the float <code>11.25</code> you specified earlier.</p>",
+      "title": "List of lists",
+      "sample_code": "hall = 11.25\nkit = 18.0\nliv = 20.0\nbed = 10.75\nbath = 9.50\n\n# House information as list of lists\nhouse = [[\"hallway\", hall],\n         [\"kitchen\", kit],\n         [\"living room\", liv],\n        ____,\n        ____]\n\n# Print out house\n____",
+      "instructions": "<ul>\n<li>Finish the list of lists so that it also contains the bedroom and bathroom data. Make sure you enter these in order!</li>\n<li>Print out <code>house</code>; does this way of structuring your data make more sense?</li>\n</ul>",
+      "number": 4,
+      "sct": "predef_msg = \"Don't remove or edit the predefined variables!\"\nhouse_msg = \"You didn't assign the correct value to `house`. Have another look at the instructions. Extend the list of lists so it incorporates a list for each pair of room name and room area. Mind the order and typos!\"\n\nEx().check_correct(\n    check_object(\"house\").has_equal_value(incorrect_msg = house_msg),\n    multi(\n        check_object('hall', missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg),\n        check_object('kit', missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg),\n        check_object('liv', missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg),\n        check_object('bed', missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg),\n        check_object('bath', missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg)\n    )\n)\n\nEx().has_printout(0, not_printed_msg = \"__JINJA__:Have you used `{{sol_call}}` to print out the contents of `house`?\")\n\nsuccess_msg(\"Great! Get ready to learn about list subsetting!\")",
+      "pre_exercise_code": "",
+      "solution": "hall = 11.25\nkit = 18.0\nliv = 20.0\nbed = 10.75\nbath = 9.50\n\n# House information as list of lists\nhouse = [[\"hallway\", hall],\n         [\"kitchen\", kit],\n         [\"living room\", liv],\n         [\"bedroom\", bed],\n         [\"bathroom\", bath]]\n\n# Print out house\nprint(house)",
+      "hint": "<ul>\n<li>Add <em>sublists</em> to the <code>house</code> list by adding <code>[\"bedroom\", bed]</code> and <code>[\"bathroom\", bath]</code> inside the square brackets.</li>\n<li>Remember to include a comma <code>,</code> after each sublist.</li>\n<li>To print a variable <code>x</code>, write <code>print(x)</code> on a new line.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    }
+  ],
+  [
+    {
+      "id": 972035,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "Subsetting Lists",
+      "sample_code": "",
+      "instructions": null,
+      "number": 5,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_fc15ba5cb9485456df8589130b519ea3",
+      "key": "c076b5a69c",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1851,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "After you've created your very own Python list, you'll need to know how you can access information in the list.\n\n",
+            "startsAtTimestamp": 0,
+            "title": "Subsetting Lists"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "Python uses the index to do this. Have a look at the fam list again here. The first element in the list has index 0, the second element has index 1, and so on. Suppose that you want to select the height of emma, the float 1.68. It's the fourth element, so it has index 3. To select it, you use 3 inside square brackets.\n\nSimilarly, to select the string \"dad\" from the list,\n\n",
+            "startsAtTimestamp": 0.04352152060506437,
+            "title": "Subsetting lists"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "which is the seventh element in the list, you'll need to put the index 6 inside square brackets.\n\nYou can also count backwards, using negative indexes. This is useful if you want to get some elements at the end of your list. To get your dad's height, for example, you'll need the index -1. These are the negative indexes for all list elements.\n\n",
+            "startsAtTimestamp": 0.1814619479495268,
+            "title": "Subsetting lists"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "This means that both these lines return the exact same result.\n\nApart from indexing, there's also something called slicing,\n\n",
+            "startsAtTimestamp": 0.3620663504500594,
+            "title": "Subsetting lists"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "which allows you to select multiple elements from a list, thus creating a new list. You can do this by specifying a range, using a colon. Let's first have another look at the list, and then try this piece of code.\n\nCan you guess what it'll return? A list with the the float 1.68, the string \"mom\", and the float 1.71, corresponding to the 4th, 5th and 6th element in the list maybe? Let's see what the output is.\n\nApparently, only the elements with index 3 and 4, get returned. The element with index 5 is not included. In general, this is the syntax: the index you specify before the colon, so where the slice starts, is included, while the index you specify after the colon, where the slice ends, is not.\n\nWith this in mind, can you tell what this call will return?\n\nYou probably guessed correctly that this call gives you a list with three elements, corresponding to the elements with index 1, 2 and 3 of the fam list.\n\nYou can also choose to just leave out the index before or after the colon.\n\n",
+            "startsAtTimestamp": 0.39755027602523657,
+            "title": "List slicing"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "If you leave out the index where the slice should begin, you're telling Python to start the slice from index 0, like this example.\n\nIf you leave out the index where the slice should end, you include all elements up to and including the last element in the list, like here.\n\nNow it's time to head over to the exercises,\n\n",
+            "startsAtTimestamp": 0.8033314841740911,
+            "title": "List slicing"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "where you will continue to work on the list you've created yourself before. You'll use different subsetting methods to get exactly the piece of information you need!\n\n",
+            "startsAtTimestamp": 0.8991275630914827,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14259,
+      "type": "NormalExercise",
+      "assignment": "<p>Subsetting Python lists is a piece of cake. Take the code sample below, which creates a list <code>x</code> and then selects \"b\" from it. Remember that this is the second element, so it has index 1. You can also use negative indexing.</p>\n<pre><code>x = [\"a\", \"b\", \"c\", \"d\"]\nx[1]\nx[-3] # same result!\n</code></pre>\n<p>Remember the <code>areas</code> list from before, containing both strings and floats? Its definition is already in the script. Can you add the correct code to do some Python subsetting?</p>",
+      "title": "Subset and conquer",
+      "sample_code": "# Create the areas list\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n\n# Print out second element from areas\nprint(areas[____])\n\n# Print out last element from areas\nprint(areas[____])\n\n# Print out the area of the living room\nprint(areas[____])",
+      "instructions": "<ul>\n<li>Print out the second element from the <code>areas</code> list (it has the value <code>11.25</code>).</li>\n<li>Subset and print out the last element of <code>areas</code>, being <code>9.50</code>. Using a negative index makes sense here!</li>\n<li>Select the number representing the area of the living room (<code>20.0</code>) and print it out.</li>\n</ul>",
+      "number": 6,
+      "sct": "msg = \"Don't remove or edit the predefined `areas` list.\"\nEx().check_object(\"areas\", missing_msg = msg).has_equal_value(incorrect_msg = msg)\nEx().has_printout(0, not_printed_msg = \"Have another look at your code to print out the second element in `areas`, which is at index `1`.\")\nEx().has_printout(1, not_printed_msg = \"Have another look at your code to print out the last element in `areas`, which is at index `-1`.\")\nEx().has_printout(2, not_printed_msg = \"Have another look at your code to print out the area of the living room. It's at index `5`.\")\nsuccess_msg(\"Good job!\")",
+      "pre_exercise_code": "",
+      "solution": "# Create the areas list\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n\n# Print out second element from areas\nprint(areas[1])\n\n# Print out last element from areas\nprint(areas[-1])\n\n# Print out the area of the living room\nprint(areas[5])",
+      "hint": "<ul>\n<li>Use <code>x[1]</code> to select the second element of a list <code>x</code>.</li>\n<li>Use <code>x[-1]</code> to select the last element of a list <code>x</code>.</li>\n<li>Make sure to wrap your subsetting operations in a <code>print()</code> call.</li>\n<li>The number representing the area of the living room is the 6th element in the list, so you'll need <code>[5]</code> here. <code>area[4]</code> would show the string!</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14261,
+      "type": "NormalExercise",
+      "assignment": "<p>Selecting single values from a list is just one part of the story. It's also possible to <em>slice</em> your list, which means selecting multiple elements from your list. Use the following syntax:</p>\n<pre><code>my_list[start:end]\n</code></pre>\n<p>The <code>start</code> index will be included, while the <code>end</code> index is <em>not</em>. However, it's also possible not to specify these indexes. If you don't specify the <code>start</code> index, Python figures out that you want to start your slice at the beginning of your list.</p>",
+      "title": "Slicing and dicing",
+      "sample_code": "# Create the areas list\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n\n# Use slicing to create downstairs\ndownstairs = areas[____]\n\n# Use slicing to create upstairs\nupstairs = areas[____]\n\n# Print out downstairs and upstairs\n____\n____",
+      "instructions": "<ul>\n<li>Use slicing to create a list, <code>downstairs</code>, that contains the first 6 elements of <code>areas</code>.</li>\n<li>Create <code>upstairs</code>, as the last <code>4</code> elements of <code>areas</code>. This time, simplify the slicing by omitting the <code>end</code> index.</li>\n<li>Print both <code>downstairs</code> and <code>upstairs</code> using <code>print()</code>.</li>\n</ul>",
+      "number": 7,
+      "sct": "msg = \"Don't remove or edit the predefined `areas` list.\"\nEx().check_object(\"areas\", missing_msg = msg).has_equal_value(incorrect_msg = msg)\n\npatt = \"`%s` is incorrect. Use `areas[%s]` and slicing to select the elements you want, or something equivalent.\"\nEx().check_object(\"downstairs\").has_equal_value(incorrect_msg = patt % ('downstairs', '0:6'))\nEx().check_object(\"upstairs\").has_equal_value(incorrect_msg = patt % (\"upstairs\",\":6\"))\n\nEx().has_printout(0, not_printed_msg=\"Have you printed out `downstairs` after calculating it?\")\nEx().has_printout(1, not_printed_msg=\"Have you printed out `upstairs` after calculating it?\")\n\nsuccess_msg(\"Great!\")",
+      "pre_exercise_code": "",
+      "solution": "# Create the areas list\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n\n# Use slicing to create downstairs\ndownstairs = areas[0:6]\n\n# Use slicing to create upstairs\nupstairs = areas[6:]\n\n# Print out downstairs and upstairs\nprint(downstairs)\nprint(upstairs)",
+      "hint": "<ul>\n<li>Use the brackets <code>[0:6]</code> to get the first six elements of a list.</li>\n<li>To get everything except the first 5 elements of a list, <code>l</code>, you would use <code>l[5:]</code>.</li>\n<li>Add two <code>print()</code> calls to print out <code>downstairs</code> and <code>upstairs</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    null,
+    {
+      "id": 14263,
+      "type": "NormalExercise",
+      "assignment": "<p>A Python list can also contain other lists.</p>\n<p>To subset lists of lists, you can use the same technique as before: square brackets. This would look something like this for a list, <code>house</code>:</p>\n<pre><code>house[2][0]\n</code></pre>",
+      "title": "Subsetting lists of lists",
+      "sample_code": "house = [[\"hallway\", 11.25],\n         [\"kitchen\", 18.0],\n         [\"living room\", 20.0],\n         [\"bedroom\", 10.75],\n         [\"bathroom\", 9.50]]\n\n# Subset the house list\nhouse___",
+      "instructions": "<ul>\n<li>Subset the <code>house</code> list to get the float <code>9.5</code>.</li>\n</ul>",
+      "number": 8,
+      "sct": "Ex().check_or(\n  has_code(\"house[-1][1]\", pattern=False),\n  has_code(\"house[4][1]\", pattern=False)\n)\n\nsuccess_msg(\"Correctomundo! The last piece of the list puzzle is manipulation.\")",
+      "pre_exercise_code": "",
+      "solution": "house = [[\"hallway\", 11.25],\n         [\"kitchen\", 18.0],\n         [\"living room\", 20.0],\n         [\"bedroom\", 10.75],\n         [\"bathroom\", 9.50]]\n\n# Subset the house list\nhouse[-1][1]",
+      "hint": "<ul>\n<li>Break this down step by step. First you want to get to the last element of the list, <code>[\"bathroom\", 9.50]</code>. Recall the index of the last element is <code>-1</code>.</li>\n<li>Next you want to get the second element of <code>[\"bathroom\", 9.50]</code>, which is at index <code>1</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    null
+  ],
+  [
+    {
+      "id": 972036,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "Manipulating Lists",
+      "sample_code": "",
+      "instructions": null,
+      "number": 9,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_355ed52d2fb0d67508c6a311b7cbc6d3",
+      "key": "d7fe818b3a",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1851,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "Wow, you're doing super well. So now, after creation and subsetting, the final piece of the Python lists puzzle is\n\n",
+            "startsAtTimestamp": 0,
+            "title": "Manipulating Lists"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "manipulation, so ways to change elements in your list, or to add elements to and remove elements from your list.\n\n",
+            "startsAtTimestamp": 0.03946281454201404,
+            "title": "List Manipulation"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "Changing list elements is pretty straightforward. You use the same square brackets that we've used to subset lists, and then assign new elements to it using the equals sign. Suppose that after another look at fam, you realize that your dad's height is not up to date anymore, as he's shrinking with age. Instead of 1.89 meters, it should be 1.86 meters. To change this list element, which is at index 7, you can use this line of code.\n\nIf you now check out fam, you'll see that the value is updated.\n\nYou can even change an entire list slice at once. To change the elements \"liz\" and 1.73, you access the first two elements with 0:2, and then assign a new list to it.\n\nDo you still remember how the plus operator was different for strings and integers?\n\n",
+            "startsAtTimestamp": 0.07155693830852704,
+            "title": "Changing list elements"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "Well, it's again different for lists. If you use the plus sign with two lists, Python simply pastes together their contents in a single list. Suppose you want to add your own name and height to the fam height list. This will do the trick.\n\nOf course, you can also store this new list in a variable, fam_ext for example.\n\nFinally, deleting elements from a list is also pretty straightforward, you'll have to use del here. Take this line, for example, that deletes the element with index 2, so \"emma\", from the list.\n\nIf you check out fam now, you'll see that the \"emma\" string is gone. Because you've removed an index, all elements that came after \"emma\" scooted over by one index. If you again run the same line, you're again removing the element at index 2, which is emma's height, 1.68 meters now.\n\nUnderstanding how Python lists actually work\n\n",
+            "startsAtTimestamp": 0.2666354495268139,
+            "title": "Adding and removing elements"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "behind the scenes becomes pretty important now. What actually happens when you create a new list, x, like this?\n\nWell, in a simplified sense, you're storing a list in your computer memory, and store the 'address' of that list, so\n\n",
+            "startsAtTimestamp": 0.5381587822732565,
+            "title": "Behind the scenes (1)"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "where the list is in your computer memory, in x. This means that x does not actually contain all the list elements, it rather contains a reference to the list. For basic operations, the difference is not that important, but it becomes more so when you start copying lists. Let me clarify this with an example.\n\nLet's store the list x as a new variable y, by simply using the equals sign.\n\nLet's now change the element with index one in the list y, like this.\n\nThe funky thing is that if you now check out x again, also here the second element was changed.\n\nThat's because when you copied x to y with the equals sign,\n\n",
+            "startsAtTimestamp": 0.6017074008589095,
+            "title": "Behind the scenes (1)"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "you copied the reference to the list, not the actual values themselves.\n\n",
+            "startsAtTimestamp": 0.78673062157379,
+            "title": "Behind the scenes (1)"
+          },
+          {
+            "citations": [],
+            "number": 8,
+            "script": "When you're updating an element the list, it's one and the same list in the computer memory your changing. Both x and y point to this list, so the update is visible from both variables.\n\nIf you want to create a list y that points to a new list in the memory with the same values,\n\n",
+            "startsAtTimestamp": 0.8045826694769683,
+            "title": "Behind the scenes (1)"
+          },
+          {
+            "citations": [],
+            "number": 9,
+            "script": "you'll need to use something else than the equals sign. You can use the list function,\n\n",
+            "startsAtTimestamp": 0.8612726735015773,
+            "title": "Behind the scenes (2)"
+          },
+          {
+            "citations": [],
+            "number": 10,
+            "script": "like this, or use slicing to select all list elements explicitly.\n\nIf you now\n\n",
+            "startsAtTimestamp": 0.9022159518879699,
+            "title": "Behind the scenes (2)"
+          },
+          {
+            "citations": [],
+            "number": 11,
+            "script": "make a change to the list y points to, x is not affected.\n\nIf this was a bit too much to take in, don't worry.\n\n",
+            "startsAtTimestamp": 0.9277965217836873,
+            "title": "Behind the scenes (2)"
+          },
+          {
+            "citations": [],
+            "number": 12,
+            "script": "The exercises will help you understand list manipulation and the subtle inner workings of lists. I'm sure you'll do great!\n\n",
+            "startsAtTimestamp": 0.9562455681281354,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14265,
+      "type": "NormalExercise",
+      "assignment": "<p>To replace list elements, you subset the list and assign new values to the subset. You can select single elements or you can change entire list slices at once.</p>\n<p>For this and the following exercises, you'll continue working on the <code>areas</code> list that contains the names and areas of different rooms in a house.</p>",
+      "title": "Replace list elements",
+      "sample_code": "# Create the areas list\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n\n# Correct the bathroom area\n\n\n# Change \"living room\" to \"chill zone\"\n",
+      "instructions": "<ul>\n<li>Update the area of the bathroom to be <code>10.50</code> square meters instead of <code>9.50</code> using negative indexing.</li>\n<li>Make the <code>areas</code> list more trendy! Change <code>\"living room\"</code> to <code>\"chill zone\"</code>. Don't use negative indexing this time.</li>\n</ul>",
+      "number": 10,
+      "sct": "bathroom_msg = 'You can use `areas[-1] = 10.50` to update the bathroom area.'\nchillzone_msg = 'You can use `areas[4] = \"chill zone\"` to update the living room name.'\nEx().check_correct(\n  check_object('areas').has_equal_value(incorrect_msg = 'Your changes to `areas` did not result in the correct list. Are you sure you used the correct subset operations? When in doubt, you can use a hint!'),\n  multi(\n    has_equal_value(expr_code='areas[-1]', override=10.50, incorrect_msg = bathroom_msg),\n    has_equal_value(expr_code='areas[4]', override='chill zone', incorrect_msg = chillzone_msg),\n  )\n)\nsuccess_msg('Sweet! As the code sample showed, you can also slice a list and replace it with another list to update multiple elements in a single command.')",
+      "pre_exercise_code": "",
+      "solution": "# Create the areas list\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n\n# Correct the bathroom area\nareas[-1] = 10.50\n\n# Change \"living room\" to \"chill zone\"\nareas[4] = \"chill zone\"",
+      "hint": "<ul>\n<li>To update the bathroom area, identify the subset of the bathroom area (it's the last item of the list!).</li>\n<li>Then, replace the value with the new bathroom area by assigning it to this subset.</li>\n<li>Do the same to update the <code>\"living room\"</code> name, which is at index 4.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14266,
+      "type": "NormalExercise",
+      "assignment": "<p>If you can change elements in a list, you sure want to be able to add elements to it, right? You can use the <code>+</code> operator:</p>\n<pre><code>x = [\"a\", \"b\", \"c\", \"d\"]\ny = x + [\"e\", \"f\"]\n</code></pre>\n<p>You just won the lottery, awesome! You decide to build a poolhouse and a garage. Can you add the information to the <code>areas</code> list?</p>",
+      "title": "Extend a list",
+      "sample_code": "# Create the areas list and make some changes\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"chill zone\", 20.0,\n         \"bedroom\", 10.75, \"bathroom\", 10.50]\n\n# Add poolhouse data to areas, new list is areas_1\nareas_1 = ____\n\n# Add garage data to areas_1, new list is areas_2\nareas_2 = ____",
+      "instructions": "<ul>\n<li>Use the <code>+</code> operator to paste the list <code>[\"poolhouse\", 24.5]</code> to the end of the <code>areas</code> list. Store the resulting list as <code>areas_1</code>.</li>\n<li>Further extend <code>areas_1</code> by adding data on your garage. Add the string <code>\"garage\"</code> and float <code>15.45</code>. Name the resulting list <code>areas_2</code>.</li>\n</ul>",
+      "number": 11,
+      "sct": "msg = \"Don't remove or edit the predefined `areas` list.\"\nEx().check_object(\"areas\", missing_msg = msg).has_equal_value(incorrect_msg = msg)\nEx().check_object(\"areas_1\").has_equal_value(incorrect_msg = \"Use `areas + [\\\"poolhouse\\\", 24.5]` to create `areas_1`. Watch out for typos!\")\nEx().check_object(\"areas_2\").has_equal_value(incorrect_msg = \"Use `areas_1 + [\\\"garage\\\", 15.45]` to create `areas_2`. Watch out for typos!\")\nsuccess_msg(\"Cool! The list is shaping up nicely!\")",
+      "pre_exercise_code": "",
+      "solution": "# Create the areas list (updated version)\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"chill zone\", 20.0,\n         \"bedroom\", 10.75, \"bathroom\", 10.50]\n\n# Add poolhouse data to areas, new list is areas_1\nareas_1 = areas + [\"poolhouse\", 24.5]\n\n# Add garage data to areas_1, new list is areas_2\nareas_2 = areas_1 + [\"garage\", 15.45]",
+      "hint": "<ul>\n<li>Follow the code sample in the assignment. <code>x</code> is <code>areas</code> here, and <code>[\"e\", \"f\"]</code> is <code>[\"poolhouse\", 24.5]</code>.</li>\n<li>To add more elements to <code>areas_1</code>, use <code>areas_1 + [\"element\", 123]</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14267,
+      "type": "NormalExercise",
+      "assignment": "<p>Finally, you can also remove elements from your list. You can do this with the <code>del</code> statement:</p>\n<pre><code>x = [\"a\", \"b\", \"c\", \"d\"]\ndel x[1]\n</code></pre>\n<p>Pay attention here: as soon as you remove an element from a list, the indexes of the elements that come after the deleted element all change!</p>\n<p>Unfortunately, the amount you won with the lottery is not that big after all and it looks like the poolhouse isn't going to happen. You'll need to remove it from the list. You decide to remove the corresponding string and float from the <code>areas</code> list.</p>",
+      "title": "Delete list elements",
+      "sample_code": "areas = [\"hallway\", 11.25, \"kitchen\", 18.0,\n        \"chill zone\", 20.0, \"bedroom\", 10.75,\n         \"bathroom\", 10.50, \"poolhouse\", 24.5,\n         \"garage\", 15.45]\n\n# Delete the poolhouse items from the list\n\n\n# Print the updated list\n",
+      "instructions": "<ul>\n<li>Delete the string and float for the <code>\"poolhouse\"</code> from your <code>areas</code> list.</li>\n<li>Print the updated <code>areas</code> list.</li>\n</ul>",
+      "number": 12,
+      "sct": "Ex().check_or(\n  multi(\n    has_code(\"del areas[10]\", pattern=False),\n    has_code(\"del areas[10]\", pattern=False)\n  ),\n  has_code(\"del areas[-4:-2]\", pattern=False),\n  has_code(\"del(areas[-4:-2])\", pattern=False),\n  multi(\n    has_code(\"del(areas[10])\", pattern=False),\n    has_code(\"del(areas[10])\", pattern=False)\n  ),\n  has_code(\"del areas[10:12]\", pattern=False),\n  has_code(\"del(areas[10:12])\", pattern=False),\n  multi(\n    has_code(\"del areas[-4]\", pattern=False),\n    has_code(\"del areas[-3]\", pattern=False)\n  ),\n  multi(\n    has_code(\"del(areas[-4])\", pattern=False),\n    has_code(\"del(areas[-3])\", pattern=False)\n  )\n)\n\nEx().has_printout(0, not_printed_msg=\"Have you printed out `areas` after removing the poolhouse string and float?\")\nsuccess_msg(\"Correct! You'll learn about easier ways to remove specific elements from Python lists later on.\")",
+      "pre_exercise_code": "",
+      "solution": "areas = [\"hallway\", 11.25, \"kitchen\", 18.0,\n        \"chill zone\", 20.0, \"bedroom\", 10.75,\n         \"bathroom\", 10.50, \"poolhouse\", 24.5,\n         \"garage\", 15.45]\n\n# Delete the poolhouse items from the list\ndel areas[10]\ndel areas[10]\n\n# Print the updated list\nprint(areas)",
+      "hint": "<ul>\n<li>You'll need to use <code>del</code> twice to delete two elements. Be careful about changing indexes though!</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14268,
+      "type": "NormalExercise",
+      "assignment": "<p>Some code has been provided for you in this exercise: a list with the name <code>areas</code> and a copy named <code>areas_copy</code>.</p>\n<p>Currently, the first element in the <code>areas_copy</code> list is changed and the <code>areas</code> list is printed out. If you hit the run code button you'll see that, although you've changed <code>areas_copy</code>, the change also takes effect in the <code>areas</code> list. That's because <code>areas</code> and <code>areas_copy</code> point to the same list.</p>\n<p>If you want to prevent changes in <code>areas_copy</code> from also taking effect in <code>areas</code>, you'll have to do a more explicit copy of the <code>areas</code> list with <code>list()</code> or by using <code>[:]</code>.</p>",
+      "title": "Inner workings of lists",
+      "sample_code": "# Create list areas\nareas = [11.25, 18.0, 20.0, 10.75, 9.50]\n\n# Change this command\nareas_copy = areas\n\n# Change areas_copy\nareas_copy[0] = 5.0\n\n# Print areas\nprint(areas)",
+      "instructions": "<ul>\n<li>Change the second command, that creates the variable <code>areas_copy</code>, such that <code>areas_copy</code> is an explicit copy of <code>areas</code>. After your edit, changes made to <code>areas_copy</code> shouldn't affect <code>areas</code>. Submit the answer to check this.</li>\n</ul>",
+      "number": 13,
+      "sct": "Ex().check_correct(\n  check_object(\"areas_copy\").has_equal_value(incorrect_msg = \"It seems that `areas_copy` has not been updated correctly.\"),\n  check_function(\"list\", missing_msg = \"Make sure to use `list(areas)` to create an `areas_copy`.\")\n)\n\nmmsg = \"Don't remove the predefined `areas` list.\"\nimsg = \"Be sure to edit ONLY the copy, not the original `areas` list. Have another look at the exercise description if you're unsure how to create a copy.\"\nEx().check_correct(\n  check_object(\"areas\", missing_msg = mmsg).has_equal_value(incorrect_msg = imsg),\n  check_function(\"list\", missing_msg = \"Make sure to use `list(areas)` to create an `areas_copy`.\")\n)\n\nsuccess_msg(\"Nice! The difference between explicit and reference-based copies is subtle, but can be really important. Try to keep in mind how a list is stored in the computer's memory.\")",
+      "pre_exercise_code": "",
+      "solution": "# Create list areas\nareas = [11.25, 18.0, 20.0, 10.75, 9.50]\n\n# Change this command\nareas_copy = list(areas)\n\n# Change areas_copy\nareas_copy[0] = 5.0\n\n# Print areas\nprint(areas)",
+      "hint": "<ul>\n<li>Change the <code>areas_copy = areas</code> call. Instead of assigning <code>areas</code>, you can assign <code>list(areas)</code> or <code>areas[:]</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    }
+  ],
+  [
+    {
+      "id": 14269,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "Functions",
+      "sample_code": "",
+      "instructions": null,
+      "number": 1,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_1204d914b0e53100529827e07441ee6c",
+      "key": "5c5f365930",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1852,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "In this video, I'm going to introduce you to functions. Once you learn about them you won't be able to stop using them. I sure can't.\n\n",
+            "startsAtTimestamp": 0,
+            "title": "Functions"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "Functions aren't entirely new for you actually: you've already used them. type, for example, is a function that returns the type of a value. But what is a function? Simply put, a function is a piece of reusable code, aimed at solving a particular task. You can call functions instead of having to write code yourself. Maybe an example can clarify things here.\n\n",
+            "startsAtTimestamp": 0.03836959534368071,
+            "title": "Functions"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "Suppose you have the list containing only the heights of your family, fam:\n\nSay that you want to get the maximum value in this list. Instead of writing your own piece of Python code that goes through the list and finds the highest value, you can also use Python's max function. This is one of Python's built-in functions, just like type. We simply pass fam to max inside parentheses.\n\nThe output makes sense: 1.89, the highest number in the list.\n\nmax worked kind of like a black box here:\n\n",
+            "startsAtTimestamp": 0.12713277856819213,
+            "title": "Example"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "you passed it a list, then the implementation of max, that you don't know, did its magic,\n\n",
+            "startsAtTimestamp": 0.25220650200810013,
+            "title": "Example"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "and produced an output. How max actually did this, is not important to you, it just does what it's supposed to, and you didn't have to write your own code, which made your life easier.\n\n",
+            "startsAtTimestamp": 0.2703959615995671,
+            "title": "Example"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "Of course, it's possible to also assign the result of a function call to a new variable, like here. Now tallest is just like any other variable; you can use it to continue your fancy calculations.\n\n",
+            "startsAtTimestamp": 0.31230759686585174,
+            "title": "Example"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "Another one of these built-in functions is round. It takes two inputs: first, a number you want to round, and second, the precision with which to round, which is how many digits after the decimal point you want to keep. Say you want to round 1.68 to one decimal place. The first input is 1.68, the second input is 1. You separate the inputs with a comma.\n\nBut there's more. It's perfectly possible to call the round function with only one input, like this. This time, Python figured out that you didn't specify the second input, and automatically chooses to round the number to the closest integer.\n\nTo understand why both approaches work, let's open up the documentation. You can do this with yet another function, help, like this.\n\nIt appears that round takes two inputs.\n\n",
+            "startsAtTimestamp": 0.3635581324179583,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 8,
+            "script": "In Python, these inputs, also called arguments, have names: number and ndigits. When you call the function round,\n\n",
+            "startsAtTimestamp": 0.5653305143291795,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 9,
+            "script": "with these two inputs, Python matches the inputs to the arguments:\n\n",
+            "startsAtTimestamp": 0.5993452050997783,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 10,
+            "script": "number is set to 1.68 and\n\n",
+            "startsAtTimestamp": 0.6179483762588034,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 11,
+            "script": "ndigits is set to 1. Next,\n\n",
+            "startsAtTimestamp": 0.62528775401621,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 12,
+            "script": "The round function does its calculations with number and ndigits as if they are Python variables in a script. We don't know exactly what code Python executes. What is important, though, is that the function produces an output,\n\n",
+            "startsAtTimestamp": 0.636900772633793,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 13,
+            "script": "namely the number 1.68 rounded to 1 decimal place.\n\n",
+            "startsAtTimestamp": 0.6941416735633308,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 14,
+            "script": "If you call the function round with only one input,\n\n",
+            "startsAtTimestamp": 0.7123508793387741,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 15,
+            "script": "Python again tries to\n\n",
+            "startsAtTimestamp": 0.7248499370448553,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 16,
+            "script": "match the inputs to\n\n",
+            "startsAtTimestamp": 0.7318285283588017,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 17,
+            "script": "the arguments. There's no input to match to the ndigits argument though. Luckily,\n\n",
+            "startsAtTimestamp": 0.7378888010392806,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 18,
+            "script": "the internal machinery of the round function knows how to handle this. When ndigits is not specified, the function simply rounds to the closest integer and\n\n",
+            "startsAtTimestamp": 0.7544399500504574,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 19,
+            "script": "returns that integer. That's why we got the number 2.\n\n",
+            "startsAtTimestamp": 0.7931830955772077,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 20,
+            "script": "In other words, ndigits is an optional argument. This tells us that you can call round in this form, as well as in this one.\n\n",
+            "startsAtTimestamp": 0.8106031876472712,
+            "title": "round()"
+          },
+          {
+            "citations": [],
+            "number": 21,
+            "script": "By now, you have an idea about how to use max and round, but how could you know that a function such as round exists in Python in the first place? Well, this is something you will learn with time. Whenever you are doing a rather standard task in Python, you can be pretty sure that there's already a function that can do this for you. In that case, you should definitely use it! Just do a quick internet search and you'll find the function you need with a nice usage example. And there is of course DataCamp, where you'll also learn about powerful functions and how to use them.\n\n",
+            "startsAtTimestamp": 0.8475549510465406,
+            "title": "Find functions"
+          },
+          {
+            "citations": [],
+            "number": 22,
+            "script": "Get straight to it in the interactive exercises, and I'll see you back here soon!\n\n",
+            "startsAtTimestamp": 0.9704220126915846,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14270,
+      "type": "NormalExercise",
+      "assignment": "<p>Out of the box, Python offers a bunch of built-in functions to make your life as a data scientist easier. You already know two such functions: <code>print()</code> and <code>type()</code>. There are also functions like <code>str()</code>, <code>int()</code>, <code>bool()</code> and <code>float()</code> to switch between data types. You can find out about them <a href=\"https://docs.python.org/3/library/functions.html\">here.</a> These are built-in functions as well.</p>\n<p>Calling a function is easy. To get the type of <code>3.0</code> and store the output as a new variable, <code>result</code>, you can use the following:</p>\n<pre><code>result = type(3.0)\n</code></pre>",
+      "title": "Familiar functions",
+      "sample_code": "# Create variables var1 and var2\nvar1 = [1, 2, 3, 4]\nvar2 = True\n\n# Print out type of var1\n____\n\n# Print out length of var1\n____\n\n# Convert var2 to an integer: out2\nout2 = ____",
+      "instructions": "<ul>\n<li>Use <code>print()</code> in combination with <code>type()</code> to print out the type of <code>var1</code>.</li>\n<li>Use <code>len()</code> to get the <a href=\"https://docs.python.org/3/library/functions.html#len\">length of the list</a> <code>var1</code>. Wrap it in a <code>print()</code> call to directly print it out.</li>\n<li>Use <code>int()</code> to convert <code>var2</code> to an <a href=\"https://docs.python.org/3/library/functions.html#int\">integer</a>. Store the output as <code>out2</code>.</li>\n</ul>",
+      "number": 2,
+      "sct": "msg = \"You don't have to change or remove the predefined variables.\"\nEx().check_object(\"var1\", missing_msg=msg).has_equal_value(incorrect_msg=msg)\nEx().check_object(\"var2\", missing_msg=msg).has_equal_value(incorrect_msg=msg)\n\npatt = \"__JINJA__:Make sure to print out the %s of `var1` with `{{sol_call}}`.\"\nEx().has_printout(0, not_printed_msg = patt % 'type')\nEx().has_printout(1, not_printed_msg = patt % 'length')\n\nint_miss_msg = \"Have you used `int()` to make an integer of `var2`?\"\nint_incorr_msg = \"Have you passed `var2` to `int()`?\"\nEx().check_correct(\n  check_object(\"out2\").has_equal_value(incorrect_msg=\"You called `int()` correctly; now make sure to assign the result of this call to `out2`.\"),\n  check_function(\"int\", missing_msg=int_miss_msg).has_equal_value(incorrect_msg=int_incorr_msg)\n)\nsuccess_msg(\"Great job! The `len()` function is extremely useful; it also works on strings to count the number of characters!\")",
+      "pre_exercise_code": "",
+      "solution": "# Create variables var1 and var2\nvar1 = [1, 2, 3, 4]\nvar2 = True\n\n# Print out type of var1\nprint(type(var1))\n\n# Print out length of var1\nprint(len(var1))\n\n# Convert var2 to an integer: out2\nout2 = int(var2)",
+      "hint": "<ul>\n<li>Call the <code>type()</code> function like this: <code>type(var1)</code>.</li>\n<li>Call <code>print()</code> like you did so many times before. Simply put the variable you want to print in parentheses.</li>\n<li><code>int(x)</code> will convert <code>x</code> to an integer.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14271,
+      "type": "MultipleChoiceExercise",
+      "assignment": "<p>Maybe you already know the name of a Python function, but you still have to figure out how to use it. Ironically, you have to ask for information about a function with another function: <code>help()</code>. In IPython specifically, you can also use <code>?</code> before the function name.</p>\n<p>To get help on the <code>max()</code> function, for example, you can use one of these calls:</p>\n<pre><code>help(max)\n?max\n</code></pre>\n<p>Use the IPython Shell to open up the <a href=\"https://docs.python.org/3/library/functions.html#pow\">documentation</a> on <code>pow()</code>. Do this by typing <code>?pow</code> or <code>help(pow)</code> and hitting <strong>Enter</strong>.</p>\n<p>Which of the following statements is true?</p>",
+      "title": "Help!",
+      "sample_code": "",
+      "instructions": null,
+      "number": 3,
+      "sct": "msg1 = \"Not quite. `mod` has a default value that will be used if you don't specify a value.\"\nmsg2 = \"Incorrect. `None` is the default value for the `mod` argument.\"\nmsg3 = \"Perfect! Using `help()` can help you understand how functions work, unleashing their full potential!\"\nmsg4 = \"Incorrect. `pow()` takes three arguments, one of which has a default value.\"\nEx().has_chosen(3, [msg1, msg2, msg3, msg4])",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": "<ul>\n<li>Optional arguments are set <code>=</code> to a default value, which the function will use if that argument is not specified.</li>\n</ul>",
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [
+        "<code>pow()</code> takes three arguments: <code>base</code>, <code>exp</code>, and <code>mod</code>. Without <code>mod</code>, the function will return an error.",
+        "<code>pow()</code> takes three required arguments: <code>base</code>, <code>exp</code>, and <code>None</code>.",
+        "<code>pow()</code> requires <code>base</code> and <code>exp</code> arguments; <code>mod</code> is optional.",
+        "<code>pow()</code> takes two arguments: <code>exp</code> and <code>mod</code>. Missing <code>exp</code> results in an error."
+      ],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14272,
+      "type": "NormalExercise",
+      "assignment": "<p>In the previous exercise, you identified optional arguments by viewing the documentation with <code>help()</code>. You'll now apply this to change the behavior of the <code>sorted()</code> function.</p>\n<p>Have a look at the <a href=\"https://docs.python.org/3/library/functions.html#sorted\">documentation</a> of <code>sorted()</code> by typing <code>help(sorted)</code> in the IPython Shell.</p>\n<p>You'll see that <code>sorted()</code> takes three arguments: <code>iterable</code>, <code>key</code>, and <code>reverse</code>. In this exercise, you'll only have to specify <code>iterable</code> and <code>reverse</code>, not <code>key</code>.</p>\n<p>Two lists have been created for you.</p>\n<p>Can you paste them together and sort them in descending order?</p>",
+      "title": "Multiple arguments",
+      "sample_code": "# Create lists first and second\nfirst = [11.25, 18.0, 20.0]\nsecond = [10.75, 9.50]\n\n# Paste together first and second: full\nfull = ____ + ____\n\n# Sort full in descending order: full_sorted\nfull_sorted = ____\n\n# Print out full_sorted\n____",
+      "instructions": "<ul>\n<li>Use <code>+</code> to merge the contents of <code>first</code> and <code>second</code> into a new list: <code>full</code>.</li>\n<li>Call <code>sorted()</code> and on <code>full</code> and specify the <code>reverse</code> argument to be <code>True</code>. Save the sorted list as <code>full_sorted</code>.</li>\n<li>Finish off by printing out <code>full_sorted</code>.</li>\n</ul>",
+      "number": 4,
+      "sct": "msg = \"You don't have to change or remove the already variables `first` and `second`.\"\nEx().multi(\n  check_object(\"first\", missing_msg=msg).has_equal_value(incorrect_msg=msg),\n  check_object(\"second\", missing_msg=msg).has_equal_value(incorrect_msg=msg)\n)\nEx().check_correct(\n  check_object(\"full_sorted\").has_equal_value(incorrect_msg=\"Make sure you assign the result of calling `sorted()` to `full_sorted`.\"),\n  check_function(\"sorted\").multi(\n    check_args(0).has_equal_value(),\n    check_args('reverse').has_equal_value()\n  )\n)\n\nsuccess_msg(\"Cool! Head over to the video on Python methods.\")",
+      "pre_exercise_code": "",
+      "solution": "# Create lists first and second\nfirst = [11.25, 18.0, 20.0]\nsecond = [10.75, 9.50]\n\n# Paste together first and second: full\nfull = first + second\n\n# Sort full in descending order: full_sorted\nfull_sorted = sorted(full, reverse=True)\n\n# Print out full_sorted\nprint(full_sorted)",
+      "hint": "<ul>\n<li>Sum <code>first</code> and <code>second</code> as if they are two numbers and assign the result to <code>full</code>.</li>\n<li>Use <code>sorted()</code> with two inputs: <code>full</code> and <code>reverse=True</code>.</li>\n<li>To print out a variable, use <code>print()</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    }
+  ],
+  [
+    {
+      "id": 14273,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "Methods",
+      "sample_code": "",
+      "instructions": null,
+      "number": 5,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_8e387776f3a264a745128b68aa8d8f83",
+      "key": "2b66cb66b1",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1852,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "Built-in functions are only\n\n",
+            "startsAtTimestamp": 0,
+            "title": "Methods"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "one part of the Python story. You already know about functions such as max, to get the maximum of a list, len, to get the length of a list or a string, and so on. But what about other basic things, such getting the index of a specific element in the list, or reversing a list? You can look very hard for built-in functions that do this, but you won't find them.\n\n",
+            "startsAtTimestamp": 0.011371834875856779,
+            "title": "Built-in Functions"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "In the past exercises, you've already created a bunch of variables. Among other Python types, you've created strings, floats and lists, like the ones you see here. Each one of these values or data structures are so-called Python objects. This string is an object, this float is an object, but this list is also, you got it, an object. These objects have a specific type, that you already know:\n\n",
+            "startsAtTimestamp": 0.0810842213695144,
+            "title": "Back 2 Basics"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "string, float, and list, and of course they represent the values you gave them, such as \"liz\", 1.73 and an entire list. But in addition to this, Python objects also come with a bunch of so-called \"methods\". You can think of methods as functions that \"belong to\" Python objects. A Python object of type string has methods,\n\n",
+            "startsAtTimestamp": 0.16718514328808445,
+            "title": "Back 2 Basics"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "such as capitalize and replace, but also objects of type float and list have specific methods depending on the type.\n\nEnough for the theory now; let's try to use a method!\n\n",
+            "startsAtTimestamp": 0.24863310708898945,
+            "title": "Back 2 Basics"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "Suppose you want to get the index of the string \"mom\" in the fam list. fam is an Python object with the type list, and has a method named index. To call the method, you use the dot notation, like this. The only input is the string \"mom\", the element you want to get the index for.\n\nPython returns 4, which indeed is the index of the string \"mom\". I called the index method \"on\" the fam list here, and the output was 4. Similarly, I can use the count method on the fam list to count the number of times 1.73 occurs in the list.\n\nPython gives me 1, which makes sense, because only liz is 1.73 meters tall.\n\nBut lists are not the only Python objects that have methods associated. Also floats, integers, booleans and strings\n\n",
+            "startsAtTimestamp": 0.2878487933634992,
+            "title": "list methods"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "are Python objects that have specific methods associated with them. Take the variable sister for example, that represents a string.\n\nYou can call the method capitalize on sister, without any inputs. It returns a string where the first letter is capitalized now.\n\nOr what if you want to replace some parts of the string with other parts? Not a problem. Just call the method replace on sister, with two appropriate inputs.\n\nIn the output, \"z\" is replaced with \"sa\".\n\n",
+            "startsAtTimestamp": 0.4732600552050473,
+            "title": "str methods"
+          },
+          {
+            "citations": [],
+            "number": 8,
+            "script": "To be absolutely clear: in Python, everything is an object, and each object has specific methods associated. Depending on the type of the object, list, string, float, whatever, the available methods are different. A string object like sister has a replace method, but a list like fam doesn't have this, as you can see from this error.\n\n",
+            "startsAtTimestamp": 0.5726500532110702,
+            "title": "Methods"
+          },
+          {
+            "citations": [],
+            "number": 9,
+            "script": "Objects of different types can have methods with the same name: Take the index method. It's available for both strings and lists. If you call it on a string, you get the index of the letters in the string; If you call it on a list, you get the index of the element in the list. This means that, depending on the type of the object, the methods behave differently.\n\nBefore I unleash you on some exercises on methods,\n\n",
+            "startsAtTimestamp": 0.6487343697609214,
+            "title": "Methods"
+          },
+          {
+            "citations": [],
+            "number": 10,
+            "script": "there's one more thing I want to tell you. Some methods can change the objects they are called on. Let's retake the fam list, and call the append method on it. As the input, we pass a string we want to add to the list.\n\nPython doesn't generate an output, but if we check the fam list again, we see that it has been extended with the string \"me\".\n\nLet's do this again, this time to add my height to the list.\n\nAgain, the fam list was extended.\n\nThis is pretty cool, because you can write very concise code to update your data structures on the fly, but it can also be pretty dangerous. Some method calls don't change the object they're called on, while others do, so watch out.\n\n",
+            "startsAtTimestamp": 0.7336305143361925,
+            "title": "Methods (2)"
+          },
+          {
+            "citations": [],
+            "number": 11,
+            "script": "Let's take a step back here and summarize this. you have Python functions, like type, max and round, that you can call like this. There's also methods, which are functions that are specific to Python objects. Depending on the type of the Python object you're dealing with, you'll be able to use different methods and they behave differently. You can call methods on the objects with the dot notation, like this, for example.\n\nThere's much more to tell about Python objects, methods and how Python works internally,\n\n",
+            "startsAtTimestamp": 0.8675818217665615,
+            "title": "Summary"
+          },
+          {
+            "citations": [],
+            "number": 12,
+            "script": "but for now, let's stick to what I've talked about here. It's time to get some exercises and add methods to your evergrowing skillset!\n\n",
+            "startsAtTimestamp": 0.9619959213116677,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14275,
+      "type": "NormalExercise",
+      "assignment": "<p>Strings come with a bunch of methods. Follow the instructions closely to discover some of them. If you want to discover them in more detail, you can always type <code>help(str)</code> in the IPython Shell.</p>\n<p>A string <code>place</code> has already been created for you to experiment with.</p>",
+      "title": "String Methods",
+      "sample_code": "# string to experiment with: place\nplace = \"poolhouse\"\n\n# Use upper() on place\nplace_up = \n\n# Print out place and place_up\n\n\n\n# Print out the number of o's in place\n",
+      "instructions": "<ul>\n<li>Use the <code>.upper()</code> <a href=\"https://docs.python.org/3/library/stdtypes.html#str.upper\">method</a> on <code>place</code> and store the result in <code>place_up</code>. Use the syntax for calling methods that you learned in the previous video.</li>\n<li>Print out <code>place</code> and <code>place_up</code>. Did both change?</li>\n<li>Print out the number of o's on the variable <code>place</code> by calling <code>.count()</code> on <code>place</code> and passing the letter <code>'o'</code> as an input to the method. We're talking about the variable <code>place</code>, not the word <code>\"place\"</code>!</li>\n</ul>",
+      "number": 6,
+      "sct": "msg = \"You don't have to change or remove the predefined variables.\"\nEx().check_object(\"place\", missing_msg=msg).has_equal_value(incorrect_msg=msg)\n\npatt = \"Don't forget to print out `%s`.\"\nEx().has_printout(0, not_printed_msg=patt % \"place\")\nEx().check_correct(\n    has_printout(1, not_printed_msg=patt % \"place_up\"),\n    check_correct(\n        check_object(\"place_up\").has_equal_value(incorrect_msg=\"Assign the result of your `place.upper()` call to `place_up`.\"),\n        check_function(\"place.upper\", signature=False)\n    )\n)    \n\n# check count of place\nEx().check_correct(\n  has_printout(2, not_printed_msg = \"You have calculated the number of o's in `place` fine; now make sure to wrap `place.count('o')` call in a `print()` function to print out the result.\"),\n  check_function(\"place.count\", signature=False).check_args(0).has_equal_value()\n)\n\nsuccess_msg(\"Nice! Notice from the printouts that the `upper()` method does not change the object it is called on. This will be different for lists in the next exercise!\")",
+      "pre_exercise_code": "",
+      "solution": "# string to experiment with: place\nplace = \"poolhouse\"\n\n# Use upper() on place\nplace_up = place.upper()\n\n# Print out place and place_up\nprint(place)\nprint(place_up)\n\n# Print out the number of o's in place\nprint(place.count('o'))",
+      "hint": "<ul>\n<li>You can call the <code>.upper()</code> method on <code>place</code> without any additional inputs.</li>\n<li>To print out a variable <code>x</code>, you can write <code>print(x)</code>.</li>\n<li>Make sure to wrap your <code>place.count(____)</code> call in a <code>print()</code> function so that you print it out.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14274,
+      "type": "NormalExercise",
+      "assignment": "<p>Strings are not the only Python types that have methods associated with them. Lists, floats, integers and booleans are also types that come packaged with a bunch of useful methods. In this exercise, you'll be experimenting with:</p>\n<ul>\n<li><code>.index()</code>, to get the index of the first element of a list that matches its input and</li>\n<li><code>.count()</code>, to get the number of times an element appears in a list.</li>\n</ul>\n<p>You'll be working on the list with the area of different parts of a house: <code>areas</code>.</p>",
+      "title": "List Methods",
+      "sample_code": "# Create list areas\nareas = [11.25, 18.0, 20.0, 10.75, 9.50]\n\n# Print out the index of the element 20.0\n\n\n# Print out how often 9.50 appears in areas\n",
+      "instructions": "<ul>\n<li>Use the <code>.index()</code> method to get the index of the element in <code>areas</code> that is equal to <code>20.0</code>. Print out this index.</li>\n<li>Call <code>.count()</code> on <code>areas</code> to find out how many times <code>9.50</code> appears in the list. Again, simply print out this number.</li>\n</ul>",
+      "number": 7,
+      "sct": "predef_msg = \"You don't have to change or remove the predefined list `areas`.\"\n\nEx().check_object(\"areas\", missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg)\n\nEx().check_function(\"print\", index=0).check_args(0).check_function('areas.index', signature=False).check_args(0).has_equal_value()\n\n\nEx().check_function(\"print\", index=1).check_args(0).check_function('areas.count', signature=False).has_equal_value()\n\nsuccess_msg(\"Nice! These were examples of `list` methods that did not change the list they were called on.\")",
+      "pre_exercise_code": "",
+      "solution": "# Create list areas\nareas = [11.25, 18.0, 20.0, 10.75, 9.50]\n\n# Print out the index of the element 20.0\nprint(areas.index(20.0))\n\n# Print out how often 9.50 appears in areas\nprint(areas.count(9.50))",
+      "hint": "<ul>\n<li>To print out the index, wrap the <code>areas.index(___)</code> call in a <code>print()</code> function.</li>\n<li>To print out the number of times an element <code>x</code> occurs in the list, wrap the <code>areas.count(___)</code> call in a <code>print()</code> function.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14401,
+      "type": "NormalExercise",
+      "assignment": "<p>Most list methods will change the list they're called on. Examples are:</p>\n<ul>\n<li><code>.append()</code>, that adds an element to the list it is called on,</li>\n<li><code>.remove()</code>, that <a href=\"https://docs.python.org/3/library/stdtypes.html#typesseq-mutable\">removes</a> the first element of a list that matches the input, and</li>\n<li><code>.reverse()</code>, that <a href=\"https://docs.python.org/3/library/stdtypes.html#typesseq-mutable\">reverses</a> the order of the elements in the list it is called on.</li>\n</ul>\n<p>You'll be working on the list with the area of different parts of the house: <code>areas</code>.</p>",
+      "title": "List Methods (2)",
+      "sample_code": "# Create list areas\nareas = [11.25, 18.0, 20.0, 10.75, 9.50]\n\n# Use append twice to add poolhouse and garage size\n\n\n\n# Print out areas\n\n\n# Reverse the orders of the elements in areas\n\n\n# Print out areas\n",
+      "instructions": "<ul>\n<li>Use <code>.append()</code> twice to add the size of the poolhouse and the garage again: <code>24.5</code> and <code>15.45</code>, respectively. Make sure to add them in this order.</li>\n<li>Print out <code>areas</code></li>\n<li>Use the <code>.reverse()</code> method to reverse the order of the elements in <code>areas</code>.</li>\n<li>Print out <code>areas</code> once more.</li>\n</ul>",
+      "number": 8,
+      "sct": "Ex().multi(\n  check_function(\"areas.append\", index=0, signature=False).check_args(0).has_equal_value(),\n  check_function(\"areas.append\", index=1, signature=False).check_args(0).has_equal_value(),\n  check_function(\"print\", index=0).check_args(0).has_equal_ast(),\n  check_function(\"areas.reverse\", index=0, signature=False),\n  check_function(\"print\", index=1).check_args(0).has_equal_ast()\n)\n\nsuccess_msg(\"Great!\")",
+      "pre_exercise_code": "",
+      "solution": "# Create list areas\nareas = [11.25, 18.0, 20.0, 10.75, 9.50]\n\n# Use append twice to add poolhouse and garage size\nareas.append(24.5)\nareas.append(15.45)\n\n# Print out areas\nprint(areas)\n\n# Reverse the orders of the elements in areas\nareas.reverse()\n\n# Print out areas\nprint(areas)",
+      "hint": "<ul>\n<li>For the first instruction, use the <code>areas.append(___)</code> call twice.</li>\n<li>To print out a variable <code>x</code>, simply write <code>print(x)</code>.</li>\n<li>The <code>.reverse()</code> method does not require additional inputs; just use the dot notation and empty parentheses: <code>.reverse()</code>.</li>\n<li>To print out a variable <code>x</code>, simply write <code>print(x)</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    }
+  ],
+  [
+    {
+      "id": 13785,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "Packages",
+      "sample_code": "",
+      "instructions": null,
+      "number": 9,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_cedcfb34350be8545599768f96695cdd",
+      "key": "ab96a17c5e",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1852,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "By now, I hope you're convinced\n\n",
+            "startsAtTimestamp": 0,
+            "title": "Packages"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "that python functions and methods are extremely powerful: you can basically use other people's code to solve your own problems. That's amazing! However, adding all functions and methods that have been written up to now to the same Python distribution would be a mess. There would be tons and tons of code in there, that you'll never use. Also, maintaining all of this code would be a real pain.\n\n",
+            "startsAtTimestamp": 0.014669949678163988,
+            "title": "Motivation"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "This is where packages come into play. You can think of packages as a directory of Python scripts. Each such script is a so-called module. These modules specify functions, methods and new Python types aimed at solving particular problems. There are thousands of Python packages available from the internet. Among them are packages for data science: there's NumPy to efficiently work with arrays, Matplotlib for data visualization, and scikit-learn for machine learning.\n\nNot all these packages are available in Python by default.\n\n",
+            "startsAtTimestamp": 0.1075577485124789,
+            "title": "Packages"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "To use Python packages, you'll first have to install them on your own system, and then put code in your script to tell Python that you want to use these packages.\n\nDatacamp already has all necessary packages installed for you, but if you want to install them on your own system, you'll want to use pip, a package maintenance system for Python. If you go to this URL, you can download the file get-pip.py. Next, you go to the terminal, and execute python3 get-pip.py. Now you can use pip to actually install a Python package of your choosing. Suppose we want to install the numpy package, which you'll learn about in the next chapter. You type pip3 install numpy. You have to use the commands python3 and pip3 here to tell our system that we're working with Python version 3.\n\nNow that the package is installed, you can actually start using it in one of your Python scripts.\n\n",
+            "startsAtTimestamp": 0.24177371450472793,
+            "title": "Install package"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "Before you can do this, you should import the package, or a specific module of the package. You can do this with the import statement.\n\nTo import the entire numpy package, you can do import numpy, like this.\n\nA commonly used function in NumPy is array. It takes a list as input. Simply calling the array function like this, will generate an error.\n\nTo refer to the array function from the numpy package, you'll need this.\n\nThis time it works. The NumPy array is very useful to do data science, but more on that later.\n\nUsing this numpy dot prefix all the time can become pretty tiring, so you can also import the package and refer to it with a different name. You can do this by extending your import statement with as, like this.\n\nNow, instead of numpy.array, you'll have to use np.array to use NumPy's array function.\n\nThere are cases in which you only need one specific function of a package. Python allows you to make this explicit in your code. Suppose that we only want to use the array function from the NumPy package. Instead of doing import numpy, you can instead do from numpy import array, like this.\n\nThis time, you can simply call the array function like this, no need to use numpy dot here.\n\nThis from import version to use specific parts of a package can be useful to limit the amount of coding, but you're also loosing some of the context.\n\n",
+            "startsAtTimestamp": 0.46595201466938,
+            "title": "Import package"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "Suppose you're working in a long Python script. You import the array function from numpy at the very top, and way later, you actually use this array function. Somebody else who's reading your code might have forgotten that this array function is a specific NumPy function; it's not clear from the function call.\n\n",
+            "startsAtTimestamp": 0.8270157726170817,
+            "title": "from numpy import array"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "In that respect, the more standard import numpy call is preferred: In this case, your function call is numpy.array, making it very clear that you're working with NumPy.\n\n",
+            "startsAtTimestamp": 0.8952450061021748,
+            "title": "import numpy"
+          },
+          {
+            "citations": [],
+            "number": 8,
+            "script": "Off to the exercises now, where you can practice different ways of importing packages and modules yourself. You're well on your way to becoming a pythonista data science ninja.\n\n",
+            "startsAtTimestamp": 0.9445914631336811,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14277,
+      "type": "NormalExercise",
+      "assignment": "<p>Let's say you wanted to calculate the circumference and area of a circle. Here's what those formulas look like:</p>\n<p>$$C = 2 \\pi r$$\n$$A = \\pi r^2 $$</p>\n<p>Rather than typing the number for <code>pi</code>, you can use the <code>math</code> package that contains the number</p>\n<p>For reference, <code>**</code> is the symbol for exponentiation. For example <code>3**4</code> is <code>3</code> to the power of <code>4</code> and will give <code>81</code>.</p>",
+      "title": "Import package",
+      "sample_code": "# Import the math package\nimport ____\n\n# Calculate C\nC = 2 * 0.43 * ____\n\n# Calculate A\nA = ____ * 0.43 ** 2\n\nprint(\"Circumference: \" + str(C))\nprint(\"Area: \" + str(A))",
+      "instructions": "<ul>\n<li>Import the <code>math</code> package.</li>\n<li>Use <code>math.pi</code> to calculate the circumference of the circle and store it in <code>C</code>.</li>\n<li>Use <code>math.pi</code> to calculate the area of the circle and store it in <code>A</code>.</li>\n</ul>",
+      "number": 10,
+      "sct": "patt = \"Your calculation of `%s` is not quite correct. Make sure to use `math.pi`.\"\nEx().multi(\n  has_import('math', same_as=False),\n  check_object('C').has_equal_value(incorrect_msg=patt%'C'),\n  check_object('A').has_equal_value(incorrect_msg=patt%'A')\n)\n\nEx().multi(\n  has_printout(0, not_printed_msg = \"__JINJA__:Keep `{{sol_call}}` in there to print out the circumference.\"),\n  has_printout(1, not_printed_msg = \"__JINJA__:Keep `{{sol_call}}` in there to print out the area.\")\n)\n\nsuccess_msg(\"Nice! If you know how to deal with functions from packages, the power of a lot of Python programmers is at your fingertips!\")",
+      "pre_exercise_code": "",
+      "solution": "# Import the math package\nimport math\n\n# Calculate C\nC = 2 * 0.43 * math.pi\n\n# Calculate A\nA = math.pi * 0.43 ** 2\n\nprint(\"Circumference: \" + str(C))\nprint(\"Area: \" + str(A))",
+      "hint": "<ul>\n<li>You can simply use <code>import math</code>, and then refer to <code>pi</code> with <code>math.pi</code>.</li>\n<li>Use the equation in the assignment text to find <code>C</code>. Use <code>*</code></li>\n<li>Use the equation in the assignment text to find <code>A</code>. Use <code>*</code> and <code>**</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14278,
+      "type": "NormalExercise",
+      "assignment": "<p>General imports, like <code>import math</code>, make <strong>all</strong> functionality from the <code>math</code> package available to you. However, if you decide to only use a specific part of a package, you can always make your import more selective:</p>\n<pre><code>from math import pi\n</code></pre>\n<p>Try the same thing again, but this time only use <code>pi</code>.</p>",
+      "title": "Selective import",
+      "sample_code": "# Import pi function of math package\nfrom math import ____\n\n# Calculate C\nC = 2 * 0.43 * ____\n\n# Calculate A\nA = ____ * 0.43 ** 2\n\nprint(\"Circumference: \" + str(C))\nprint(\"Area: \" + str(A))",
+      "instructions": "<ul>\n<li>Perform a selective import from the <code>math</code> package where you only import the <code>pi</code> function.</li>\n<li>Use <code>math.pi</code> to calculate the circumference of the circle and store it in <code>C</code>.</li>\n<li>Use <code>math.pi</code> to calculate the area of the circle and store it in <code>A</code>.</li>\n</ul>",
+      "number": 11,
+      "sct": "patt = \"Your calculation of `%s` is not quite correct. Make sure to use only `pi`.\"\n\nEx().has_import(\"math.pi\", not_imported_msg = \"Be sure to import `pi` from the `math` package. You should use the `from ___ import ___` notation.\",)\n\nEx().multi(\n  check_object('C').has_equal_value(incorrect_msg=patt%'C'),\n  check_object('A').has_equal_value(incorrect_msg=patt%'A')\n)\n\nEx().multi(\n  has_printout(0, not_printed_msg = \"__JINJA__:Keep `{{sol_call}}` in there to print out the circumference.\"),\n  has_printout(1, not_printed_msg = \"__JINJA__:Keep `{{sol_call}}` in there to print out the area.\")\n)\n\nsuccess_msg(\"Nice! Head over to the next exercise.\")",
+      "pre_exercise_code": "",
+      "solution": "# Import pi function of math package\nfrom math import pi\n\n# Calculate C\nC = 2 * 0.43 * pi\n\n# Calculate A\nA = pi * 0.43 ** 2\n\nprint(\"Circumference: \" + str(C))\nprint(\"Area: \" + str(A))",
+      "hint": "<ul>\n<li>Use <code>from math import pi</code> to do the selective import.</li>\n<li>Now, you can use <code>pi</code> on it's own!</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14279,
+      "type": "MultipleChoiceExercise",
+      "assignment": "<p>There are several ways to import packages and modules into Python. Depending on the import call, you'll have to use different Python code.</p>\n<p>Suppose you want to use the <a href=\"https://docs.scipy.org/doc/scipy/reference/generated/scipy.linalg.inv.html\">function</a> <code>inv()</code>, which is in the <code>linalg</code> subpackage of the <code>scipy</code> package. You want to be able to use this function as follows:</p>\n<pre><code>my_inv([[1,2], [3,4]])\n</code></pre>\n<p>Which <code>import</code> statement will you need in order to run the above code without an error?</p>",
+      "title": "Different ways of importing",
+      "sample_code": "",
+      "instructions": null,
+      "number": 12,
+      "sct": "msg1 = msg2 = msg3 = \"Incorrect, try again. Try the different import statements in the IPython shell and see which one causes the line `my_inv([[1, 2], [3, 4]])` to run without errors.\"\nmsg4 = \"Correct! The `as` word allows you to create a local name for the function you're importing: `inv()` is now available as `my_inv()`.\"\nEx().has_chosen(4, [msg1, msg2, msg3, msg4])",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": "<ul>\n<li>Try the different import statements in the IPython shell and see which one causes the line <code>my_inv([[1, 2], [3, 4]])</code> to run without errors. Hit <strong>enter</strong> to run the code you have typed.</li>\n</ul>",
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [
+        "<code>import scipy</code>",
+        "<code>import scipy.linalg</code>",
+        "<code>from scipy.linalg import my_inv</code>",
+        "<code>from scipy.linalg import inv as my_inv</code>"
+      ],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    }
+  ],
+  [
+    {
+      "id": 972037,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "NumPy",
+      "sample_code": "",
+      "instructions": null,
+      "number": 1,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_a0487c26210f6b71ea98f917734cea3a",
+      "key": "f4545baa53",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1853,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "Wow, you've done well and by now, you are aware\n\n",
+            "startsAtTimestamp": 0,
+            "title": "NumPy"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "that the Python list is pretty powerful. A list can hold any type and can hold different types at the same time. You can also change, add and remove elements. This is wonderful, but one feature is missing, a feature that is super important for aspiring data scientists as yourself. When analyzing data, you'll often want to carry out operations over entire collections of values, and you want to do this fast. With lists, this is a problem.\n\n",
+            "startsAtTimestamp": 0.014893968614940927,
+            "title": "Lists Recap"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "Let's retake the heights of your family and yourself. Suppose you've also asked for everybody's weight. It's not very polite, but everything for science, right? You end up with two lists, height, and weight. The first person is 1.73 meters tall and weighs 65.4 kilograms.\n\nIf you now want to calculate the Body Mass Index for each family member, you'd hope that this call can work, making the calculations element-wise.\n\nUnfortunately, Python throws an error, because it has no idea how to do calculations on lists. You could solve this by going through each list element one after the other, and calculating the BMI for each person separately, but this is terribly inefficient and tiresome to write.\n\n",
+            "startsAtTimestamp": 0.09866045450068396,
+            "title": "Illustration"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "A way more elegant solution is to use NumPy, or Numeric Python. It's a Python package that, among others, provides a alternative to the regular python list: the NumPy array. The NumPy array is pretty similar to the list, but has one additional feature: you can perform calculations over entire arrays. It's really easy, and super-fast as well.\n\nThe NumPy package is already installed on DataCamp's servers, but if you want to work with it on your own system, go to the command line and execute pip3 install numpy.\n\nNext,\n\n",
+            "startsAtTimestamp": 0.23959027711870975,
+            "title": "Solution: NumPy"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "to actually use NumPy in your Python session, you can import the numpy package, like this.\n\nLet's start with creating a numpy array. You do this with NumPy's array function: the input is a regular Python list. I'm using array twice here, to create NumPy versions of the height and weight lists from before: np_height and np_weight:\n\nLet's try to calculate everybody's BMI with a single call again.\n\nThis time, it worked fine: the calculations were performed element-wise. The first person's BMI was calculated by dividing the first element in np_weight by the square of the first element in np_height, the second person's BMI was calculated with the second height and weight elements, and so on.\n\n",
+            "startsAtTimestamp": 0.34763867416424304,
+            "title": "NumPy"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "Let's do a quick comparison here. First, we tried to do calculations with regular lists, like this, but this gave us an error, because Python doesn't now how to do calculations with lists like we want them to. Next, these regular lists where converted to NumPy arrays. The same operations now work without any problem: NumPy knows how to work with arrays as if they are single values, which is pretty awesome if you ask me.\n\n",
+            "startsAtTimestamp": 0.487662728108223,
+            "title": "Comparison"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "You should still pay attention, though. First of all, NumPy can do all of this so easily because it assumes that your NumPy array can only contain values of a single type. It's either an array of floats, either an array of booleans, and so on. If you do try to create an array with different types, like this for example, the resulting NumPy array will contain a single type, string in this case. The boolean and the float were both converted to strings.\n\nSecond, you should know that a NumPy array is simply a new kind of Python type, like the float, string and list types from before. This means that it comes with its own methods, which can behave differently than you'd expect.\n\n",
+            "startsAtTimestamp": 0.5661603877539089,
+            "title": "NumPy: remarks"
+          },
+          {
+            "citations": [],
+            "number": 8,
+            "script": "Take this Python list and this numpy array, for example.\n\nIf you do python_list + python_list, the list elements are pasted together, generating a list with 6 elements. If you do this with the numpy arrays, on the other hand, Python will do an element-wise sum of the arrays.\n\nJust make sure to pay attention when you're juggling around with different Python types, because the outcomes can differ a lot!\n\nApart from these subtleties,\n\n",
+            "startsAtTimestamp": 0.6965969079939668,
+            "title": "NumPy: remarks"
+          },
+          {
+            "citations": [],
+            "number": 9,
+            "script": "you can work with NumPy arrays pretty much the same as you can with regular Python lists. When you want to get elements from your array, for example, you can use square brackets. Suppose you want to get the bmi for the second person, so at index 1. This will do the trick.\n\nSpecifically for NumPy, there's also another way to do list subsetting: using an array of booleans. Say you want to get all BMI values in the bmi array that are over 23. A first step is using the greater than sign, like this:\n\nThe result is a NumPy array containing booleans: True if the corresponding bmi is above 23, False if it's below. Next, you can use this boolean array inside square brackets to do subsetting. Only the elements in bmi that are above 23, so for which the corresponding boolean value is True, is selected. There's only one BMI that's above 23, so we end up with a NumPy array with a single value, that specific BMI.\n\nUsing the result of a comparison to make a selection of your data is a very common way to get surprising insights.\n\n",
+            "startsAtTimestamp": 0.7795531674208145,
+            "title": "NumPy Subsetting"
+          },
+          {
+            "citations": [],
+            "number": 10,
+            "script": "Learn all about it and the other NumPy basics in the exercises!\n\n",
+            "startsAtTimestamp": 0.9774851398529034,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14294,
+      "type": "NormalExercise",
+      "assignment": "<p>You're now going to dive into the world of baseball. Along the way, you'll get comfortable with the basics of <code>numpy</code>, a powerful package to do data science.</p>\n<p>A list <code>baseball</code> has already been defined in the Python script, representing the height of some baseball players in centimeters. Can you add some code to create a <code>numpy</code> array from it?</p>",
+      "title": "Your First NumPy Array",
+      "sample_code": "# Import the numpy package as np\n\n\nbaseball = [180, 215, 210, 210, 188, 176, 209, 200]\n\n# Create a numpy array from baseball: np_baseball\n\n\n# Print out type of np_baseball\n",
+      "instructions": "<ul>\n<li>Import the <code>numpy</code> package as <code>np</code>, so that you can refer to <code>numpy</code> with <code>np</code>.</li>\n<li>Use <code>np.array()</code> to create a <code>numpy</code> array from <code>baseball</code>. Name this array <code>np_baseball</code>.</li>\n<li>Print out the type of <code>np_baseball</code> to check that you got it right.</li>\n</ul>",
+      "number": 2,
+      "sct": "predef_msg = \"You don't have to change or remove the predefined variables.\"\nEx().has_import(\"numpy\")\nEx().check_correct(\n  check_object(\"np_baseball\"),\n  multi(\n    check_object(\"baseball\", missing_msg=predef_msg).has_equal_value(incorrect_msg=predef_msg),\n    check_function(\"numpy.array\").check_args(0).has_equal_ast()\n  )\n)\n\nEx().has_printout(0)\nsuccess_msg(\"Great job!\")",
+      "pre_exercise_code": "import numpy as np",
+      "solution": "# Import the numpy package as np\nimport numpy as np\n\nbaseball = [180, 215, 210, 210, 188, 176, 209, 200]\n\n# Create a NumPy array from baseball: np_baseball\nnp_baseball = np.array(baseball)\n\n# Print out type of np_baseball\nprint(type(np_baseball))",
+      "hint": "<ul>\n<li><code>import numpy as np</code> will do the trick. Now, you have to use <code>np.fun_name()</code> whenever you want to use a <code>numpy</code> function.</li>\n<li><code>np.array()</code> should take on input <code>baseball</code>. Assign the result of the function call to <code>np_baseball</code>.</li>\n<li>To print out the type of a variable <code>x</code>, simply type <code>print(type(x))</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14349,
+      "type": "NormalExercise",
+      "assignment": "<p>You are a huge baseball fan. You decide to call the MLB (Major League Baseball) and ask around for some more statistics on the height of the main players. They pass along data on more than a thousand players, which is stored as a regular Python list: <code>height_in</code>. The height is expressed in inches. Can you make a <code>numpy</code> array out of it and convert the units to meters?</p>\n<p><code>height_in</code> is already available and the <code>numpy</code> package is loaded, so you can start straight away (Source: stat.ucla.edu).</p>",
+      "title": "Baseball players' height",
+      "sample_code": "# Import numpy\nimport numpy as np\n\n# Create a numpy array from height_in: np_height_in\n\n\n# Print out np_height_in\n\n\n# Convert np_height_in to m: np_height_m\n\n\n# Print np_height_m\n",
+      "instructions": "<ul>\n<li>Create a <code>numpy</code> array from <code>height_in</code>. Name this new array <code>np_height_in</code>.</li>\n<li>Print <code>np_height_in</code>.</li>\n<li>Multiply <code>np_height_in</code> with <code>0.0254</code> to convert all height measurements from inches to meters. Store the new values in a new array, <code>np_height_m</code>.</li>\n<li>Print out <code>np_height_m</code> and check if the output makes sense.</li>\n</ul>",
+      "number": 3,
+      "sct": "Ex().has_import(\"numpy\", same_as = False)\n\nEx().check_correct(\n  has_printout(0),\n  check_correct(\n    check_object('np_height_in').has_equal_value(),\n    check_function('numpy.array').check_args(0).has_equal_ast()\n  )\n)\n\nEx().check_correct(\n  has_printout(1),\n  check_object(\"np_height_m\").has_equal_value(incorrect_msg = \"Use `np_height_in * 0.0254` to calculate `np_height_m`.\")\n)\n\nsuccess_msg(\"Nice! In the blink of an eye, `numpy` performs multiplications on more than 1000 height measurements.\")",
+      "pre_exercise_code": "import pandas as pd\nmlb = pd.read_csv(\"https://assets.datacamp.com/course/intro_to_python/baseball.csv\")\nheight_in = mlb['Height'].tolist()\nimport numpy as np",
+      "solution": "# Import numpy\nimport numpy as np\n\n# Create a numpy array from height_in: np_height_in\nnp_height_in = np.array(height_in)\n\n# Print out np_height_in\nprint(np_height_in)\n\n# Convert np_height_in to m: np_height_m\nnp_height_m = np_height_in * 0.0254\n\n# Print np_height_m\nprint(np_height_m)",
+      "hint": "<ul>\n<li>Use <code>np.array()</code> and pass it <code>height</code>. Store the result in <code>np_height_in</code>.</li>\n<li>To print out a variable <code>x</code>, type <code>print(x)</code> in the Python script.</li>\n<li>Perform calculations as if <code>np_height_in</code> is a single number: <code>np_height_in * conversion_factor</code> is part of the answer.</li>\n<li>To print out a variable <code>x</code>, type <code>print(x)</code> in the Python script.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    null,
+    {
+      "id": 14283,
+      "type": "MultipleChoiceExercise",
+      "assignment": "<p><code>numpy</code> is great for doing vector arithmetic. If you compare its functionality with regular Python lists, however, some things have changed.</p>\n<p>First of all, <code>numpy</code> arrays cannot contain elements with different types. \nSecond, the typical arithmetic operators, such as <code>+</code>, <code>-</code>, <code>*</code> and <code>/</code> have a different meaning for regular Python lists and <code>numpy</code> arrays.</p>\n<p>Some lines of code have been provided for you. Try these out and select the one that would match this:</p>\n<pre><code>np.array([True, 1, 2]) + np.array([3, 4, False])\n</code></pre>\n<p>The <code>numpy</code> package is already imported as <code>np</code>.</p>",
+      "title": "NumPy Side Effects",
+      "sample_code": "",
+      "instructions": null,
+      "number": 4,
+      "sct": "msg1 = msg3 = msg4 = \"Incorrect. Try out the different code chunks and see which one matches the target code chunk.\"\nmsg2 = \"Great job! `True` is converted to 1, `False` is converted to 0.\"\nEx().has_chosen(2, [msg1, msg2, msg3, msg4])",
+      "pre_exercise_code": "import numpy as np",
+      "solution": "",
+      "hint": "<ul>\n<li>Copy the different code chunks and paste them in the IPython Shell. Hit <strong>enter</strong> to run the code and see which output matches the one generated by <code>np.array([True, 1, 2]) + np.array([3, 4, False])</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [
+        "<code>np.array([True, 1, 2, 3, 4, False])</code>",
+        "<code>np.array([4, 3, 0]) + np.array([0, 2, 2])</code>",
+        "<code>np.array([1, 1, 2]) + np.array([3, 4, -1])</code>",
+        "<code>np.array([0, 1, 2, 3, 4, 5])</code>"
+      ],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14284,
+      "type": "NormalExercise",
+      "assignment": "<p>Subsetting (using the square bracket notation on lists or arrays) works exactly the same with both lists and arrays.</p>\n<p>This exercise already has two lists, <code>height_in</code> and <code>weight_lb</code>, loaded in the background for you. These contain the height and weight of the MLB players as regular lists. It also has two <code>numpy</code> array lists, <code>np_weight_lb</code> and <code>np_height_in</code> prepared for you.</p>",
+      "title": "Subsetting NumPy Arrays",
+      "sample_code": "import numpy as np\n\nnp_weight_lb = np.array(weight_lb)\nnp_height_in = np.array(height_in)\n\n# Print out the weight at index 50\n\n\n# Print out sub-array of np_height_in: index 100 up to and including index 110\n",
+      "instructions": "<ul>\n<li>Subset <code>np_weight_lb</code> by printing out the element at index 50.</li>\n<li>Print out a sub-array of <code>np_height_in</code> that contains the elements at index 100 up to <strong>and including</strong> index 110.</li>\n</ul>",
+      "number": 5,
+      "sct": "Ex().has_import(\"numpy\", same_as=False)\nmsg = \"You don't have to change or remove the predefined variables.\"\nEx().multi(\n    check_object(\"np_height_in\", missing_msg=msg).has_equal_value(incorrect_msg = msg),\n    check_object(\"np_weight_lb\", missing_msg=msg).has_equal_value(incorrect_msg = msg)\n)\n\nEx().has_printout(0)\nEx().has_printout(1)\n\nsuccess_msg(\"Nice! Time to learn something new: 2D NumPy arrays!\")",
+      "pre_exercise_code": "import pandas as pd\nmlb = pd.read_csv(\"https://assets.datacamp.com/course/intro_to_python/baseball.csv\")\nheight_in = mlb['Height'].tolist()\nweight_lb = mlb['Weight'].tolist()",
+      "solution": "import numpy as np\n\nnp_weight_lb = np.array(weight_lb)\nnp_height_in = np.array(height_in)\n\n# Print out the weight at index 50\nprint(np_weight_lb[50])\n\n# Print out sub-array of np_height_in: index 100 up to and including index 110\nprint(np_height_in[100:111])",
+      "hint": "<ul>\n<li>Make sure to wrap a <code>print()</code> call around your subsetting operations.</li>\n<li>Use <code>[100:111]</code> to get the elements from index 100 up to and including index 110.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    null
+  ],
+  [
+    {
+      "id": 972038,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "2D NumPy Arrays",
+      "sample_code": "",
+      "instructions": null,
+      "number": 6,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_ae3238dcc7feb9adecfee0c395fc8dc8",
+      "key": "1241efac7a",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1853,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "Well done you legend! Let's now recreate the numpy arrays from the previous video.\n\n",
+            "startsAtTimestamp": 0,
+            "title": "2D NumPy Arrays"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "If you ask for the type of these arrays, Python tells you that they are numpy.ndarray. numpy dot tells you it's a type that was defined in the numpy package. ndarray stands for n-dimensional array. The arrays np_height and np_weight are one-dimensional arrays, but it's perfectly possible to create 2 dimensional, three dimensional, heck even seven dimensional arrays! Let's stick to 2 in this video though.\n\n",
+            "startsAtTimestamp": 0.03251707040201399,
+            "title": "Type of NumPy Arrays"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "You can create a 2D numpy array from a regular Python list of lists. Let's try to create one numpy array for all height and weight data of your family, like this.\n\nIf you print out np_2d now, you'll see that it is a rectangular data structure: Each sublist in the list, corresponds to a row in the two dimensional numpy array. From np_2d.shape, you can see that we indeed have 2 rows and 5 columns. shape is a so-called attribute of the np2d array, that can give you more information about what the data structure looks like.\n\nNote that the syntax for accessing an attribute looks a bit like calling a method, but they are not the same! Remember that methods have round brackets after them, and, you can see here, attributes do not.\n\nAlso for 2D arrays, the NumPy rule applies: an array can only contain a single type. If you change one float to be string, all the array elements will be coerced to strings, to end up with a homogeneous array.\n\n",
+            "startsAtTimestamp": 0.15479243486524027,
+            "title": "2D NumPy Arrays"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "You can think of the 2D numpy array as an improved list of lists: you can perform calculations on the arrays, like I showed before, and you can do more advanced ways of subsetting.\n\nSuppose you want the first row, and then the third element in that row. To select the row, you need the index 0 in square brackets. Don't forget about zero indexing.\n\nTo then select the third element, you can extend the same call with another pair of brackets, this time with the index 2,\n\n",
+            "startsAtTimestamp": 0.45702904715164766,
+            "title": "Subsetting"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "like this. Basically you're selecting the row, and then from that row do another selection.\n\nThere's also an alternative way of subsetting, using single square brackets and a comma. This call returns the exact same value as before. The value before the comma specifies the row, the value after the comma specifies the column. The intersection of the rows and columns you specified, are returned. Once you get used to it, this syntax is more intuitive and opens up more possibilities.\n\n",
+            "startsAtTimestamp": 0.5887646851802607,
+            "title": "Subsetting"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "Suppose you want to select the height and weight of the second and third family member. You want both rows, so you put in a colon before the comma. You only want the second and third column, so you put in the indices 1 to 3 after the comma. Remember that the third index is not included here. The intersection gives us a 2D array with 2 rows and 2 columns:\n\nSimilarly, you can select the weight of all family members like this: you only want the second row, so put 1 before the comma. You want all columns, so you use a colon after the comma. The intersection gives us the entire second row.\n\nFinally, 2D numpy arrays enable you to do element-wise calculations, the same way you did it with 1D numpy arrays. That's something\n\n",
+            "startsAtTimestamp": 0.7201157471014565,
+            "title": "Subsetting"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "you can experiment with in the exercises, along with creating and subsetting 2D numpy arrays! Exciting\n\n",
+            "startsAtTimestamp": 0.9341260986816129,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14774,
+      "type": "NormalExercise",
+      "assignment": "<p>Before working on the actual MLB data, let's try to create a 2D <code>numpy</code> array from a small list of lists.</p>\n<p>In this exercise, <code>baseball</code> is a list of lists. The main list contains 4 elements. Each of these elements is a list containing the height and the weight of 4 baseball players, in this order. <code>baseball</code> is already coded for you in the script.</p>",
+      "title": "Your First 2D NumPy Array",
+      "sample_code": "import numpy as np\n\nbaseball = [[180, 78.4],\n            [215, 102.7],\n            [210, 98.5],\n            [188, 75.2]]\n\n# Create a 2D numpy array from baseball: np_baseball\n\n\n# Print out the type of np_baseball\n\n\n# Print out the shape of np_baseball\n",
+      "instructions": "<ul>\n<li>Use <code>np.array()</code> to create a 2D <code>numpy</code> array from <code>baseball</code>. Name it <code>np_baseball</code>.</li>\n<li>Print out the type of <code>np_baseball</code>.</li>\n<li>Print out the <code>shape</code> attribute of <code>np_baseball</code>. Use <code>np_baseball.shape</code>.</li>\n</ul>",
+      "number": 7,
+      "sct": "msg = \"You don't have to change or remove the predefined variables.\"\nEx().check_object(\"baseball\", missing_msg=msg).has_equal_value(incorrect_msg = msg)\nEx().has_import(\"numpy\", same_as = False)\n\nEx().check_correct(\n    multi(\n        has_printout(0),\n        has_printout(1)\n    ),\n    check_correct(\n        check_object('np_baseball').has_equal_value(),\n        check_function('numpy.array').check_args(0).has_equal_ast()\n    )\n)\n\nsuccess_msg(\"Great! You're ready to convert the actual MLB data to a 2D `numpy` array now!\")",
+      "pre_exercise_code": "",
+      "solution": "import numpy as np\n\nbaseball = [[180, 78.4],\n            [215, 102.7],\n            [210, 98.5],\n            [188, 75.2]]\n\n# Create a 2D numpy array from baseball: np_baseball\nnp_baseball = np.array(baseball)\n\n# Print out the type of np_baseball\nprint(type(np_baseball))\n\n# Print out the shape of np_baseball\nprint(np_baseball.shape)",
+      "hint": "<ul>\n<li><code>baseball</code> is already coded for you in the script. Call <code>np.array()</code> on it and store the resulting 2D <code>numpy</code> array in <code>np_baseball</code>.</li>\n<li>Use <code>print()</code> in combination with <code>type()</code> for the second instruction.</li>\n<li><code>np_baseball.shape</code> will give you the dimensions of the <code>np_baseball</code>. Make sure to wrap a <code>print()</code> call around it.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14775,
+      "type": "NormalExercise",
+      "assignment": "<p>You realize that it makes more sense to restructure all this information in a 2D <code>numpy</code> array.</p>\n<p>You have a Python list of lists. In this list of lists, each sublist represents the height and weight of a single baseball player. The name of this list is <code>baseball</code> and it has been loaded for you already (although you can't see it).</p>\n<p>Store the data as a 2D array to unlock <code>numpy</code>'s extra functionality.</p>",
+      "title": "Baseball data in 2D form",
+      "sample_code": "import numpy as np\n\n# Create a 2D numpy array from baseball: np_baseball\nnp_baseball = \n\n# Print out the shape of np_baseball\n",
+      "instructions": "<ul>\n<li>Use <code>np.array()</code> to create a 2D <code>numpy</code> array from <code>baseball</code>. Name it <code>np_baseball</code>.</li>\n<li>Print out the <code>shape</code> attribute of <code>np_baseball</code>.</li>\n</ul>",
+      "number": 8,
+      "sct": "Ex().has_import(\"numpy\", same_as = False)\n\nEx().check_correct(\n    has_printout(0),\n    check_correct(\n        check_object('np_baseball').has_equal_value(),\n        check_function('numpy.array').check_args(0).has_equal_ast()\n    )\n)\n\nsuccess_msg(\"Slick! Time to show off some killer features of multi-dimensional `numpy` arrays!\")",
+      "pre_exercise_code": "import pandas as pd\nbaseball = pd.read_csv(\"https://assets.datacamp.com/course/intro_to_python/baseball.csv\")[['Height', 'Weight']].to_numpy().tolist()\nimport numpy as np",
+      "solution": "import numpy as np\n\n# Create a 2D numpy array from baseball: np_baseball\nnp_baseball = np.array(baseball)\n\n# Print out the shape of np_baseball\nprint(np_baseball.shape)",
+      "hint": "<ul>\n<li><code>baseball</code> is already available in the Python environment. Call <code>np.array()</code> on it and store the resulting 2D <code>numpy</code> array in <code>np_baseball</code>.</li>\n<li><code>np_baseball.shape</code> will give the dimensions of the <code>np_baseball</code>. Make sure to wrap a <code>print()</code>call around it.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14343,
+      "type": "NormalExercise",
+      "assignment": "<p>If your 2D <code>numpy</code> array has a regular structure, i.e. each row and column has a fixed number of values, complicated ways of subsetting become very easy. Have a look at the code below where the elements <code>\"a\"</code> and <code>\"c\"</code> are extracted from a list of lists.</p>\n<pre><code># numpy\nimport numpy as np\nnp_x = np.array(x)\nnp_x[:, 0]\n</code></pre>\n<p>The indexes before the comma refer to the rows, while those after the comma refer to the columns. The <code>:</code> is for slicing; in this example, it tells Python to include all rows.</p>",
+      "title": "Subsetting 2D NumPy Arrays",
+      "sample_code": "import numpy as np\n\nnp_baseball = np.array(baseball)\n\n# Print out the 50th row of np_baseball\n\n\n# Select the entire second column of np_baseball: np_weight_lb\n\n\n# Print out height of 124th player\n",
+      "instructions": "<ul>\n<li>Print out the 50th row of <code>np_baseball</code>.</li>\n<li>Make a new variable, <code>np_weight_lb</code>, containing the entire second column of <code>np_baseball</code>.</li>\n<li>Select the height (first column) of the 124th baseball player in <code>np_baseball</code> and print it out.</li>\n</ul>",
+      "number": 9,
+      "sct": "msg = \"You don't have to change or remove the predefined variables.\"\nEx().multi(\n    has_import(\"numpy\", same_as = False),\n    check_object(\"np_baseball\", missing_msg=msg).has_equal_value(incorrect_msg = msg)\n)\n\nEx().has_printout(0)\n\nEx().check_object('np_weight_lb').has_equal_value(incorrect_msg = \"You can use `np_baseball[:,1]` to define `np_weight_lb`. This will select the entire first column.\")\n\nEx().has_printout(1)\n\nsuccess_msg(\"This is going well!\")",
+      "pre_exercise_code": "import pandas as pd\nbaseball = pd.read_csv(\"https://assets.datacamp.com/course/intro_to_python/baseball.csv\")[['Height', 'Weight']].to_numpy().tolist()\nimport numpy as np",
+      "solution": "import numpy as np\n\nnp_baseball = np.array(baseball)\n\n# Print out the 50th row of np_baseball\nprint(np_baseball[49,:])\n\n# Select the entire second column of np_baseball: np_weight_lb\nnp_weight_lb = np_baseball[:,1]\n\n# Print out height of 124th player\nprint(np_baseball[123, 0])",
+      "hint": "<ul>\n<li>You need row index 49 in the first instruction! More specifically, you'll want to use <code>[49, :]</code>.</li>\n<li>To select the entire second column, you'll need <code>[:, 1]</code>.</li>\n<li>For the last instruction, use <code>[123, 0]</code>; don't forget to wrap it all in a <code>print()</code> statement.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14289,
+      "type": "NormalExercise",
+      "assignment": "<p>2D <code>numpy</code> arrays can perform calculations element by element, like <code>numpy</code> arrays.</p>\n<p><code>np_baseball</code> is coded for you; it's again a 2D <code>numpy</code> array with 3 columns representing height (in inches), weight (in pounds) and age (in years). <code>baseball</code> is available as a regular list of lists and <code>updated</code> is available as 2D numpy array.</p>",
+      "title": "2D Arithmetic",
+      "sample_code": "import numpy as np\n\nnp_baseball = np.array(baseball)\n\n# Print out addition of np_baseball and updated\n\n\n# Create numpy array: conversion\n\n\n# Print out product of np_baseball and conversion\n",
+      "instructions": "<ul>\n<li>You managed to get hold of the changes in height, weight and age of all baseball players. It is available as a 2D <code>numpy</code> array, <code>updated</code>. Add <code>np_baseball</code> and <code>updated</code> and print out the result.</li>\n<li>You want to convert the units of height and weight to metric (meters and kilograms, respectively). As a first step, create a <code>numpy</code> array with three values: <code>0.0254</code>, <code>0.453592</code> and <code>1</code>. Name this array <code>conversion</code>.</li>\n<li>Multiply <code>np_baseball</code> with <code>conversion</code> and print out the result.</li>\n</ul>",
+      "number": 10,
+      "sct": "Ex().has_import(\"numpy\")\n\nmsg = \"You don't have to change or remove the predefined variables.\"\nEx().check_object(\"np_baseball\", missing_msg=msg).has_equal_value(incorrect_msg = msg)\n\nEx().has_printout(0)\n\nEx().check_correct(\n    has_printout(1),\n    check_correct(\n        check_object('conversion').has_equal_value(),\n        check_function('numpy.array', index = 1).check_args(0).has_equal_value()\n    )    \n)\n\nsuccess_msg(\"Great job! Notice how with very little code, you can change all values in your `numpy` data structure in a very specific way. This will be very useful in your future as a data scientist!\")",
+      "pre_exercise_code": "import pandas as pd\nimport numpy as np\nbaseball = pd.read_csv(\"https://assets.datacamp.com/course/intro_to_python/baseball.csv\")[['Height', 'Weight', 'Age']].to_numpy().tolist()\nn = len(baseball)\nupdated = np.array(pd.read_csv(\"https://assets.datacamp.com/course/intro_to_python/update.csv\", header = None))\nimport numpy as np",
+      "solution": "import numpy as np\n\nnp_baseball = np.array(baseball)\n\n# Print out addition of np_baseball and updated\nprint(np_baseball + updated)\n\n# Create numpy array: conversion\nconversion = np.array([0.0254, 0.453592, 1])\n\n# Print out product of np_baseball and conversion\nprint(np_baseball * conversion)",
+      "hint": "<ul>\n<li><code>np_baseball + updated</code> will do an element-wise summation of the two <code>numpy</code> arrays.</li>\n<li>Create a <code>numpy</code> array with <code>np.array()</code>; the input is a regular Python list with three elements.</li>\n<li><code>np_baseball * conversion</code> will work, without extra work. Try out it! Make sure to wrap it in a <code>print()</code> call.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    }
+  ],
+  [
+    {
+      "id": 972039,
+      "type": "VideoExercise",
+      "assignment": null,
+      "title": "NumPy: Basic Statistics",
+      "sample_code": "",
+      "instructions": null,
+      "number": 11,
+      "sct": "",
+      "pre_exercise_code": "",
+      "solution": "",
+      "hint": null,
+      "attachments": null,
+      "xp": 50,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null,
+      "video_link": null,
+      "video_hls": null,
+      "aspect_ratio": 56.25,
+      "projector_key": "course_735_34495ba457d74296794d2a122c9b6e19",
+      "key": "287995e488",
+      "language": "python",
+      "course_id": 735,
+      "chapter_id": 1853,
+      "version": "v0",
+      "video_exercise_transcript": {
+        "slides": [
+          {
+            "citations": [],
+            "number": 1,
+            "script": "A typical first step in analyzing your data,\n\n",
+            "startsAtTimestamp": 0,
+            "title": "NumPy: Basic Statistics"
+          },
+          {
+            "citations": [],
+            "number": 2,
+            "script": "is getting to know your data in the first place. For the NumPy arrays from before, this is pretty easy, because it isn't a lot of data. However, as a data scientist, you'll be crunching thousands, if not millions or billions of numbers.\n\n",
+            "startsAtTimestamp": 0.026002737762759433,
+            "title": "Data analysis"
+          },
+          {
+            "citations": [],
+            "number": 3,
+            "script": "Imagine you conduct a city-wide survey where you ask 5000 adults about their height and weight. You end up with something like this: a 2D numpy array, which I named np_city, that has 5000 rows, corresponding to the 5000 people, and two columns, corresponding to the height and the weight.\n\nSimply staring at these numbers like a zombie won't give you any insights. What you can do, though, is generate summarizing statistics about your data.\n\n",
+            "startsAtTimestamp": 0.10136632991081054,
+            "title": "City-wide survey"
+          },
+          {
+            "citations": [],
+            "number": 4,
+            "script": "Aside from an efficient data structure for number crunching, it happens that NumPy is also good at doing these kinds of things.\n\nFor starters, you can try to find out the average height of these 5000 people, with NumPy's mean function. Because it's a function from the NumPy package, don't forget to start with np..\n\nOf course, I first had to do a subsetting operation to get the height column from the 2D array. It appears that on average, people are 1.75 meters tall. What about the median height? This is the height of the middle person if you sort all persons from small to tall. Instead of writing complicated python code to figure this out, you can simply use NumPy's median function:\n\nYou can do similar things for the weight column in np_city. Often, these summarizing statistics will provide you with a \"sanity check\" of your data. If you end up with a average weight of 2000 kilograms, your measurements are most likely incorrect.\n\nApart from mean and median, there's also other functions,\n\n",
+            "startsAtTimestamp": 0.26640826325184624,
+            "title": "NumPy"
+          },
+          {
+            "citations": [],
+            "number": 5,
+            "script": "like corrcoeff to check if for example height and weight are correlated,\n\nand std, for standard deviation.\n\nNumPy also features more basic functions, such as sum and sort, which also exist in the basic Python distribution. However, the big difference here is speed. Because NumPy enforces a single data type in an array, it can drastically speed up the calculations.\n\n",
+            "startsAtTimestamp": 0.6061068153804047,
+            "title": "NumPy"
+          },
+          {
+            "citations": [],
+            "number": 6,
+            "script": "Just a sidenote here: If you're wondering how I came up with the data in this video: We simulated it with NumPy functions! I sampled two random distributions 5000 times to create the height and weight arrays, and then used column_stack to paste them together as two columns. Another awesome thing that NumPy can do!\n\nAnother great tool to get some sense of your data is to visualize it, but that's something for the next course also.\n\n",
+            "startsAtTimestamp": 0.7489263699349847,
+            "title": "Generate data"
+          },
+          {
+            "citations": [],
+            "number": 7,
+            "script": "First, head over to the exercises to learn how to explore your NumPy arrays!\n\n",
+            "startsAtTimestamp": 0.929771315735684,
+            "title": "Let's practice!"
+          }
+        ]
+      }
+    },
+    {
+      "id": 14290,
+      "type": "NormalExercise",
+      "assignment": "<p>You now know how to use <code>numpy</code> functions to get a better feeling for your data. </p>\n<p>The baseball data is available as a 2D <code>numpy</code> array with 3 columns (height, weight, age) and 1015 rows. The name of this <code>numpy</code> array is <code>np_baseball</code>. After restructuring the data, however, you notice that some height values are abnormally high. Follow the instructions and discover which summary statistic is best suited if you're dealing with so-called <em>outliers</em>. <code>np_baseball</code> is available.</p>",
+      "title": "Average versus median",
+      "sample_code": "import numpy as np\n\n# Create np_height_in from np_baseball\n\n\n# Print out the mean of np_height_in\n\n\n# Print out the median of np_height_in\n",
+      "instructions": "<ul>\n<li>Create <code>numpy</code> array <code>np_height_in</code> that is equal to first column of <code>np_baseball</code>.</li>\n<li>Print out the mean of <code>np_height_in</code>.</li>\n<li>Print out the median of <code>np_height_in</code>.</li>\n</ul>",
+      "number": 12,
+      "sct": "Ex().has_import(\"numpy\", same_as = False)\n\nEx().check_object(\"np_height_in\").has_equal_value(incorrect_msg = \"You can use `np_baseball[:,0]` to select the first column from `np_baseball`\"),\n\nEx().check_correct(\n    has_printout(0),\n    check_function('numpy.mean').has_equal_value()\n)\n\nEx().check_correct(\n    has_printout(1),\n    check_function('numpy.median').has_equal_value()\n)\n\nsuccess_msg(\"An average height of 1586 inches, that doesn't sound right, does it? However, the median does not seem affected by the outliers: 74 inches makes perfect sense. It's always a good idea to check both the median and the mean, to get an idea about the overall distribution of the entire dataset.\")",
+      "pre_exercise_code": "import pandas as pd\nnp_baseball = pd.read_csv(\"https://assets.datacamp.com/course/intro_to_python/baseball.csv\")[['Height', 'Weight', 'Age']].to_numpy()\nnp_baseball[slice(0, 1015, 50), 0] = np_baseball[slice(0, 1015, 50), 0]*1000\nimport numpy as np",
+      "solution": "import numpy as np\n\n# Create np_height_in from np_baseball\nnp_height_in = np_baseball[:,0]\n\n# Print out the mean of np_height_in\nprint(np.mean(np_height_in))\n\n# Print out the median of np_height_in\nprint(np.median(np_height_in))",
+      "hint": "<ul>\n<li>Use 2D <code>numpy</code> subsetting: <code>[:,0]</code> is a part of the solution.</li>\n<li>If <code>numpy</code> is imported as <code>np</code>, you can use <code>np.mean()</code> to get the mean of a NumPy array. Don't forget to throw in a <code>print()</code> call.</li>\n<li>For the last instruction, use <code>np.median()</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    {
+      "id": 14291,
+      "type": "NormalExercise",
+      "assignment": "<p>Because the mean and median are so far apart, you decide to complain to the MLB. They find the error and send the corrected data over to you. It's again available as a 2D NumPy array <code>np_baseball</code>, with three columns.</p>\n<p>The Python script in the editor already includes code to print out informative messages with the different summary statistics and <code>numpy</code> is already loaded as <code>np</code>. Can you finish the job? <code>np_baseball</code> is available.</p>",
+      "title": "Explore the baseball data",
+      "sample_code": "avg = np.mean(np_baseball[:,0])\nprint(\"Average: \" + str(avg))\n\n# Print median height\nmed = ____\nprint(\"Median: \" + str(med))\n\n# Print out the standard deviation on height\nstddev = ____\nprint(\"Standard Deviation: \" + str(stddev))\n\n# Print out correlation between first and second column\ncorr = ____\nprint(\"Correlation: \" + str(corr))",
+      "instructions": "<ul>\n<li>The code to print out the mean height is already included. Complete the code for the median height.</li>\n<li>Use <code>np.std()</code> on the first column of <code>np_baseball</code> to calculate <code>stddev</code>. </li>\n<li>Do big players tend to be heavier? Use <code>np.corrcoef()</code> to store the correlation between the first and second column of <code>np_baseball</code> in <code>corr</code>.</li>\n</ul>",
+      "number": 13,
+      "sct": "msg = \"You shouldn't change or remove the predefined `avg` variable.\"\nEx().check_object(\"avg\", missing_msg=msg).has_equal_value(incorrect_msg=msg)\n\nmissing = \"Have you used `np.median()` to calculate the median?\"\nincorrect = \"To calculate `med`, pass the first column of `np_baseball` to `numpy.median()`. The example of `np.mean()` shows how it's done.\"\nEx().check_correct(\n  check_object(\"med\").has_equal_value(),\n  check_function(\"numpy.median\", index=0, missing_msg=missing).check_args(0).has_equal_value(incorrect_msg=incorrect)\n)\n\nmissing = \"Have you used `np.std()` to calculate the standard deviation?\"\nincorrect = \"To calculate `stddev`, pass the first column of `np_baseball` to `numpy.std()`. The example of `np.mean()` shows how it's done.\"\nEx().check_correct(\n  check_object(\"stddev\").has_equal_value(),\n  check_function(\"numpy.std\", index=0, missing_msg=missing).check_args(0).has_equal_value(incorrect_msg=incorrect)\n)\n\nmissing = \"Have you used `np.corrcoef()` to calculate the correlation?\"\nincorrect1 = \"To calculate `corr`, the first argument to `np.corrcoef()` should be the first column of `np_baseball`, similar to how did it before.\"\nincorrect2 = \"To calculate `corr`, the second argument to `np.corrcoef()` should be the second column of `np_baseball`. Instead of `[:,0]`, use `[:,1]` this time.\"\nEx().check_correct(\n  check_object(\"corr\").has_equal_value(),\n  check_function(\"numpy.corrcoef\", index=0, missing_msg=missing).multi(\n    check_args(0, missing_msg=incorrect1).has_equal_value(incorrect_msg=incorrect1),\n    check_args(1, missing_msg=incorrect2).has_equal_value(incorrect_msg=incorrect2)\n  )\n)\n\nsuccess_msg(\"Great! Time to use all of your new data science skills in the last exercise!\")",
+      "pre_exercise_code": "import pandas as pd\nnp_baseball = pd.read_csv(\"https://assets.datacamp.com/course/intro_to_python/baseball.csv\")[['Height', 'Weight', 'Age']].to_numpy()\nimport numpy as np",
+      "solution": "avg = np.mean(np_baseball[:,0])\nprint(\"Average: \" + str(avg))\n\n# Print median height\nmed = np.median(np_baseball[:,0])\nprint(\"Median: \" + str(med))\n\n# Print out the standard deviation on height\nstddev = np.std(np_baseball[:,0])\nprint(\"Standard Deviation: \" + str(stddev))\n\n# Print out correlation between first and second column\ncorr = np.corrcoef(np_baseball[:,0], np_baseball[:,1])\nprint(\"Correlation: \" + str(corr))",
+      "hint": "<ul>\n<li>Use <code>np.median()</code> to calculate the median. Make sure to select to correct column first!</li>\n<li>Subset the same column when calculating the standard deviation with <code>np.std()</code>.</li>\n<li>Use <code>np_baseball[:, 0]</code> and <code>np_baseball[:, 1]</code> to select the first and second columns; these are the inputs to <code>np.corrcoef()</code>.</li>\n</ul>",
+      "attachments": null,
+      "xp": 100,
+      "possible_answers": [],
+      "feedbacks": [],
+      "question": "",
+      "exercise_image": null,
+      "programming_language": null,
+      "runtime_config": null
+    },
+    null
+  ]
+]
