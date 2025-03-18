@@ -1,3 +1,4 @@
+/** @jsxImportSource @emotion/react */
 import { useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -10,6 +11,8 @@ import { ArrowRight, Check, RefreshCw } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
 import { CodeBlock as WafflesCodeBlock } from '@datacamp/waffles/code-block';
+import {darkThemeStyle, theme} from "@datacamp/waffles/theme";
+import {css} from '@emotion/react';
 
 interface QuestionCardProps {
   question: Question;
@@ -75,13 +78,13 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
           </Button>
         </div>
       </CardHeader>
-      
+
       <CardContent className="space-y-4">
         <div className="space-y-2">
           <h3 className="text-sm font-medium text-muted-foreground mb-2">Fill in the blank:</h3>
           <CodeBlock code={question.question.code} />
           <h3 className="text-sm font-medium text-muted-foreground mb-2">Output:</h3>
-          <WafflesCodeBlock size="medium">{question.question.output}</WafflesCodeBlock>
+          <WafflesCodeBlock size="medium" css={{backgroundColor: theme.background.contrastInverse, color: theme.text.inverse}}>{question.question.output}</WafflesCodeBlock>
           {isRevealed && (
             <div className={cn(
               "mt-4 bg-secondary/50 rounded-lg p-3 text-sm",
