@@ -1,3 +1,4 @@
+
 import React, { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
@@ -58,7 +59,6 @@ const OptionButton: React.FC<OptionButtonProps> = ({
     return baseStyles;
   };
   
-
   return (
     <Button
       variant={getVariant() as any}

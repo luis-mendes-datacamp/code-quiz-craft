@@ -1,4 +1,4 @@
-/** @jsxImportSource @emotion/react */
+
 import { useEffect, useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
@@ -10,8 +10,7 @@ import { animate } from '@/utils/animations';
 import { ArrowRight, Check, RefreshCw } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { CodeBlock as WafflesCodeBlock } from '@datacamp/waffles/code-block';
-import {darkThemeStyle, theme} from "@datacamp/waffles/theme";
-import {css} from '@emotion/react';
+import { theme } from "@datacamp/waffles/theme";
 
 interface QuestionCardProps {
   question: Question;
@@ -63,8 +62,6 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
     };
   }, [isRevealed]);
   
-  
-
   return (
     <Card className={cn(
       "w-full max-w-2xl border overflow-hidden shadow-subtle",
@@ -90,7 +87,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
           <h3 className="text-sm font-medium text-muted-foreground mb-2">Fill in the blank:</h3>
           <CodeBlock code={question.question.code} />
           <h3 className="text-sm font-medium text-muted-foreground mb-2">Output:</h3>
-          <WafflesCodeBlock size="medium" css={{backgroundColor: theme.background.contrastInverse, color: theme.text.inverse}}>{question.question.output}</WafflesCodeBlock>
+          <WafflesCodeBlock size="medium" style={{backgroundColor: theme.background.contrastInverse, color: theme.text.inverse}}>{question.question.output}</WafflesCodeBlock>
           {isRevealed && (
             <div className={cn(
               "mt-4 bg-secondary/50 rounded-lg p-3 text-sm",
