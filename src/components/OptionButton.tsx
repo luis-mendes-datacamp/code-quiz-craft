@@ -33,14 +33,14 @@ const OptionButton: React.FC<OptionButtonProps> = ({
 
   // Determine the right icon based on state
   const renderIcon = () => {
-    if (!isRevealed) return null;
+    if (!isRevealed) return <div className="ml-2 h-4 w-4" />;
     if (isCorrect) {
       return <CheckCircle className="ml-2 h-4 w-4 text-emerald-500 text-white" />;
     }
     if (isSelected && !isCorrect) {
       return <XCircle className="ml-2 h-4 w-4 text-destructive text-white" />;
     }
-    return null;
+    return <div className="ml-2 h-4 w-4" />;
   };
 
   // Dynamic styling based on state
