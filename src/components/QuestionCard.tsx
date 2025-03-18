@@ -9,6 +9,7 @@ import { animate } from '@/utils/animations';
 import { ArrowRight, Check, RefreshCw } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
 import { toast } from 'sonner';
+import { CodeBlock as WafflesCodeBlock } from '@datacamp/waffles/code-block';
 
 interface QuestionCardProps {
   question: Question;
@@ -79,14 +80,13 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
         <div className="space-y-2">
           <h3 className="text-sm font-medium text-muted-foreground mb-2">Fill in the blank:</h3>
           <CodeBlock code={question.question.code} />
-          
+          <WafflesCodeBlock size="medium">{question.question.output}</WafflesCodeBlock>
           {isRevealed && (
             <div className={cn(
               "mt-4 bg-secondary/50 rounded-lg p-3 text-sm",
               animate({ variant: 'fadeIn' })
             )}>
               <div className="flex flex-col gap-2">
-                <p className="font-semibold">Output: <code className="bg-background/70 px-1 py-0.5 rounded">{question.question.output}</code></p>
                 <p className="text-muted-foreground">{question.question.explanation}</p>
               </div>
             </div>
@@ -103,6 +103,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
               correctIndex={question.correctAnswer}
               isRevealed={isRevealed}
               onClick={() => handleSelectOption(idx)}
+              handleReveal={handleReveal}
             />
           ))}
         </div>

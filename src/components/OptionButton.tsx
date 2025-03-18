@@ -1,5 +1,4 @@
-
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { cn } from '@/lib/utils';
 import { animate } from '@/utils/animations';
@@ -12,6 +11,7 @@ interface OptionButtonProps {
   correctIndex: number;
   isRevealed: boolean;
   onClick: () => void;
+  handleReveal: () => void;
 }
 
 const OptionButton: React.FC<OptionButtonProps> = ({
@@ -21,6 +21,7 @@ const OptionButton: React.FC<OptionButtonProps> = ({
   correctIndex,
   isRevealed,
   onClick,
+  handleReveal,
 }) => {
   const isSelected = selectedIndex === index;
   const isCorrect = index === correctIndex;
@@ -58,6 +59,23 @@ const OptionButton: React.FC<OptionButtonProps> = ({
     
     return baseStyles;
   };
+  
+  // Add useEffect for global keyboard event listener
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === `${index + 1}` && !isRevealed) {
+        handleReveal();
+      }
+    };
+    
+    // Add event listener to window
+    window.addEventListener('keydown', handleKeyDown);
+    
+    // Cleanup when component unmounts
+    return () => {
+      window.removeEventListener('keydown', handleKeyDown);
+    };
+  }, [index, onClick, isRevealed]);
 
   return (
     <Button
@@ -70,6 +88,7 @@ const OptionButton: React.FC<OptionButtonProps> = ({
       onClick={onClick}
       disabled={isRevealed}
     >
+      <span className='text-xs'>{index + 1}</span>
       <span>{option}</span>
       {renderIcon()}
     </Button>

@@ -97,11 +97,11 @@ const Index = () => {
             "w-full max-w-2xl mx-auto px-4",
             animate({ variant: 'fadeIn' })
           )}>
-            <DifficultySelector 
+            {/* <DifficultySelector 
               selectedDifficulty={difficulty} 
               onChange={setDifficulty} 
             />
-            
+             */}
             {activeQuestions.length > 0 && !quizCompleted ? (
               <>
                 <ProgressBar 
