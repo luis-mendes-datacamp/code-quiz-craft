@@ -11,7 +11,6 @@ interface OptionButtonProps {
   correctIndex: number;
   isRevealed: boolean;
   onClick: () => void;
-  handleReveal: () => void;
 }
 
 const OptionButton: React.FC<OptionButtonProps> = ({
@@ -21,7 +20,6 @@ const OptionButton: React.FC<OptionButtonProps> = ({
   correctIndex,
   isRevealed,
   onClick,
-  handleReveal,
 }) => {
   const isSelected = selectedIndex === index;
   const isCorrect = index === correctIndex;
@@ -37,10 +35,10 @@ const OptionButton: React.FC<OptionButtonProps> = ({
   const renderIcon = () => {
     if (!isRevealed) return null;
     if (isCorrect) {
-      return <CheckCircle className="ml-2 h-4 w-4 text-emerald-500" />;
+      return <CheckCircle className="ml-2 h-4 w-4 text-emerald-500 text-white" />;
     }
     if (isSelected && !isCorrect) {
-      return <XCircle className="ml-2 h-4 w-4 text-destructive" />;
+      return <XCircle className="ml-2 h-4 w-4 text-destructive text-white" />;
     }
     return null;
   };
@@ -60,22 +58,6 @@ const OptionButton: React.FC<OptionButtonProps> = ({
     return baseStyles;
   };
   
-  // Add useEffect for global keyboard event listener
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.key === `${index + 1}` && !isRevealed) {
-        handleReveal();
-      }
-    };
-    
-    // Add event listener to window
-    window.addEventListener('keydown', handleKeyDown);
-    
-    // Cleanup when component unmounts
-    return () => {
-      window.removeEventListener('keydown', handleKeyDown);
-    };
-  }, [index, onClick, isRevealed]);
 
   return (
     <Button
@@ -83,14 +65,14 @@ const OptionButton: React.FC<OptionButtonProps> = ({
       className={cn(
         getStyles(),
         animate({ variant: 'slideUp', delay: 'short' }),
-        `delay-[${100 + index * 50}ms]`
+        `delay-[${100 + index * 50}ms]`,
+        isRevealed && isCorrect && 'bg-emerald-500 text-white'
       )}
       onClick={onClick}
-      disabled={isRevealed}
     >
-      <span className='text-xs'>{index + 1}</span>
-      <span>{option}</span>
       {renderIcon()}
+      <span>{option}</span>
+      <span className='text-xs'>Press {index + 1} to answer</span>
     </Button>
   );
 };

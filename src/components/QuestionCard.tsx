@@ -1,5 +1,4 @@
-/** @jsxImportSource @emotion/react */
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { Card, CardContent, CardFooter, CardHeader } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import CodeBlock from '@/components/CodeBlock';
@@ -9,7 +8,6 @@ import { cn } from '@/lib/utils';
 import { animate } from '@/utils/animations';
 import { ArrowRight, Check, RefreshCw } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import { toast } from 'sonner';
 import { CodeBlock as WafflesCodeBlock } from '@datacamp/waffles/code-block';
 import {darkThemeStyle, theme} from "@datacamp/waffles/theme";
 import {css} from '@emotion/react';
@@ -30,16 +28,6 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
   
   const handleReveal = () => {
     setIsRevealed(true);
-    
-    if (selectedOption === question.correctAnswer) {
-      toast.success('Correct answer!', {
-        description: question.question.explanation
-      });
-    } else {
-      toast.error('Incorrect answer', {
-        description: `The correct answer is: ${question.options[question.correctAnswer]}`
-      });
-    }
   };
   
   const handleNext = () => {
@@ -58,6 +46,23 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
     intermediate: 'bg-amber-100 text-amber-800 hover:bg-amber-100',
     expert: 'bg-rose-100 text-rose-800 hover:bg-rose-100',
   };
+
+  const handleSubmitAnswer = (e: KeyboardEvent) => {
+    if (e.key >= '1' && e.key <= '4') {
+      setSelectedOption(Number(e.key) - 1);
+      setIsRevealed(true);
+    }
+  };
+
+  useEffect(() => {
+    // add event listener to the document for keydown
+    document.addEventListener('keydown', handleSubmitAnswer);
+    return () => {
+      document.removeEventListener('keydown', handleSubmitAnswer);
+    };
+  }, []);
+  
+  
 
   return (
     <Card className={cn(
@@ -107,7 +112,6 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
               correctIndex={question.correctAnswer}
               isRevealed={isRevealed}
               onClick={() => handleSelectOption(idx)}
-              handleReveal={handleReveal}
             />
           ))}
         </div>

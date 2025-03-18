@@ -19,6 +19,7 @@ const Index = () => {
   const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
   const [quizCompleted, setQuizCompleted] = useState(false);
   const [correctAnswers, setCorrectAnswers] = useState(0);
+  console.log("🚀 ~ Index ~ correctAnswers:", correctAnswers)
   const [userAnswers, setUserAnswers] = useState<number[]>([]);
   
   // Initialize quiz questions based on selected difficulty
@@ -44,7 +45,10 @@ const Index = () => {
   const handleNext = () => {
     // Record answer for current question
     const currentQuestion = activeQuestions[currentQuestionIndex];
+    console.log("🚀 ~ handleNext ~ currentQuestion:", currentQuestion)
+    console.log("🚀 ~ handleNext ~ userAnswers:", userAnswers)
     const isCorrect = userAnswers[currentQuestionIndex] === currentQuestion.correctAnswer;
+    console.log("🚀 ~ handleNext ~ isCorrect:", isCorrect)
     
     if (isCorrect) {
       setCorrectAnswers(prev => prev + 1);
