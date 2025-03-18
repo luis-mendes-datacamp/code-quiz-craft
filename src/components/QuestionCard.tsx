@@ -9,7 +9,7 @@ import { cn } from '@/lib/utils';
 import { animate } from '@/utils/animations';
 import { ArrowRight, Check, RefreshCw } from 'lucide-react';
 import { Badge } from '@/components/ui/badge';
-import { toast } from '@/components/ui/sonner';
+import { toast } from 'sonner';
 
 interface QuestionCardProps {
   question: Question;
@@ -80,7 +80,7 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
       
       <CardContent className="space-y-4">
         <div className="space-y-2">
-          <CodeBlock code={question.code} />
+          <CodeBlock code={question.question.code} />
           
           {isRevealed && (
             <div className={cn(
