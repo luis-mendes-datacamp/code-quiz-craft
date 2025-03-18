@@ -1,1 +1,307 @@
-[{"id":"1d2b3c4d-5e6f-7a8b-90cd-ef1234567890","type":"Blanks","question":{"code":"x = [\"a\", \"b\", \"c\", \"d\"]\nprint(x[___])","output":"b","explanation":"Indexing in Python starts at 0, so the second element is at index 1."},"options":["0","1","2","3"],"correctAnswer":1,"difficultyLevel":"beginner"},{"id":"2e3f4a5b-6c7d-8e9f-10ab-cd1234567890","type":"Blanks","question":{"code":"numbers = [1, 2, 3, 4, 5]\nprint(numbers[___])","output":"3","explanation":"The third element in the list is at index 2."},"options":["0","1","2","3"],"correctAnswer":2,"difficultyLevel":"beginner"},{"id":"3f4a5b6c-7d8e-9f10-ab11-cd1234567890","type":"Blanks","question":{"code":"areas = [\"hallway\", 11.25, \"kitchen\"]\nprint(areas[___])","output":"11.25","explanation":"The second element in the list is at index 1."},"options":["0","1","2","3"],"correctAnswer":1,"difficultyLevel":"beginner"},{"id":"4b5c6d7e-8f9g-10ab-cd11-ef1234567890","type":"Blanks","question":{"code":"fruits = [\"apple\", \"orange\", \"banana\", \"grape\"]\nprint(fruits[___])","output":"banana","explanation":"'banana' is the third element, so it's at index 2."},"options":["1","2","3","-1"],"correctAnswer":2,"difficultyLevel":"beginner"},{"id":"5b6c7d8e-9f10-ab11-cd12-ef1234567890","type":"Blanks","question":{"code":"family = ['mom', 'dad', 'emma', 'aria']\nprint(family[___])","output":"aria","explanation":"'aria' is the last element, so it can be accessed using negative indexing -1."},"options":["3","0","2","-1"],"correctAnswer":3,"difficultyLevel":"beginner"},{"id":"6e7f8g9a-0b1c-2d3e-4f5g-abcdef123456","type":"Blanks","question":{"code":"squares = [1, 4, 9, 16]\nsquares[2] = ___\nprint(squares)","output":"[1, 4, 81, 16]","explanation":"The third element is replaced by 81."},"options":["81","49","25","64"],"correctAnswer":0,"difficultyLevel":"intermediate"},{"id":"7f8g9a0b-1c2d-3e4f-5g6h-abcdef123456","type":"Blanks","question":{"code":"week_days = [\"Sunday\", \"Monday\", \"Tuesday\", \"Wednesday\"]\nprint(week_days[___:2])","output":"['Sunday', 'Monday']","explanation":"Slicing returns the elements from index 0 to 1."},"options":["0","1","2","3"],"correctAnswer":0,"difficultyLevel":"intermediate"},{"id":"8g9a0b1c-2d3e-4f5g-6h7i-abcdef123456","type":"Blanks","question":{"code":"colors = [\"red\", \"blue\", \"green\", \"yellow\"]\nprint(colors[-___])","output":"red","explanation":"-4 accesses the first element in reverse indexing."},"options":["1","2","3","4"],"correctAnswer":3,"difficultyLevel":"intermediate"},{"id":"9a0b1c2d-3e4f-5g6h-7i8j-abcdef123456","type":"Blanks","question":{"code":"matrix = [[1, 2], [3, 4], [5, 6]]\nprint(matrix[___][1])","output":"4","explanation":"The second element of the second list is accessed."},"options":["0","1","2","3"],"correctAnswer":1,"difficultyLevel":"advanced"},{"id":"0b1c2d3e-4f5g-6h7i-8j9k-abcdef123456","type":"Blanks","question":{"code":"arr = [7, 14, 21, 28]\nprint(___(arr))","output":"4","explanation":"len() gives the number of elements in a list."},"options":["len","size","count","range"],"correctAnswer":0,"difficultyLevel":"expert"}]
+[
+  {
+    "id": "a1f2b3c4-567d-8e9f-0a1b-2c3d4e5f6789",
+    "type": "Blanks",
+    "question": {
+      "code": "numbers = [10, 20, 30, 40]\nprint(___(numbers))",
+      "output": "4",
+      "explanation": "len() is the built-in function used to get the number of elements in a list."
+    },
+    "options": [
+      "size",
+      "count",
+      "length",
+      "len",
+      "num"
+    ],
+    "correctAnswer": 3,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "b2c3d4e5-678f-9a0b-1c2d-3e4f5g6h7i8j",
+    "type": "Blanks",
+    "question": {
+      "code": "print(str(10.5 * ____))",
+      "output": "31.5",
+      "explanation": "The multiplication yields 31.5 with a multiplier of 3."
+    },
+    "options": [
+      "2",
+      "3",
+      "4",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "c3d4e5f6-789g-0a1b-2c3d-4e5f6g7h8i9j",
+    "type": "Blanks",
+    "question": {
+      "code": "print(___ // 3)",
+      "output": "2",
+      "explanation": "Floor division of 7 by 3 results in 2."
+    },
+    "options": [
+      "6",
+      "7",
+      "9",
+      "5"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "d4e5f6g7-890h-1a2b-3c4d-5e6f7g8h9i0j",
+    "type": "Blanks",
+    "question": {
+      "code": "print(\"hello\".upper() == ___)",
+      "output": "True",
+      "explanation": "\"HELLO\" is the uppercase version of \"hello\"."
+    },
+    "options": [
+      "\"hello\"",
+      "\"HELLO\"",
+      "\"Hello\""
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "e5f6g7h8-901i-2a3b-4c5d-6e7f8g9h0i1j",
+    "type": "Blanks",
+    "question": {
+      "code": "print(int(\"42\") == ___)",
+      "output": "True",
+      "explanation": "Converting string \"42\" to integer results in 42."
+    },
+    "options": [
+      "42",
+      "\"42\"",
+      "24",
+      "\"24\""
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "f6g7h8i9-012j-3a4b-5c6d-7e8f9g0h1i2k",
+    "type": "Blanks",
+    "question": {
+      "code": "result = 5 <= 6\nprint(___)",
+      "output": "True",
+      "explanation": "5 is less than or equal to 6, therefore the expression evaluates to True."
+    },
+    "options": [
+      "False",
+      "True",
+      "None",
+      "\"True\""
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "g7h8i9j0-123k-4b5c-6d7e-8f9g0h1i2j3l",
+    "type": "Blanks",
+    "question": {
+      "code": "def add(x, y):\n    return x + y\n\nprint(add(3, 4) == ___)",
+      "output": "True",
+      "explanation": "3 + 4 equals 7."
+    },
+    "options": [
+      "10",
+      "7",
+      "8",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "h8i9j0k1-234l-5c6d-7e8f-9g0h1i2j3k4m",
+    "type": "Blanks",
+    "question": {
+      "code": "value = \"DataCamp\"\nprint(value.___)",
+      "output": "8",
+      "explanation": "The len() function returns the length of the string."
+    },
+    "options": [
+      "size()",
+      "length",
+      "len()",
+      "count"
+    ],
+    "correctAnswer": 2,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "i9j0k1l2-345m-6d7e-8f9g-0h1i2j3k4l5n",
+    "type": "Blanks",
+    "question": {
+      "code": "print(\"hello\".capitalize() == ___)",
+      "output": "True",
+      "explanation": "capitalize() function returns the string with the first letter capitalized, which is \"Hello\"."
+    },
+    "options": [
+      "\"hello\"",
+      "\"Hello\"",
+      "\"HELLO\"",
+      "False"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "j0k1l2m3-456n-7e8f-9g0h-1i2j3k4l5m6o",
+    "type": "Blanks",
+    "question": {
+      "code": "print(3 ** ___)",
+      "output": "9",
+      "explanation": "3 to the power of 2 equals 9."
+    },
+    "options": [
+      "1",
+      "2",
+      "3",
+      "4"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "k1l2m3n4-567o-8f9g-0h1i-2j3k4l5m6n7p",
+    "type": "Blanks",
+    "question": {
+      "code": "def check_value(n):\n    return n % 2 == 0\n\nprint(check_value(4) == ___)",
+      "output": "True",
+      "explanation": "check_value(4) checks if 4 is even, which is True."
+    },
+    "options": [
+      "True",
+      "False",
+      "None"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "l2m3n4o5-678p-9g0h-1i2j-3k4l5m6n7o8q",
+    "type": "Blanks",
+    "question": {
+      "code": "x = 10\nx += ___\nprint(x)",
+      "output": "15",
+      "explanation": "Adding 5 to 10 results in 15."
+    },
+    "options": [
+      "2",
+      "3",
+      "5",
+      "10"
+    ],
+    "correctAnswer": 2,
+    "difficultyLevel": "advanced"
+  },
+  {
+    "id": "m3n4o5p6-789q-0h1i-2j3k-4l5m6n7o8p9r",
+    "type": "Blanks",
+    "question": {
+      "code": "print((3 + 2) * (8 // 4) == ___)",
+      "output": "True",
+      "explanation": "(3 + 2) * (8 // 4) equals 10."
+    },
+    "options": [
+      "15",
+      "10",
+      "True",
+      "False"
+    ],
+    "correctAnswer": 2,
+    "difficultyLevel": "advanced"
+  },
+  {
+    "id": "n4o5p6q7-890r-1i2j-3k4l-5m6n7o8p9q0s",
+    "type": "Blanks",
+    "question": {
+      "code": "print(\"Python\".find(\"o\") == ___)",
+      "output": "4",
+      "explanation": "The find() method returns the index of the first occurrence of \"o\", which is 4."
+    },
+    "options": [
+      "3",
+      "4",
+      "5",
+      "6"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "advanced"
+  },
+  {
+    "id": "o5p6q7r8-901s-2j3k-4l5m-6n7o8p9q0r1t",
+    "type": "Blanks",
+    "question": {
+      "code": "x = range(5)\nprint(len(list(x)) == ___)",
+      "output": "True",
+      "explanation": "Converting range(5) to a list and checking its length equals 5."
+    },
+    "options": [
+      "True",
+      "5",
+      "\"5\"",
+      "range"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "advanced"
+  },
+  {
+    "id": "p6q7r8s9-012t-3k4l-5m6n-7o8p9q0r1s2u",
+    "type": "Blanks",
+    "question": {
+      "code": "my_list = [1, 2, 3]\nmy_list.append(___)\nprint(my_list)",
+      "output": "[1, 2, 3, 4]",
+      "explanation": "Appending 4 to the list results in [1, 2, 3, 4]."
+    },
+    "options": [
+      "3",
+      "4",
+      "5",
+      "None"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "advanced"
+  },
+  {
+    "id": "q7r8s9t0-123u-4l5m-6n7o-8p9q0r1s2t3v",
+    "type": "Blanks",
+    "question": {
+      "code": "y = 7\nresult = y % 3\nprint(result == ___)",
+      "output": "True",
+      "explanation": "7 modulo 3 results in 1."
+    },
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "expert"
+  },
+  {
+    "id": "r8s9t0u1-234v-5m6n-7o8p-9q0r1s2t3u4w",
+    "type": "Blanks",
+    "question": {
+      "code": "message = \"DataScience\"\nprint(\"Science\" in message == ___)",
+      "output": "True",
+      "explanation": "\"Science\" is indeed a substring of \"DataScience\"."
+    },
+    "options": [
+      "True",
+      "False",
+      "\"True\"",
+      "\"False\""
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "expert"
+  }
+]

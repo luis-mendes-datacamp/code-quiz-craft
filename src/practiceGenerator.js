@@ -40,17 +40,49 @@ async function generatePractice(exerciseCount, lessonExercises) {
         "correctAnswer": 3,
         "difficultyLevel": "beginner"
     }
-    const prompt = 'Context: You are a teacher, and you are creating exercises based on the lesson details provided as the input. Input is in JSON format.' +
-        `Generate a JSON array of size ${exerciseCount} containing coding exercises in the "fill in the blanks" style based on the content of the course.
-        'There should be exactly one blank to fill.' +
-        'Each exercise should have between 3 and 5 options.' +
-        'Exactly one option should be correct.' +
-        'Here's an example of one exercise:\n` +
-        '```' + JSON.stringify(exerciseExample) + '```\n' +
-        'The difficulty of the exercises should be: beginner (40%), intermediate (30%), advanced (20%), expert (10%)' +
-        'Ensure the output you generate is a valid JSON without additional markup.';
+    const prompt = 'Context: You are a Python teacher creating exercises. Follow these strict rules:' +
+        '\n\nOutput Format Rules:' +
+        '\n1. String Values:' +
+        '\n   - For printing strings: print("hello") outputs hello (no quotes)' +
+        '\n   - For lists with strings: ["a", "b"] prints with quotes: [\'a\', \'b\']' +
+        '\n2. Number Outputs:' +
+        '\n   - Integer division (/) always shows decimal: 6/3 outputs 2.0' +
+        '\n   - Floor division (//) shows integer: 6//3 outputs 2' +
+        '\n3. Multiple Line Outputs:' +
+        '\n   - Each print() starts on a new line' +
+        '\n   - Exact newline count matters' +
+        '\n   - No trailing newline at the end' +
+        '\n4. Boolean Outputs:' +
+        '\n   - print(True) outputs True (capital T)' +
+        '\n   - print(False) outputs False (capital F)' +
 
+        '\n\nExercise Requirements:' +
+        `\n1. Generate ${exerciseCount} "fill in the blanks" exercises.` +
+        '\n2. Exactly ONE blank to fill (marked as ___).' +
+        '\n3. Between 3-5 options per exercise.' +
+        '\n4. Exactly ONE correct option - validate by running the code.' +
+        '\n5. The "correctAnswer" property is the index (0-based) of the correct option.' +
+        '\n6. Output field must show EXACT console output, character by character.' +
 
+        '\n\nHere is an example:\n' +
+        '```' + JSON.stringify(exerciseExample, null, 2) + '```\n' +
+
+        '\nDifficulty Distribution:' +
+        '\n- beginner: 40%' +
+        '\n- intermediate: 30%' +
+        '\n- advanced: 20%' +
+        '\n- expert: 10%' +
+
+        '\n\nValidation Steps:' +
+        '\n1. For each exercise:' +
+        '\n   - Replace ___ with each option' +
+        '\n   - Run the code' +
+        '\n   - Verify EXACT output match' +
+        '\n   - Confirm only one option works' +
+        '\n2. Verify correctAnswer index matches the working option' +
+        '\n3. Test that no other option produces the same output' +
+
+        '\nEnsure your response is valid JSON without markup.';
 
     const response = await client.chat.completions.create({
         model: "gpt-4o",

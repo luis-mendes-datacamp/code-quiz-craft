@@ -1,0 +1,14 @@
+[
+  {
+    "id": "test-1",
+    "type": "Blanks",
+    "question": {
+      "code": "numbers = [10, 20, 30, 40]\nprint(___(numbers))",
+      "output": "4",
+      "explanation": "len() is the built-in function used to get the number of elements in a list."
+    },
+    "options": ["size", "count", "length", "len", "num"],
+    "correctAnswer": 3,
+    "difficultyLevel": "beginner"
+  }
+]
