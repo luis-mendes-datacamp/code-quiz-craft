@@ -14,17 +14,7 @@ const CodeBlock: React.FC<CodeBlockProps> = ({ code, className }) => {
     .replace(/___/g, '<span class="highlight-blank">___</span>');
   
   // Enhanced syntax highlighting for Python
-  const highlightedCode = processedCode
-    // Keywords
-    .replace(/(print|def|return|if|for|in|else|elif|import|from|as|class|try|except|with|raise|pass|continue|break|while|not|and|or|is|None|True|False)\b/g, '<span class="keyword">$1</span>')
-    // Strings
-    .replace(/(["'])(?:(?=(\\?))\2.)*?\1/g, '<span class="string">$&</span>')
-    // Numbers
-    .replace(/(\b\d+\.?\d*\b)/g, '<span class="number">$1</span>')
-    // Comments
-    .replace(/(#.*)/g, '<span class="comment">$1</span>')
-    // Functions and built-ins
-    .replace(/(?<!\w)(self|range|len|sum|type|int|str|float|list|dict|set|tuple)(?!\w)/g, '<span class="function">$1</span>');
+  const highlightedCode = processedCode;
 
   return (
     <pre className={cn("px-4 py-3 rounded-lg overflow-auto bg-secondary text-foreground font-mono text-sm", className)}>
