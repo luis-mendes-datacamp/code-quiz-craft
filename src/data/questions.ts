@@ -89,7 +89,7 @@ export const questions: Question[] = [
     "id": "7a8b9c0d-1234-5678-9012-131415161718",
     "type": "Blanks",
     "question": {
-      "code": "for i in range(3):\\n    print(i) # Last output: ___",
+      "code": "for i in range(3):\n    print(i) # Last output: ___",
       "output": "2",
       "explanation": "range(3) generates values 0, 1, and 2. The last printed value is 2."
     },
