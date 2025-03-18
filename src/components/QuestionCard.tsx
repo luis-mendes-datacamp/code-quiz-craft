@@ -80,7 +80,8 @@ const QuestionCard: React.FC<QuestionCardProps> = ({ question, onNext }) => {
         <div className="space-y-2">
           <h3 className="text-sm font-medium text-muted-foreground mb-2">Fill in the blank:</h3>
           <CodeBlock code={question.question.code} />
-          <WafflesCodeBlock size="medium">Output: {question.question.output}</WafflesCodeBlock>
+          <h3 className="text-sm font-medium text-muted-foreground mb-2">Output:</h3>
+          <WafflesCodeBlock size="medium">{question.question.output}</WafflesCodeBlock>
           {isRevealed && (
             <div className={cn(
               "mt-4 bg-secondary/50 rounded-lg p-3 text-sm",
