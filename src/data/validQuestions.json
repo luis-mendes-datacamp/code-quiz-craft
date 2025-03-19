@@ -1,0 +1,325 @@
+[
+  {
+    "id": "b1e72bd6-5778-4a31-ad51-502bd367ec84",
+    "type": "Blanks",
+    "question": {
+      "code": "my_list = [1, 2, 3]\nmy_list.append(___)\nprint(my_list)",
+      "output": "[1, 2, 3, 4]",
+      "explanation": "The append() method adds an element at the end of the list."
+    },
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "e5d1a3ba-674e-40ca-9266-5e13fb3cfed6",
+    "type": "Blanks",
+    "question": {
+      "code": "my_list = [1, 2, 3]\nmy_list[1] = ___\nprint(my_list)",
+      "output": "[1, 5, 3]",
+      "explanation": "Access the element at index 1 and reassign it using '='."
+    },
+    "options": [
+      "4",
+      "5",
+      "6",
+      "7"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "02f0582c-5c60-4d1c-bcb6-50e7c67a861d",
+    "type": "Blanks",
+    "question": {
+      "code": "my_list = ['a', 'b', 'c']\ndel my_list[___]\nprint(my_list)",
+      "output": "['a', 'c']",
+      "explanation": "The del statement removes an element based on its index."
+    },
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "e5f36b95-ae0e-4aae-b541-be7bcb0ff227",
+    "type": "Blanks",
+    "question": {
+      "code": "x = [4, 5, 6]\ny = x\nx[0] = ___\nprint(y)",
+      "output": "[9, 5, 6]",
+      "explanation": "Assigning y = x creates a reference, thus changing x also changes y."
+    },
+    "options": [
+      "7",
+      "8",
+      "9",
+      "10"
+    ],
+    "correctAnswer": 2,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "c492a6c0-13e5-4115-a3b1-6f13460e9477",
+    "type": "Blanks",
+    "question": {
+      "code": "a = [1, 2]\nb = a[:]\nb[0] = 10\nprint(___)",
+      "output": "[1, 2]",
+      "explanation": "a[:] creates a shallow copy of the list, which is unaffected by changes to b."
+    },
+    "options": [
+      "a",
+      "b",
+      "c",
+      "[10, 2]"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "3bf55527-80bb-4197-9695-5cf78b2e2da2",
+    "type": "Blanks",
+    "question": {
+      "code": "list1 = ['cat', 'dog']\nlist2 = list1 + ___\nprint(list2)",
+      "output": "['cat', 'dog', 'fish']",
+      "explanation": "Using '+' with lists concatenates them."
+    },
+    "options": [
+      "['fish']",
+      "['bird']",
+      "['horse']",
+      "['tiger']"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "ab5de8ab-4d23-4a0d-b5a0-aa8bf0e9bcf1",
+    "type": "Blanks",
+    "question": {
+      "code": "items = [10, 20, 30]\nprint(items[___])",
+      "output": "30",
+      "explanation": "Accessing an element by index to retrieve its value."
+    },
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 2,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "8daac9b2-90fa-4ee6-b4b4-6e9e2f29b39c",
+    "type": "Blanks",
+    "question": {
+      "code": "fruits = ['apple', 'banana']\nfruits.insert(1, ___)\nprint(fruits)",
+      "output": "['apple', 'cherry', 'banana']",
+      "explanation": "insert() method places an element at a specified position."
+    },
+    "options": [
+      "'orange'",
+      "'grape'",
+      "'cherry'",
+      "'pear'"
+    ],
+    "correctAnswer": 2,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "3e54ad80-2399-4ef7-b06f-2f4cdaf57b49",
+    "type": "Blanks",
+    "question": {
+      "code": "letters = ['x', 'y', 'z']\nletters.remove(___)\nprint(letters)",
+      "output": "['x', 'z']",
+      "explanation": "remove() method removes the first occurrence of a value."
+    },
+    "options": [
+      "'x'",
+      "'y'",
+      "'z'",
+      "'a'"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "cb3de8c5-e723-4287-8e42-b1abcd6bccea",
+    "type": "Blanks",
+    "question": {
+      "code": "nums = [4, 5, 6]\nnums.extend([7, ___])\nprint(nums)",
+      "output": "[4, 5, 6, 7, 8]",
+      "explanation": "extend() method adds elements of an iterable to the end of the list."
+    },
+    "options": [
+      "8",
+      "9",
+      "10",
+      "11"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "df9b945e-257a-4461-b96b-efe0195b2314",
+    "type": "Blanks",
+    "question": {
+      "code": "days = ['Mon', ___, 'Wed', 'Thu']\nprint(days[1])",
+      "output": "Tue",
+      "explanation": "Accessing a list by index to get the value."
+    },
+    "options": [
+      "'Tue'",
+      "'Fri'",
+      "'Sat'",
+      "'Sun'"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "c39e1b65-92ae-4985-8b43-b69ead9bf60c",
+    "type": "Blanks",
+    "question": {
+      "code": "names = ['John', 'James']\nnames[1:1] = [___]\nprint(names)",
+      "output": "['John', 'Anna', 'James']",
+      "explanation": "Assigning a value into a sliced list."
+    },
+    "options": [
+      "'Anna'",
+      "'Tom'",
+      "'Sara'",
+      "'Chris'"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "advanced"
+  },
+  {
+    "id": "13b75768-4519-4ed4-a9be-d9f1ebc254ac",
+    "type": "Blanks",
+    "question": {
+      "code": "colors = ['red', 'green', ___]\nprint(colors[-1])",
+      "output": "blue",
+      "explanation": "Negative index -1 refers to the last item in the list."
+    },
+    "options": [
+      "'yellow'",
+      "'blue'",
+      "'pink'",
+      "'orange'"
+    ],
+    "correctAnswer": 1,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "82dc973b-eb8f-4375-81fc-010cdfa05a7e",
+    "type": "Blanks",
+    "question": {
+      "code": "tech = ['AI', 'Blockchain']\nprint(len(___))",
+      "output": "2",
+      "explanation": "len() function returns the number of elements in an iterable."
+    },
+    "options": [
+      "'tech'",
+      "'AI'",
+      "'Blockchain'",
+      "'list'"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "beginner"
+  },
+  {
+    "id": "9423e70c-cab9-486a-b807-234ab4f34516",
+    "type": "Blanks",
+    "question": {
+      "code": "data = ['a', 'b', 'c']\nreversed_data = data[::___]\nprint(reversed_data)",
+      "output": "['c', 'b', 'a']",
+      "explanation": "Slicing with step -1 reverses the list."
+    },
+    "options": [
+      "-1",
+      "0",
+      "1",
+      "2"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "advanced"
+  },
+  {
+    "id": "6cd85723-1d4f-4bdf-b65d-367c096acb3c",
+    "type": "Blanks",
+    "question": {
+      "code": "matrix = [[1, 2], [3, 4]]\nfirst_row = matrix[___]\nprint(first_row)",
+      "output": "[1, 2]",
+      "explanation": "Accessing nested lists by index."
+    },
+    "options": [
+      "0",
+      "1",
+      "2",
+      "3"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "intermediate"
+  },
+  {
+    "id": "3bf704c3-a97a-4a25-9735-1cc29d0c1d2f",
+    "type": "Blanks",
+    "question": {
+      "code": "my_list = list(___)\nprint(my_list)",
+      "output": "['a', 'b', 'c']",
+      "explanation": "The list() method converts a string to a list of characters."
+    },
+    "options": [
+      "\"abc\"",
+      "\"123\"",
+      "\"xyz\"",
+      "\"def\""
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "expert"
+  },
+  {
+    "id": "874c70fa-6609-41d9-9ab1-8ecbbdb69d05",
+    "type": "Blanks",
+    "question": {
+      "code": "numbers = [1, 2, 3]\nsquared = [x**2 for x in ___]\nprint(squared)",
+      "output": "[1, 4, 9]",
+      "explanation": "This list comprehension squares each element in numbers."
+    },
+    "options": [
+      "numbers",
+      "range(5)",
+      "[4,5,6]",
+      "[7,8,9]"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "expert"
+  },
+  {
+    "id": "fa220fda-6dce-4a8d-84b7-c9a801a29abc",
+    "type": "Blanks",
+    "question": {
+      "code": "values = ['apple', 'banana', 'pear']\nvalues.insert(-3, ___)\nprint(values)",
+      "output": "['inserted', 'apple', 'banana', 'pear']",
+      "explanation": "Negative index allows insertion before the first element."
+    },
+    "options": [
+      "'inserted'",
+      "'removed'",
+      "'missing'",
+      "'added'"
+    ],
+    "correctAnswer": 0,
+    "difficultyLevel": "advanced"
+  }
+]
