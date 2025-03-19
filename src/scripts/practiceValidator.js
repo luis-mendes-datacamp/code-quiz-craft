@@ -139,11 +139,11 @@ class CodeExecutor {
     };
 }
 
-const executeCode = async (userCode) => {
+const executeCode = async (imageTag, programmingLanguage, userCode) => {
     const syncSession = new mux.SyncSession(
         {email: process.env.DATACAMP_EMAIL, authentication_token: process.env.DATACAMP_TOKEN},
         {
-            multiplexerUrl: 'https://sessions.datacamp.com', language: 'python', initCommand: {
+            multiplexerUrl: 'https://sessions.datacamp.com', language: programmingLanguage, initCommand: {
                 code: '',
                 command: 'init',
                 pec: '',
@@ -152,7 +152,7 @@ const executeCode = async (userCode) => {
     );
 
     await syncSession.start();
-    const [response] = await syncSession.input({command: 'console', code: userCode});
+    const [response] = await syncSession.input({command: 'console', code: userCode}, {image_tag: imageTag});
     return response.payload;
 };
 
@@ -167,7 +167,7 @@ function fixPythonCode(code) {
     });
 }
 
-async function testExercise(exercise) {
+async function testExercise(imageTag, programmingLanguage, exercise) {
     console.log(`\nTesting exercise ${exercise.id}:`);
     console.log("Original code:", exercise.question.code);
     console.log("Expected output:", exercise.question.output);
@@ -179,7 +179,7 @@ async function testExercise(exercise) {
         console.log(`\nTrying option: ${option}`);
         console.log("Modified code:", code);
 
-        const output = await executeCode(code);
+        const output = await executeCode(imageTag, programmingLanguage, code);
         if (output !== null) {
             const matches = output === exercise.question.output;
             console.log("Got output:", output);
@@ -192,20 +192,28 @@ async function testExercise(exercise) {
     }
     return correctAnswerCount;
 }
+const getImageTag = async (courseId) => {
+    const response = await fetch(`https://imb.datacamp.com/active_course_images/${courseId}`);
+    const body = await response.json();
+    return body.imageTag;
+}
 
 async function main() {
     try {
         // Read questions
         const questionsPath = path.join(process.cwd(), "src/data/questions.json");
         console.log("Reading questions from:", questionsPath);
-        const questions = JSON.parse(await fs.readFile(questionsPath, "utf-8"));
+        const { courseId, questions, programmingLanguage } = JSON.parse(await fs.readFile(questionsPath, "utf-8"));
+        const imageTag = await getImageTag(courseId);
+
         console.log(`Loaded ${questions.length} questions`);
+
 
         const results = [];
         const validQuestions = [];
         // Test each exercise
         for (const [index, exercise] of questions.entries()) {
-            const correctAnswerCount = await testExercise(exercise);
+            const correctAnswerCount = await testExercise(imageTag, programmingLanguage, exercise);
             console.log("-".repeat(80));
             results.push([index, correctAnswerCount]);
             if (correctAnswerCount === 1) {
@@ -218,7 +226,11 @@ async function main() {
         });
         const validQuestionPath = path.join(process.cwd(), "src/data/validQuestions.json");
 
-        await fs.writeFile(validQuestionPath, JSON.stringify(validQuestions));
+        await fs.writeFile(validQuestionPath, JSON.stringify({
+            courseId,
+            programmingLanguage,
+            questions: validQuestions
+        }));
     } catch (err) {
         console.error("Failed to run tests:", err);
     }

@@ -106,8 +106,12 @@ async function main() {
     const currentLesson = lessons.find((l) => l.number === Number(lesson));
     const exerciseMap = Object.fromEntries(enrichedChapterData.flatMap(chapter => chapter.map(exercise => [exercise.id, exercise])));
     const lessonExercises = currentLesson.exercises.map(exercise => exerciseMap[exercise.id]);
-    const output = await generatePractice(exerciseCount, lessonExercises);
-    console.log(JSON.stringify(output));
+    const questions = await generatePractice(exerciseCount, lessonExercises);
+    console.log(JSON.stringify({
+        courseId,
+        programmingLanguage: courseData.programming_language,
+        questions,
+    }));
 }
 
 // Execute the main function
