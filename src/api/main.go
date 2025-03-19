@@ -10,17 +10,22 @@ import (
 )
 
 func loadQuestions() ([]models.Question, error) {
-	file, err := os.ReadFile("../data/validQuestions.json")
-	if err != nil {
-		return nil, err
-	}
+    file, err := os.ReadFile("../data/examples/python/questions.json")
+    if err != nil {
+        return nil, err
+    }
 
-	var questions []models.Question
-	if err := json.Unmarshal(file, &questions); err != nil {
-		return nil, err
-	}
+    var questionSet models.QuestionSet
+    if err := json.Unmarshal(file, &questionSet); err != nil {
+        return nil, err
+    }
 
-	return questions, nil
+    // Set courseId for each question from the parent QuestionSet
+    for i := range questionSet.Questions {
+        questionSet.Questions[i].CourseID = questionSet.CourseID
+    }
+
+    return questionSet.Questions, nil
 }
 
 func main() {
