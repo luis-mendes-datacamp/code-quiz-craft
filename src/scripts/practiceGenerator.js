@@ -12,13 +12,14 @@ function getArguments() {
         process.exit(1);
     }
     const [exerciseCount, courseId, lesson] = args;
-    return { exerciseCount, courseId, lesson };
+    return {exerciseCount, courseId, lesson};
 }
+
 const sanitize = (input) => {
     if (input.startsWith("```json")) {
         input = input.slice(7);
     } else if (input.startsWith("```")) {
-       input = input.slice(3)
+        input = input.slice(3)
     }
     if (input.endsWith("```")) {
         return input.substring(0, input.length - 3);
@@ -42,7 +43,7 @@ async function generatePractice(exerciseCount, lessonExercises) {
     }
     const prompt = 'Context: You are a teacher, and you are creating exercises based on the lesson details provided as the input. Input is in JSON format.' +
         `Generate a JSON array of size ${exerciseCount} containing coding exercises in the "fill in the blanks" style based on the content of the course.
-        'There should be exactly one blank to fill.' +
+        'There should be exactly one blank to fill. The blank to be filled should be shown as three underscores: \`___\`.' +
         'Each exercise should have between 3 and 5 options.' +
         'Exactly one option should be correct.' +
         'Here's an example of one exercise:\n` +
@@ -52,29 +53,28 @@ async function generatePractice(exerciseCount, lessonExercises) {
         'Ensure the output you generate is a valid JSON without additional markup.';
 
 
-
     const response = await client.chat.completions.create({
         model: "gpt-4o",
-            messages: [
-                {
-                    "role": "developer",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": prompt
-                        }
-                    ]
-                },
-                {
-                    "role": "user",
-                    "content": [
-                        {
-                            "type": "text",
-                            "text": JSON.stringify(lessonExercises),
-                        }
-                    ]
-                }
-            ],
+        messages: [
+            {
+                "role": "developer",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": prompt
+                    }
+                ]
+            },
+            {
+                "role": "user",
+                "content": [
+                    {
+                        "type": "text",
+                        "text": JSON.stringify(lessonExercises),
+                    }
+                ]
+            }
+        ],
 
     });
 
@@ -84,7 +84,7 @@ async function generatePractice(exerciseCount, lessonExercises) {
 
 // Main function
 async function main() {
-    const { exerciseCount, courseId, lesson } = getArguments();
+    const {exerciseCount, courseId, lesson} = getArguments();
 
     const response = await fetch(`https://campus-api.datacamp.com/api/courses/${courseId}`);
     const courseData = await response.json();
