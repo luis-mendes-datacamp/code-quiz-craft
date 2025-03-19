@@ -1,0 +1,204 @@
+[
+  {
+    "id": 972036,
+    "type": "VideoExercise",
+    "assignment": null,
+    "title": "Manipulating Lists",
+    "sample_code": "",
+    "instructions": null,
+    "number": 9,
+    "sct": "",
+    "pre_exercise_code": "",
+    "solution": "",
+    "hint": null,
+    "attachments": null,
+    "xp": 50,
+    "possible_answers": [],
+    "feedbacks": [],
+    "question": "",
+    "exercise_image": null,
+    "programming_language": null,
+    "runtime_config": null,
+    "video_link": null,
+    "video_hls": null,
+    "aspect_ratio": 56.25,
+    "projector_key": "course_735_355ed52d2fb0d67508c6a311b7cbc6d3",
+    "key": "d7fe818b3a",
+    "language": "python",
+    "course_id": 735,
+    "chapter_id": 1851,
+    "version": "v0",
+    "video_exercise_transcript": {
+      "slides": [
+        {
+          "citations": [],
+          "number": 1,
+          "script": "Wow, you're doing super well. So now, after creation and subsetting, the final piece of the Python lists puzzle is\n\n",
+          "startsAtTimestamp": 0,
+          "title": "Manipulating Lists"
+        },
+        {
+          "citations": [],
+          "number": 2,
+          "script": "manipulation, so ways to change elements in your list, or to add elements to and remove elements from your list.\n\n",
+          "startsAtTimestamp": 0.03946281454201404,
+          "title": "List Manipulation"
+        },
+        {
+          "citations": [],
+          "number": 3,
+          "script": "Changing list elements is pretty straightforward. You use the same square brackets that we've used to subset lists, and then assign new elements to it using the equals sign. Suppose that after another look at fam, you realize that your dad's height is not up to date anymore, as he's shrinking with age. Instead of 1.89 meters, it should be 1.86 meters. To change this list element, which is at index 7, you can use this line of code.\n\nIf you now check out fam, you'll see that the value is updated.\n\nYou can even change an entire list slice at once. To change the elements \"liz\" and 1.73, you access the first two elements with 0:2, and then assign a new list to it.\n\nDo you still remember how the plus operator was different for strings and integers?\n\n",
+          "startsAtTimestamp": 0.07155693830852704,
+          "title": "Changing list elements"
+        },
+        {
+          "citations": [],
+          "number": 4,
+          "script": "Well, it's again different for lists. If you use the plus sign with two lists, Python simply pastes together their contents in a single list. Suppose you want to add your own name and height to the fam height list. This will do the trick.\n\nOf course, you can also store this new list in a variable, fam_ext for example.\n\nFinally, deleting elements from a list is also pretty straightforward, you'll have to use del here. Take this line, for example, that deletes the element with index 2, so \"emma\", from the list.\n\nIf you check out fam now, you'll see that the \"emma\" string is gone. Because you've removed an index, all elements that came after \"emma\" scooted over by one index. If you again run the same line, you're again removing the element at index 2, which is emma's height, 1.68 meters now.\n\nUnderstanding how Python lists actually work\n\n",
+          "startsAtTimestamp": 0.2666354495268139,
+          "title": "Adding and removing elements"
+        },
+        {
+          "citations": [],
+          "number": 5,
+          "script": "behind the scenes becomes pretty important now. What actually happens when you create a new list, x, like this?\n\nWell, in a simplified sense, you're storing a list in your computer memory, and store the 'address' of that list, so\n\n",
+          "startsAtTimestamp": 0.5381587822732565,
+          "title": "Behind the scenes (1)"
+        },
+        {
+          "citations": [],
+          "number": 6,
+          "script": "where the list is in your computer memory, in x. This means that x does not actually contain all the list elements, it rather contains a reference to the list. For basic operations, the difference is not that important, but it becomes more so when you start copying lists. Let me clarify this with an example.\n\nLet's store the list x as a new variable y, by simply using the equals sign.\n\nLet's now change the element with index one in the list y, like this.\n\nThe funky thing is that if you now check out x again, also here the second element was changed.\n\nThat's because when you copied x to y with the equals sign,\n\n",
+          "startsAtTimestamp": 0.6017074008589095,
+          "title": "Behind the scenes (1)"
+        },
+        {
+          "citations": [],
+          "number": 7,
+          "script": "you copied the reference to the list, not the actual values themselves.\n\n",
+          "startsAtTimestamp": 0.78673062157379,
+          "title": "Behind the scenes (1)"
+        },
+        {
+          "citations": [],
+          "number": 8,
+          "script": "When you're updating an element the list, it's one and the same list in the computer memory your changing. Both x and y point to this list, so the update is visible from both variables.\n\nIf you want to create a list y that points to a new list in the memory with the same values,\n\n",
+          "startsAtTimestamp": 0.8045826694769683,
+          "title": "Behind the scenes (1)"
+        },
+        {
+          "citations": [],
+          "number": 9,
+          "script": "you'll need to use something else than the equals sign. You can use the list function,\n\n",
+          "startsAtTimestamp": 0.8612726735015773,
+          "title": "Behind the scenes (2)"
+        },
+        {
+          "citations": [],
+          "number": 10,
+          "script": "like this, or use slicing to select all list elements explicitly.\n\nIf you now\n\n",
+          "startsAtTimestamp": 0.9022159518879699,
+          "title": "Behind the scenes (2)"
+        },
+        {
+          "citations": [],
+          "number": 11,
+          "script": "make a change to the list y points to, x is not affected.\n\nIf this was a bit too much to take in, don't worry.\n\n",
+          "startsAtTimestamp": 0.9277965217836873,
+          "title": "Behind the scenes (2)"
+        },
+        {
+          "citations": [],
+          "number": 12,
+          "script": "The exercises will help you understand list manipulation and the subtle inner workings of lists. I'm sure you'll do great!\n\n",
+          "startsAtTimestamp": 0.9562455681281354,
+          "title": "Let's practice!"
+        }
+      ]
+    }
+  },
+  {
+    "id": 14265,
+    "type": "NormalExercise",
+    "assignment": "<p>To replace list elements, you subset the list and assign new values to the subset. You can select single elements or you can change entire list slices at once.</p>\n<p>For this and the following exercises, you'll continue working on the <code>areas</code> list that contains the names and areas of different rooms in a house.</p>",
+    "title": "Replace list elements",
+    "sample_code": "# Create the areas list\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n\n# Correct the bathroom area\n\n\n# Change \"living room\" to \"chill zone\"\n",
+    "instructions": "<ul>\n<li>Update the area of the bathroom to be <code>10.50</code> square meters instead of <code>9.50</code> using negative indexing.</li>\n<li>Make the <code>areas</code> list more trendy! Change <code>\"living room\"</code> to <code>\"chill zone\"</code>. Don't use negative indexing this time.</li>\n</ul>",
+    "number": 10,
+    "sct": "bathroom_msg = 'You can use `areas[-1] = 10.50` to update the bathroom area.'\nchillzone_msg = 'You can use `areas[4] = \"chill zone\"` to update the living room name.'\nEx().check_correct(\n  check_object('areas').has_equal_value(incorrect_msg = 'Your changes to `areas` did not result in the correct list. Are you sure you used the correct subset operations? When in doubt, you can use a hint!'),\n  multi(\n    has_equal_value(expr_code='areas[-1]', override=10.50, incorrect_msg = bathroom_msg),\n    has_equal_value(expr_code='areas[4]', override='chill zone', incorrect_msg = chillzone_msg),\n  )\n)\nsuccess_msg('Sweet! As the code sample showed, you can also slice a list and replace it with another list to update multiple elements in a single command.')",
+    "pre_exercise_code": "",
+    "solution": "# Create the areas list\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"living room\", 20.0, \"bedroom\", 10.75, \"bathroom\", 9.50]\n\n# Correct the bathroom area\nareas[-1] = 10.50\n\n# Change \"living room\" to \"chill zone\"\nareas[4] = \"chill zone\"",
+    "hint": "<ul>\n<li>To update the bathroom area, identify the subset of the bathroom area (it's the last item of the list!).</li>\n<li>Then, replace the value with the new bathroom area by assigning it to this subset.</li>\n<li>Do the same to update the <code>\"living room\"</code> name, which is at index 4.</li>\n</ul>",
+    "attachments": null,
+    "xp": 100,
+    "possible_answers": [],
+    "feedbacks": [],
+    "question": "",
+    "exercise_image": null,
+    "programming_language": null,
+    "runtime_config": null
+  },
+  {
+    "id": 14266,
+    "type": "NormalExercise",
+    "assignment": "<p>If you can change elements in a list, you sure want to be able to add elements to it, right? You can use the <code>+</code> operator:</p>\n<pre><code>x = [\"a\", \"b\", \"c\", \"d\"]\ny = x + [\"e\", \"f\"]\n</code></pre>\n<p>You just won the lottery, awesome! You decide to build a poolhouse and a garage. Can you add the information to the <code>areas</code> list?</p>",
+    "title": "Extend a list",
+    "sample_code": "# Create the areas list and make some changes\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"chill zone\", 20.0,\n         \"bedroom\", 10.75, \"bathroom\", 10.50]\n\n# Add poolhouse data to areas, new list is areas_1\nareas_1 = ____\n\n# Add garage data to areas_1, new list is areas_2\nareas_2 = ____",
+    "instructions": "<ul>\n<li>Use the <code>+</code> operator to paste the list <code>[\"poolhouse\", 24.5]</code> to the end of the <code>areas</code> list. Store the resulting list as <code>areas_1</code>.</li>\n<li>Further extend <code>areas_1</code> by adding data on your garage. Add the string <code>\"garage\"</code> and float <code>15.45</code>. Name the resulting list <code>areas_2</code>.</li>\n</ul>",
+    "number": 11,
+    "sct": "msg = \"Don't remove or edit the predefined `areas` list.\"\nEx().check_object(\"areas\", missing_msg = msg).has_equal_value(incorrect_msg = msg)\nEx().check_object(\"areas_1\").has_equal_value(incorrect_msg = \"Use `areas + [\\\"poolhouse\\\", 24.5]` to create `areas_1`. Watch out for typos!\")\nEx().check_object(\"areas_2\").has_equal_value(incorrect_msg = \"Use `areas_1 + [\\\"garage\\\", 15.45]` to create `areas_2`. Watch out for typos!\")\nsuccess_msg(\"Cool! The list is shaping up nicely!\")",
+    "pre_exercise_code": "",
+    "solution": "# Create the areas list (updated version)\nareas = [\"hallway\", 11.25, \"kitchen\", 18.0, \"chill zone\", 20.0,\n         \"bedroom\", 10.75, \"bathroom\", 10.50]\n\n# Add poolhouse data to areas, new list is areas_1\nareas_1 = areas + [\"poolhouse\", 24.5]\n\n# Add garage data to areas_1, new list is areas_2\nareas_2 = areas_1 + [\"garage\", 15.45]",
+    "hint": "<ul>\n<li>Follow the code sample in the assignment. <code>x</code> is <code>areas</code> here, and <code>[\"e\", \"f\"]</code> is <code>[\"poolhouse\", 24.5]</code>.</li>\n<li>To add more elements to <code>areas_1</code>, use <code>areas_1 + [\"element\", 123]</code>.</li>\n</ul>",
+    "attachments": null,
+    "xp": 100,
+    "possible_answers": [],
+    "feedbacks": [],
+    "question": "",
+    "exercise_image": null,
+    "programming_language": null,
+    "runtime_config": null
+  },
+  {
+    "id": 14267,
+    "type": "NormalExercise",
+    "assignment": "<p>Finally, you can also remove elements from your list. You can do this with the <code>del</code> statement:</p>\n<pre><code>x = [\"a\", \"b\", \"c\", \"d\"]\ndel x[1]\n</code></pre>\n<p>Pay attention here: as soon as you remove an element from a list, the indexes of the elements that come after the deleted element all change!</p>\n<p>Unfortunately, the amount you won with the lottery is not that big after all and it looks like the poolhouse isn't going to happen. You'll need to remove it from the list. You decide to remove the corresponding string and float from the <code>areas</code> list.</p>",
+    "title": "Delete list elements",
+    "sample_code": "areas = [\"hallway\", 11.25, \"kitchen\", 18.0,\n        \"chill zone\", 20.0, \"bedroom\", 10.75,\n         \"bathroom\", 10.50, \"poolhouse\", 24.5,\n         \"garage\", 15.45]\n\n# Delete the poolhouse items from the list\n\n\n# Print the updated list\n",
+    "instructions": "<ul>\n<li>Delete the string and float for the <code>\"poolhouse\"</code> from your <code>areas</code> list.</li>\n<li>Print the updated <code>areas</code> list.</li>\n</ul>",
+    "number": 12,
+    "sct": "Ex().check_or(\n  multi(\n    has_code(\"del areas[10]\", pattern=False),\n    has_code(\"del areas[10]\", pattern=False)\n  ),\n  has_code(\"del areas[-4:-2]\", pattern=False),\n  has_code(\"del(areas[-4:-2])\", pattern=False),\n  multi(\n    has_code(\"del(areas[10])\", pattern=False),\n    has_code(\"del(areas[10])\", pattern=False)\n  ),\n  has_code(\"del areas[10:12]\", pattern=False),\n  has_code(\"del(areas[10:12])\", pattern=False),\n  multi(\n    has_code(\"del areas[-4]\", pattern=False),\n    has_code(\"del areas[-3]\", pattern=False)\n  ),\n  multi(\n    has_code(\"del(areas[-4])\", pattern=False),\n    has_code(\"del(areas[-3])\", pattern=False)\n  )\n)\n\nEx().has_printout(0, not_printed_msg=\"Have you printed out `areas` after removing the poolhouse string and float?\")\nsuccess_msg(\"Correct! You'll learn about easier ways to remove specific elements from Python lists later on.\")",
+    "pre_exercise_code": "",
+    "solution": "areas = [\"hallway\", 11.25, \"kitchen\", 18.0,\n        \"chill zone\", 20.0, \"bedroom\", 10.75,\n         \"bathroom\", 10.50, \"poolhouse\", 24.5,\n         \"garage\", 15.45]\n\n# Delete the poolhouse items from the list\ndel areas[10]\ndel areas[10]\n\n# Print the updated list\nprint(areas)",
+    "hint": "<ul>\n<li>You'll need to use <code>del</code> twice to delete two elements. Be careful about changing indexes though!</li>\n</ul>",
+    "attachments": null,
+    "xp": 100,
+    "possible_answers": [],
+    "feedbacks": [],
+    "question": "",
+    "exercise_image": null,
+    "programming_language": null,
+    "runtime_config": null
+  },
+  {
+    "id": 14268,
+    "type": "NormalExercise",
+    "assignment": "<p>Some code has been provided for you in this exercise: a list with the name <code>areas</code> and a copy named <code>areas_copy</code>.</p>\n<p>Currently, the first element in the <code>areas_copy</code> list is changed and the <code>areas</code> list is printed out. If you hit the run code button you'll see that, although you've changed <code>areas_copy</code>, the change also takes effect in the <code>areas</code> list. That's because <code>areas</code> and <code>areas_copy</code> point to the same list.</p>\n<p>If you want to prevent changes in <code>areas_copy</code> from also taking effect in <code>areas</code>, you'll have to do a more explicit copy of the <code>areas</code> list with <code>list()</code> or by using <code>[:]</code>.</p>",
+    "title": "Inner workings of lists",
+    "sample_code": "# Create list areas\nareas = [11.25, 18.0, 20.0, 10.75, 9.50]\n\n# Change this command\nareas_copy = areas\n\n# Change areas_copy\nareas_copy[0] = 5.0\n\n# Print areas\nprint(areas)",
+    "instructions": "<ul>\n<li>Change the second command, that creates the variable <code>areas_copy</code>, such that <code>areas_copy</code> is an explicit copy of <code>areas</code>. After your edit, changes made to <code>areas_copy</code> shouldn't affect <code>areas</code>. Submit the answer to check this.</li>\n</ul>",
+    "number": 13,
+    "sct": "Ex().check_correct(\n  check_object(\"areas_copy\").has_equal_value(incorrect_msg = \"It seems that `areas_copy` has not been updated correctly.\"),\n  check_function(\"list\", missing_msg = \"Make sure to use `list(areas)` to create an `areas_copy`.\")\n)\n\nmmsg = \"Don't remove the predefined `areas` list.\"\nimsg = \"Be sure to edit ONLY the copy, not the original `areas` list. Have another look at the exercise description if you're unsure how to create a copy.\"\nEx().check_correct(\n  check_object(\"areas\", missing_msg = mmsg).has_equal_value(incorrect_msg = imsg),\n  check_function(\"list\", missing_msg = \"Make sure to use `list(areas)` to create an `areas_copy`.\")\n)\n\nsuccess_msg(\"Nice! The difference between explicit and reference-based copies is subtle, but can be really important. Try to keep in mind how a list is stored in the computer's memory.\")",
+    "pre_exercise_code": "",
+    "solution": "# Create list areas\nareas = [11.25, 18.0, 20.0, 10.75, 9.50]\n\n# Change this command\nareas_copy = list(areas)\n\n# Change areas_copy\nareas_copy[0] = 5.0\n\n# Print areas\nprint(areas)",
+    "hint": "<ul>\n<li>Change the <code>areas_copy = areas</code> call. Instead of assigning <code>areas</code>, you can assign <code>list(areas)</code> or <code>areas[:]</code>.</li>\n</ul>",
+    "attachments": null,
+    "xp": 100,
+    "possible_answers": [],
+    "feedbacks": [],
+    "question": "",
+    "exercise_image": null,
+    "programming_language": null,
+    "runtime_config": null
+  }
+]
