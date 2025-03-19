@@ -47,7 +47,7 @@ async function generatePractice(exerciseCount, lessonExercises) {
         'Exactly one option should be correct.' +
         'Here's an example of one exercise:\n` +
         '```' + JSON.stringify(exerciseExample) + '```\n' +
-        '`question.code` field contains the code with the blank and `question.output` the output of the code if it were run.'
+        '`question.code` field contains the code with the blank and `question.output` the output of the code if it were run.' +
         'The difficulty of the exercises should be: beginner (40%), intermediate (30%), advanced (20%), expert (10%)' +
         'Ensure the output you generate is a valid JSON without additional markup.';
 
